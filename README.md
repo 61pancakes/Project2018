@@ -12,7 +12,7 @@ Ik wil de ontwikkelingen in de man/vrouw-verhouding bij technische studies aan d
 * Visualisatie 1: Barchart van de afgelopen jaren van totaal aantal studenten (m/v en BA/MA gescheiden).
 * Visualisatie 2: Sunburst met per niveau: Verdeling in academische jaren, studies, jaarlagen + nog een vierde laag?
 * Visualisatie 3: Bubble Barchart met een overzicht van de studies in een academisch jaar? Ik twijfel nog over deze, omdat het delen van de andere twee visualisaties samenvoegt. Maar ik weet niet zo goed wat ik in plaats er van zou kunnen doen. Kan nog later besloten worden.
-![Sketch](/Sketch.jpg)
+![Sketch](/doc/Sketch.jpg)
 
 #### Main Features: 
 - Laat het verschil in inschrijvingen tussen jongens en meisjes zien per academisch jaar. (MVP)  
