@@ -1,5 +1,8 @@
 ### Minor Programmeren: Programmeerproject 2018     
-#### Onderwerp: Demografie (bèta)studies UvA.  
+**Titel:** Demografie van bètastudies aan de UvA. 
+**Auteur:** Andrea van den Hooff
+**Samenvatting:** Deze visualisaties moeten meer inzicht geven in de man/vrouw-verhoudingen bij de FNWI per studie en per academisch jaar.   
+
 #### Problem statement:  
 Het doel van deze visualisatie is het beter in kaart brengen, en inzicht krijgen in, de demografie bij bètastudies aan de Universiteit van Amsterdam. Het is bekend dat vrouwen in de minderheid zijn bij technische studies en daar wordt van alles aan gedaan, door subsidies en NGO's zoals [Women Who Code](https://www.womenwhocode.com). Is die balans bij alle studies zo scheef en in hoeverre zit er een ontwikkeling in sinds het populairder worden van banen in de ICT?
 
@@ -23,5 +26,4 @@ Ik wil de ontwikkelingen in de man/vrouw-verhouding bij technische studies aan d
 1. Transformeer data vanuit de [dataset](https://public.tableau.com/views/FeitenenCijfers/Students?:embed=y&:toolbar=no&:toolbar=no&:display_count=no&:display_count=no&:showVizHome=nohttps://public.tableausoftware.com/views/FeitenenCijfers "UvA") van de UvA.  
 2. Volgens mij zijn er geen externe componenten nodig voor deze visualisaties. (Niet heel erg in verdiept - zou wel kunnen?)
 3. Gerelateerde visualisaties zijn bijvoorbeeld: [WomenWhoTech](https://www.womenwhotech.com/womenintechinfographic) en [TU Delft](https://www.tudelft.nl/over-tu-delft/feiten-en-cijfers/onderwijs/studentenpopulatie/). WWT is een blitse, populistische visualisatie. Het is niet interactief en gooit vooral heel veel data naar de kijker. Het is waarschijnlijk niet geprogrammeerd, maar kan nog wel een goed voorbeeld zijn qua visualisatie. Het laat goed het verschil zien tussen de mannen en vrouwen (alhoewel cliché). De TU Delft is vergelijkbaar met, maar beter dan, de dataset van de UvA. De site heeft in tegenstelling tot WWT juist heel veel data verwerkt, maar laat dit wel maar in 1 compacte barchart zien. Sommige dingen, zoals de faculteiten, zijn niet erg begrijpelijk voor mensen buiten de TU. 
-
-**Hardest parts:** Ik heb de vorige vakken van de Minor Programmeren een jaar geleden gedaan en de d3js is enigszins weggezakt. Het uitzoeken hoe ik de verschillende visualisaties met elkaar interactief moet maken zal een grote uitdaging zijn, maar te doen met hulp van de TA's en Het Internet. Daarnaast zal het verzamelen van de data niet per se lastig zijn, maar wel redelijk wat werk, omdat ik het handmatig zal moeten invoeren via de gegevens van de UvA. Ik zal er relatief veel tijd voor moeten inplannen.
+4. Hardest parts: Ik heb de vorige vakken van de Minor Programmeren een jaar geleden gedaan en de d3js is enigszins weggezakt. Het uitzoeken hoe ik de verschillende visualisaties met elkaar interactief moet maken zal een grote uitdaging zijn, maar te doen met hulp van de TA's en Het Internet. Daarnaast zal het verzamelen van de data niet per se lastig zijn, maar wel redelijk wat werk, omdat ik het handmatig zal moeten invoeren via de gegevens van de UvA. Ik zal er relatief veel tijd voor moeten inplannen.
