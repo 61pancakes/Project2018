@@ -29,4 +29,4 @@ https://www.tudelft.nl/over-tu-delft/feiten-en-cijfers/onderwijs/studentenpopula
 * Visualisatie 2: Bubble Bar Chart? Ik twijfel nog over deze, omdat het eigenlijk de andere 2 samenvoegt. Weet niet zo goed wat ik in plaats er van zou kunnen doen.
 * Visualisatie 3: Sunburst met per niveau: Academische jaren, studies, jaarlagen.
 
-![Sketch](/Downloads/Sketch.jpg)
+![Sketch](/Sketch.jpg)
