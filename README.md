@@ -2,7 +2,11 @@
 ### Minor Programmeren UvA
 
 #### --- Optie 1: Hanabi ----
-Dataset: Het kaartspel (50 kaarten: Elke kleur heeft een set 3x 1, 2x 2, 2x 3, 2x 4, 1x 5 (= 10 kaarten in totaal) in de kleuren rood, geel, groen, blauw en wit).
+Dataset: Het kaartspel Hanabi. 
+![Hanabi](https://www.google.nl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiAzdfel8jYAhWJKsAKHe4xCMAQjRwIBw&url=http%3A%2F%2Frnrgames.com%2Fhanabi&psig=AOvVaw0CwfNwLOxz9eBffvXbwn54&ust=1515494668702642)
+
+
+(50 kaarten, 10 kaarten per kleur: Elke kleur heeft een set 3x 1, 2x 2, 2x 3, 2x 4, 1x 5 in de kleuren rood, geel, groen, blauw en wit).
 
 Een digitale variant van het kaartspel Hanabi. 
 * Visualisatie 1: Alle mogelijke kaarten, faded / highlighted afhankelijk van de andere visualisaties. 
@@ -14,7 +18,7 @@ Toevoegingen voor werking van het spel:
 * Beurten: Hints geven, kaart afleggen, kaart spelen -> Moeilijkst om computers een 'brein' te geven?
 * Extra: Mooie kaarten als visualisaties, i. p. v. simpele tekst. 
 
-** Waarom? ** 
+**Waarom?**
 Pro: 
 + Eigen interesse.
 + Uitdagend. 
@@ -30,7 +34,7 @@ Dataset: [link](https://public.tableau.com/views/FeitenenCijfers/Students?:embed
 * Visualisatie 2: Bilevel partition. 
 * Visualisatie 3: 
 
-* Waarom? * 
+**Waarom?** 
 Pro: 
 + Niet enorm uitdagend.
 + Duidelijk en goed afgebakend.
