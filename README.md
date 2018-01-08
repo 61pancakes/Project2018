@@ -18,15 +18,11 @@ Toevoegingen voor werking van het spel:
 * Extra: Mooie kaarten als visualisaties, i. p. v. simpele tekst. 
 
 **Waarom?**  
-
-Pro: 
-**+** Extra motivatie, want eigen interesse.
-+ Programmeren zal uitdagend zijn. 
-+ Relevanter met wat ik de afgelopen maanden deed / komende maanden ga doen.  
-
-Con: 
-- Mogelijk te moeilijk qua implementeren spelinteracties?
-- Focus ligt minder op de dataset.  
+**+** Extra motivatie, want eigen interesse.  
+**+** Programmeren zal uitdagend zijn. 
+**+** Relevanter met wat ik de afgelopen maanden deed / komende maanden ga doen.  
+**-** Mogelijk te moeilijk qua implementeren spelinteracties?
+**-** Focus ligt minder op de dataset.  
 
 
 </br></br>
@@ -39,11 +35,9 @@ Man/vrouw-verhoudingen vergelijken bij Bachelor & Master bètastudies de afgelop
 * Visualisatie 3: Nader te bepalen. Misschien iets om 2 datagroepen met elkaar te vergelijken? Vergelijken met staf?
 
 **Waarom?**  
-Pro: 
-+ Niet te moeilijk.
-+ Duidelijk en goed afgebakend.
-+ Past goed bij dit vak.  
+**+** Niet te moeilijk.
+**+** Duidelijk en goed afgebakend.
+**+** Past goed bij dit vak.  
 
-Con: 
-- Mogelijk niet uitdagend genoeg.
-- Het handmatig data verzamelen zal relatief veel tijd kosten.
+**-** Mogelijk niet uitdagend genoeg.
+**-** Het handmatig data verzamelen zal relatief veel tijd kosten.
