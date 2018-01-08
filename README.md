@@ -25,10 +25,11 @@ Pro:
 
 Con: 
 - Mogelijk te moeilijk qua spelinteracties?
-- Focus ligt minder op de dataset.
-</br></br>
+- Focus ligt minder op de dataset.  
 
-#### --- Optie 2: Demografie (bèta)studies UvA --- 
+
+</br></br>
+#### Optie 2: Demografie (bèta)studies UvA.
 Dataset: [link](https://public.tableau.com/views/FeitenenCijfers/Students?:embed=y&:toolbar=no&:toolbar=no&:display_count=no&:display_count=no&:showVizHome=nohttps://public.tableausoftware.com/views/FeitenenCijfers "UvA").
 
 * Visualisatie 1: Tijdlijn/Grafiek door de jaren heen. 
