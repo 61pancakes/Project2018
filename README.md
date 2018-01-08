@@ -17,11 +17,13 @@ Toevoegingen voor werking van het spel:
 * Beurten: Hints geven, kaart afleggen, kaart spelen -> Moeilijkst om computers een 'brein' te geven?
 * Extra: Mooie kaarten als visualisaties, i. p. v. simpele tekst. 
 
-**Waarom?**
+**Waarom?**  
+
 Pro: 
 + Eigen interesse.
 + Uitdagend. 
-+ Relevanter met wat ik de afgelopen maanden / komende maanden ga programmeren.
++ Relevanter met wat ik de afgelopen maanden / komende maanden ga programmeren.  
+
 Con: 
 - Mogelijk te moeilijk qua spelinteracties?
 - Focus ligt minder op de dataset.
@@ -39,10 +41,10 @@ Dataset: [link](https://public.tableau.com/views/FeitenenCijfers/Students?:embed
 * Visualisatie 2: Bilevel partition. 
 * Visualisatie 3: 
 
-**Waarom?** 
+**Waarom?**  
 Pro: 
 + Niet enorm uitdagend.
 + Duidelijk en goed afgebakend.
-+ Past goed bij dit vak.
++ Past goed bij dit vak.  
 Con: 
 - Het handmatig data verzamelen zal relatief veel tijd kosten.
