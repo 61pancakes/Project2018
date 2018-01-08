@@ -1,7 +1,7 @@
-### Minor Programmeren: Programmeerproject 2018     
-**Titel:** Demografie van bètastudies aan de UvA. 
-**Auteur:** Andrea van den Hooff
-**Samenvatting:** Deze visualisaties moeten meer inzicht geven in de man/vrouw-verhoudingen bij de FNWI per studie en per academisch jaar.   
+#### Minor Programmeren: Programmeerproject 2018     
+**Titel:** Demografie van bètastudies aan de UvA.  
+**Auteur:** Andrea van den Hooff  
+**Samenvatting:** In dit project worden verschillende visualisaties gemaakt, die meer inzicht moeten geven in de man/vrouw-verhoudingen bij de FNWI, per studie en per academisch jaar.  
 
 #### Problem statement:  
 Het doel van deze visualisatie is het beter in kaart brengen, en inzicht krijgen in, de demografie bij bètastudies aan de Universiteit van Amsterdam. Het is bekend dat vrouwen in de minderheid zijn bij technische studies en daar wordt van alles aan gedaan, door subsidies en NGO's zoals [Women Who Code](https://www.womenwhocode.com). Is die balans bij alle studies zo scheef en in hoeverre zit er een ontwikkeling in sinds het populairder worden van banen in de ICT?
