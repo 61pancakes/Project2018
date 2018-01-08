@@ -26,13 +26,7 @@ https://www.tudelft.nl/over-tu-delft/feiten-en-cijfers/onderwijs/studentenpopula
 5. Identify the hardest parts of implementing your application: think of technical problems or limitations that could arise during development and what possibilities you have to overcome these.
 
 * Visualisatie 1: Tijdlijn/Grafiek van de afgelopen jaren van totaal aantal studenten.
-* Visualisatie 2: Sunburst per academisch jaar. Studie, 
-* Visualisatie 3: Nader te bepalen. Misschien iets om 2 datagroepen met elkaar te vergelijken?
+* Visualisatie 2: Bubble Bar Chart? Ik twijfel nog over deze, omdat het eigenlijk de andere 2 samenvoegt. Weet niet zo goed wat ik in plaats er van zou kunnen doen.
+* Visualisatie 3: Sunburst met per niveau: Academische jaren, studies, jaarlagen.
 
-**Waarom?**  
-**+**  Niet te moeilijk.  
-**+**  Duidelijk en goed afgebakend.  
-**+**  Past goed bij dit vak.  
-**-**  Mogelijk niet uitdagend genoeg. 
-**-**  Cliché onderwerp, interesseert me minder.   
-**-**  Het handmatig data verzamelen zal relatief veel tijd kosten.
+![Sketch](/Downloads/Sketch.jpg)
