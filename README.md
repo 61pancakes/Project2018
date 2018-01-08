@@ -1,7 +1,7 @@
-# Programmeerproject 2018
+## Programmeerproject 2018
 ### Minor Programmeren UvA
 
-## --- Optie 1: Hanabi ----
+#### --- Optie 1: Hanabi ----
 Dataset: Het kaartspel (50 kaarten: Elke kleur heeft een set 3x 1, 2x 2, 2x 3, 2x 4, 1x 5 (= 10 kaarten in totaal) in de kleuren rood, geel, groen, blauw en wit).
 
 Een digitale variant van het kaartspel Hanabi. 
@@ -14,22 +14,26 @@ Toevoegingen voor werking van het spel:
 * Beurten: Hints geven, kaart afleggen, kaart spelen -> Moeilijkst om computers een 'brein' te geven?
 * Extra: Mooie kaarten als visualisaties, i. p. v. simpele tekst. 
 
-# Waarom?
+** Waarom? ** 
+Pro: 
 + Eigen interesse.
 + Uitdagend. 
 + Relevanter met wat ik de afgelopen maanden / komende maanden ga programmeren.
+Con: 
 - Mogelijk te moeilijk qua spelinteracties?
 - Focus ligt minder op de dataset.
 
-## --- Optie 2: Demografie (bèta)studies UvA --- 
+#### --- Optie 2: Demografie (bèta)studies UvA --- 
 Dataset: [link](https://public.tableau.com/views/FeitenenCijfers/Students?:embed=y&:toolbar=no&:toolbar=no&:display_count=no&:display_count=no&:showVizHome=nohttps://public.tableausoftware.com/views/FeitenenCijfers "UvA").
 
 * Visualisatie 1: Tijdlijn/Grafiek door de jaren heen. 
 * Visualisatie 2: Bilevel partition. 
 * Visualisatie 3: 
 
-# Waarom?
+* Waarom? * 
+Pro: 
 + Niet enorm uitdagend.
 + Duidelijk en goed afgebakend.
 + Past goed bij dit vak.
+Con: 
 - Het handmatig data verzamelen zal relatief veel tijd kosten.
