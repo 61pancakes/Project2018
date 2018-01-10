@@ -1,33 +1,67 @@
-FNWI BA;1593;1180;1889;1381;2061;1459;2146;1511;2239;1574;2285;1640
-FNWI MA;829;520;971;629;1053;702;1140;751;1287;883;1454;968
-BA Artificial Intelligence;110;23;160;21;171;29;200;41;267;65;324;89
-MA Artificial Intelligence;82;10;84;11;95;20;105;25;153;35;227;57
-MA Astronomy and Astrophysics;19;7;21;7;24;7;29;10;21;7;15;0
-MA Biological Sciences;62;61;81;73;84;85;77;77;74;83;74;85
-BA Biology;73;95;79;110;78;115;74;106;71;95;84;95
-BA Biomedical Sciences;155;210;140;227;150;252;149;280;145;259;143;218
-MA Biomedical Sciences;67;134;94;188;121;231;135;253;139;290;117;296
-MA Brain and Cognitive Sciences;44;62;42;82;46;92;46;84;50;87;48;86
-BA Chemistry;59;41;66;46;106;50;115;58;133;65;140;90
-MA Chemistry;65;31;81;37;82;41;87;46;55;31;31;17
-MA Computational Science;19;1;21;4;38;7;56;18;74;15;89;20
-MA Computer Science;0;0;0;0;0;0;0;0;11;0;22;1
-BA Computing Science;170;13;202;9;238;17;259;16;277;19;279;26
-BA Earth Sciences;35;22;22;12;12;6;0;0;0;0;0;0
-MA Earth Sciences;23;31;27;27;9;16;41;22;46;30;49;48
-MA Forensic Science;15;61;17;48;20;46;20;61;12;65;14;63
-BA Future Planet Studies;127;85;194;132;256;185;287;206;305;229;294;251
-BA Information Science;96;18;135;29;157;38;85;46;192;61;212;65
-MA Information Studies;92;29;121;48;123;55;148;57;154;81;176;85
-MA Life Sciences;13;9;12;12;13;10;19;9;20;14;16;20
-MA Logic;53;29;60;30;69;31;54;30;65;37;71;26
-MA Mathematical Physics;13;0;12;0;16;0;14;1;12;2;7;1
-BA Mathematics;96;41;111;47;20;41;138;44;137;42;138;40
-MA Mathematics;18;8;25;9;24;11;24;12;29;7;44;10
-BA Natural and Social Sciences;202;159;224;190;249;216;245;229;251;229;250;222
-MA Physics;88;34;112;33;132;37;148;34;173;49;192;63
-BA Physics and Astronomy;240;32;278;39;267;51;261;51;263;65;257;72
-BA Psychobiology;206;463;248;550;220;496;201;466;174;469;151;483
-MA Software Engineering;91;8;93;14;78;7;73;6;74;7;86;7
-MA Stochastics and Financial Mathematics;19;2;16;2;20;3;22;4;29;6;29;7
-MA System and Network Engineering;46;2;49;3;39;3;42;2;35;2;43;0
+;12-'13;13-'14;14-'15;15-'16;16 - '17;17 ' 18
+BA FNWI F;1180;1381;1459;1511;1574;1640
+BA FNWI M;1593;1889;2061;2146;2239;2285
+MA FNWI F;520;629;702;751;883;968
+MA FNWI M;829;971;1053;1140;1287;1454
+BA Artificial Intelligence F;23;21;29;41;65;89
+BA Artificial Intelligence M;110;160;171;200;267;324
+MA Artificial Intelligence F;10;11;20;25;35;57
+MA Artificial Intelligence M;82;84;95;105;153;227
+MA Astronomy and Astrophysics F;7;7;7;10;7;0
+MA Astronomy and Astrophysics M;19;21;24;29;21;15
+MA Biological Sciences F;61;73;85;77;83;85
+MA Biological Sciences M;62;81;84;77;74;74
+BA Biology F;95;110;115;106;95;95
+BA Biology M;73;79;78;74;71;84
+BA Biomedical Sciences F;210;227;252;280;259;218
+BA Biomedical Sciences M;155;140;150;149;145;143
+MA Biomedical Sciences F;134;188;231;253;290;296
+MA Biomedical Sciences M;67;94;121;135;139;117
+MA Brain and Cognitive Sciences F;62;82;92;84;87;86
+MA Brain and Cognitive Sciences M;44;42;46;46;50;48
+BA Chemistry F;41;46;50;58;65;90
+BA Chemistry M;59;66;106;115;133;140
+MA Chemistry F;31;37;41;46;31;17
+MA Chemistry M;65;81;82;87;55;31
+MA Computational Science F;1;4;7;18;15;20
+MA Computational Science M;19;21;38;56;74;89
+MA Computer Science F;0;0;0;0;0;1
+MA Computer Science M;0;0;0;0;11;22
+BA Computing Science F;13;9;17;16;19;
+BA Computing Science M;170;202;238;259;277;279
+BA Earth Sciences  F;22;12;6;0;0;0
+BA Earth Sciences M;35;22;12;0;0;0
+MA Earth Sciences F;31;27;16;22;30;48
+MA Earth Sciences M;23;27;9;41;46;49
+MA Forensic Science F;61;48;46;61;65;63
+MA Forensic Science M;15;17;20;20;12;14
+BA Future Planet Studies F;85;132;185;206;229;251
+BA Future Planet Studies M;127;194;256;287;305;295
+BA Information Science F;18;29;38;46;61;65
+BA Information Science M;96;135;157;85;192;212
+MA Information Studies F;29;48;55;57;81;85
+MA Information Studies M;92;121;123;148;154;176
+MA Life Sciences F;9;12;10;9;14;20
+MA Life Sciences M;13;12;13;19;20;16
+MA Logic F;29;30;31;30;37;26
+MA Logic M;53;60;69;54;65;71
+MA Mathematical Physics F;0;0;0;1;2;1
+MA Mathematical Physics M;13;12;16;14;12;7
+BA Mathematics F;41;47;41;44;42;40
+BA Mathematics M;96;111;120;138;137;138
+MA Mathematics F;8;9;11;12;7;10
+MA Mathematics M;18;25;24;24;29;44
+BA Natural and Social Sciences F;159;190;216;229;229;222
+BA Natural and Social Sciences M;202;224;249;245;251;250
+MA Physics F;34;33;37;34;49;63
+MA Physics M;88;112;132;148;173;192
+BA Physics and Astronomy F;32;39;51;51;65;72
+BA Physics and Astronomy M;240;278;267;261;263;257
+BA Psychobiology F;463;550;496;466;469;483
+BA Psychobiology M;206;248;220;201;174;151
+MA Software Engineering F;8;14;7;6;7;7
+MA Software Engineering M;91;93;78;73;74;86
+MA Stochastics and Financial Mathematics F;2;2;3;4;6;7
+MA Stochastics and Financial Mathematics M;19;16;20;22;29;29
+MA System and Network Engineering F;2;3;3;2;2;0
+MA System and Network Engineering M;46;49;39;42;35;43
