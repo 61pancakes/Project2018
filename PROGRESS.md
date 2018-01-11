@@ -1,8 +1,34 @@
-# day 1
+## day 1 (8 January 2017)
+- Proposal Document geschreven, met twee opties. Optie 1, het visualiseren van het kaartspel 'Hanabi'. Optie 2, verdiepen in statistieken van studenten aan de UvA.
+- Data opgezocht voor optie 2 en uiteindelijk knoop doorgehakt dat ook daadwerkelijk te gaan doen.
+- Proposal Document voor optie 2 uitgewerkt.
 
-# day 2
+## day 2 (9 January 2017)
+- Data handmatig verzameld en omgezet naar CSV & JSON-format. 
+- JSON-data aangepast om mannen en vrouwen in aparte sets te hebben.
 
-# day 3
+## day 3 (10 January 2017)
+- Proposal besproken met TA.
+- Begonnen aan Design Document.
+- Begonnen aan Grouped & Stacked Staafdiagram (visualisatie #1).
+
+## day 4 (11 January 2017)
+- De Staafdiagram redelijk werkende gekregen: grouped werkt, nu nog het 'stacked' gedeeltde van de Masters.
+- Proposal aangepast op basis van gesprek met TA. 
+- Idee aangepast in README & Design Document.
+
+## day 5 (12 January 2017)
+## day 6 (15 January 2017)
+## day 7 (16 January 2017)
+## day 8 (17 January 2017)
+## day 9 (18 January 2017)
+## day 10 (19 January 2017)
+## day 11 (22 January 2017)
+## day 12 (23 January 2017)
+## day 13 (24 January 2017)
+## day 14 (25 January 2017)
+## day 15 (26 January 2017)
+
 
 
 
