@@ -13,7 +13,7 @@ Ik wil de ontwikkelingen in de man/vrouw-verhouding bij technische studies aan d
 * Visualisatie 2: Sunburst met per niveau: Verdeling in academische jaren, studies, geslacht, jaarlagen + nog een vierde laag?
 * Visualisatie 3: Multilijngrafiek: Vergelijk de FNWI van de UvA met de UvA als geheel, haar staf, andere universiteiten zoals de TU Delft.
 ![Sketch](/doc/Sketch.jpg)
-![Sketch updated](/doc/Sketchv2.jpg)
+![Sketch updated](/doc/Sketch_v2.jpg)
 
 #### Main Features: 
 - Laat het verschil in inschrijvingen van geslacht zien per academisch jaar. (MVP)  
