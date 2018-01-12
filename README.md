@@ -17,7 +17,7 @@ Originele schets:
 ![Sketch](/doc/Sketch.jpg)
 
 Geupdate schets:
-![Sketch updated](/doc/Sketch_v2.pdf)
+![Sketch updated](/doc/Sketchv2.png)
 
 #### Main Features: 
 - Laat het verschil in inschrijvingen van geslacht zien per academisch jaar. (MVP)  
