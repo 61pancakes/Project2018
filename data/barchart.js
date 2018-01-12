@@ -1,5 +1,5 @@
 // Load dataset from local server.
-d3.json("http://localhost:8000/studenten.json", function (error, data) {
+d3.json("http://localhost:8000/totaalstudenten.json", function (error, data) {
 
     // Transform data from string to int in multidimensional array.
     var finalData = [];
@@ -28,7 +28,7 @@ d3.json("http://localhost:8000/studenten.json", function (error, data) {
 
     // Create the basis variables. Nu nog HARDCODED.
     var years = 6,
-        genders = 2; // m - number of series
+        genders = 2;
 
     var margin = { top: 20, right: 30, bottom: 30, left: 40 },
         width = 500 - margin.left - margin.right,
@@ -36,7 +36,7 @@ d3.json("http://localhost:8000/studenten.json", function (error, data) {
 
     var y = d3.scale.linear()
         .domain([studentMax, 0])
-        .range([0, height]); // DIT OMDRAAIEN
+        .range([0, height]);
 
     var xLabels = d3.scale.ordinal() // Jaren op de x-as 
         .domain(['\'12-\'13', '\'13-\'14', '\'14-\'15', '\'15-\'16', '\'16-\'17', '\'17-\'18',])
@@ -81,17 +81,20 @@ d3.json("http://localhost:8000/studenten.json", function (error, data) {
     svg.append("g").selectAll("g")
         .data(finalData) // Voeg de data arrays toe.
         .enter().append("g")
-        .style("fill", function (d, i) { return z(i); }) // Kleur ze de juiste kleur. 
+        .style("fill", function (i) { return z(i); }) // Kleur elke balk de juiste kleur. 
         .attr("transform", function (d, i) { return "translate(" + x1(i % 2) + ",0)"; }) // Zet ze op de juiste plek links en rechts van een x coordinaat. // genders
         .selectAll("rect")
         .data(function (d) { return d; })
         .enter().append("rect")
         .attr("width", x1.rangeBand())
-        .attr("height", function (d, i) { return y(0) - y(d); }) // Top van de rechthoek
+        .attr("height", function (d, i) { console.log(i); return y(0) - y(d); }) // Top van de rechthoek
         .attr("x", function (d, i) { return x0(i); })
-        .attr("y", function (d) { return y(d); }); // Begin van de rechthoek
+        .attr("y", function (d) { return y(d); }) // Begin van de rechthoek
 
-    // Height: if (i < 2) { return y(0) - y(d); } if (i < 4) { return y(d - 2) - y(d) }
+    // .attr("transform", function (d, i) { console.log(d, i); return "translate(0,-" + y(d) + ")"; });
+
+
+    // Height: if (i < 2) { return y(0) - y(d); } if (i < 4) { return height(dy(d - 2) - y(d) }
     // Y: if (i < 2) { return y(d); } if (i < 4) { return y(d - 2) }
 
 }

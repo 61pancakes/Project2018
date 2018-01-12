@@ -1,4 +1,4 @@
-d3.json("http://localhost:8000/studenten.json", function (error, data) {
+d3.json("http://localhost:8000/totaalalgemeen.json", function (error, data) {
 
     var margin = { top: 20, right: 50, bottom: 30, left: 40 },
         width = 500 - margin.left - margin.right,
@@ -6,12 +6,12 @@ d3.json("http://localhost:8000/studenten.json", function (error, data) {
         years = 6;
 
     var y = d3.scale.linear()
-        .domain([2000, 0])
+        .domain([3500, 0])
         .range([0, height]);
 
     var x = d3.scale.ordinal() // Jaren op de x-as 
         .domain(d3.range(years))
-        .rangeBands([0, width], .5);
+        .rangeBands([0, width]);
 
     var xLabels = d3.scale.ordinal() // Jaren op de x-as 
         .domain(['\'12-\'13', '\'13-\'14', '\'14-\'15', '\'15-\'16', '\'16-\'17', '\'17-\'18',])
@@ -53,12 +53,12 @@ d3.json("http://localhost:8000/studenten.json", function (error, data) {
 
     // Transform data from string to int in multidimensional array.
     var finalData = [];
-    var jaren = ["twaalfdertien", "dertienveertien", "veertienvijftien", "vijftienzestien", "zestienzeventien", "zeventienachttien"];
+    var jaren = ["twaalfdertien", "dertienveertien", "veertienvijftien", "vijftienzestien", "zestienzeventien"];
 
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < 18; i++) {
         finalData[i] = [6];
-        for (var j = 0; j < 6; j++) {
-            finalData[i][j] = parseInt(data.students[i][jaren[j]]);
+        for (var j = 0; j < 5; j++) {
+            finalData[i][j] = parseInt(data.data[i + 1][jaren[j]]);
         }
     }
 
@@ -69,12 +69,17 @@ d3.json("http://localhost:8000/studenten.json", function (error, data) {
         .x(function (d, i) { return x(i); })
         .y(function (d) { return y(d); })
 
-    svg.append("path")		// Add the valueline path.
-        .attr("class", "line")
-        .attr("d", line(finalData[0]));
-
-    svg.append("path")		// Add the valueline2 path.
-        .attr("class", "line")
-        .style("stroke", "red")
-        .attr("d", line(finalData[1]));
+    for (var i = 0; i < 17; i++) {
+        if (i % 2 != 0) {
+            svg.append("path")		// Add the valueline path.
+                .attr("class", "line")
+                .style("stroke", "#1ac6ff")
+                .attr("d", line(finalData[i]));
+        } else {
+            svg.append("path")		// Add the valueline2 path.
+                .attr("class", "line")
+                .style("stroke", "#ffb3ff")
+                .attr("d", line(finalData[i]));
+        }
+    }
 })
