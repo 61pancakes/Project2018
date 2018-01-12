@@ -7,11 +7,12 @@
 - Extra informatie toevoegen aan de basisdata, verder net als staafdiagram goed verwerken.
 - Verschillende niveaus implenteren en beter overwegen welk niveau precies welke variabele gaat vertegenwoordigen ([met een tutorial in het maken van sunbursts](https://bl.ocks.org/denjn5/e1cdbbe586ac31747b4a304f8f86efa5)).
 - De visualisatie in D3 op orde krijgen ([voorbeeld van een sunburst](https://bl.ocks.org/mbostock/4348373)). 
+- Interactie met staafdiagram implementeren (lastigst).
 
-#### Bubble chart in D3
-- Levenskeuzes rondom het maken van een [bubble chart](https://bl.ocks.org/mbostock/4063269) nog eens heroverwegen.
-- Misschien toch maar iets maken waarbij je een meer vergelijkende visualisatie hebt?
-- Ik weet het nog even niet met deze. Ik heb advies nodig!
+#### Multilijngrafiek / Multi line chart in D3
+- Aparte data fixen voor de lijngrafieken (andere faculteiten, universiteiten).
+- Duidelijk onderscheid creëren in de lijnen. ([voorbeeld van een multilijngrafiek](https://bl.ocks.org/d3noob/4db972df5d7efc7d611255d1cc6f3c4f)).
+- Interactie met de andere twee visualisaties implementeren.
 
 #### Datasources
 De (voornaamste) databron is de [statistiekenpagina](https://public.tableau.com/views/FeitenenCijfers/Students?:embed=y&:toolbar=no&:toolbar=no&:display_count=no&:display_count=no&:showVizHome=nohttps://public.tableausoftware.com/views/FeitenenCijfers/Students?:embed%3Dy&:showVizHome=no)
@@ -22,14 +23,10 @@ voor de sunburst deze moet uitbreiden of een tweede maken, waarin de verschillen
 Misschien kan ik nog een andere variabele toevoegen, maar het lijkt me beter om eerst wat feedback te krijgen en de basis rond te krijgen.
 
 #### D3 Features, Plugins & APIs
-- ???
-- ???
+- Alles in D3.
 - ???
 
 #### Interaction of various parts
-Think about and fully express how the user interface will be handled, where the data is coming from, and how the various parts will work together to form a complete application.
-
-#### Separate handling user interface from data management and complex algorithms. 
-**a diagram with an overview of the technical components of your app (visualizations, scraper etc etc)
-descriptions of each of the components and what you need to implement these**
+Data: Handmatig uit de UvA-website gehaald, omgezet naar CSV en JSON, die in aparte bestanden in de Git staan.  
+Overview: HTML-pagina met calls naar barchart.js, sunburst.js etcetera. (Ik weet niet hoeveel moeilijker qua interactie dat is, dus misschien ga ik dat nog aanpassen in week 2.).
 
