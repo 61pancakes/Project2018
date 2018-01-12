@@ -3,7 +3,7 @@ d3.json("http://localhost:8000/totaalalgemeen.json", function (error, data) {
     var margin = { top: 20, right: 50, bottom: 30, left: 40 },
         width = 500 - margin.left - margin.right,
         height = 300 - margin.top - margin.bottom,
-        years = 6;
+        years = 5;
 
     var y = d3.scale.linear()
         .domain([3500, 0])
@@ -11,11 +11,11 @@ d3.json("http://localhost:8000/totaalalgemeen.json", function (error, data) {
 
     var x = d3.scale.ordinal() // Jaren op de x-as 
         .domain(d3.range(years))
-        .rangeBands([0, width]);
+        .rangePoints([0, width]);
 
     var xLabels = d3.scale.ordinal() // Jaren op de x-as 
-        .domain(['\'12-\'13', '\'13-\'14', '\'14-\'15', '\'15-\'16', '\'16-\'17', '\'17-\'18',])
-        .rangeBands([0, width], .5);
+        .domain(['\'12-\'13', '\'13-\'14', '\'14-\'15', '\'15-\'16', '\'16-\'17'])
+        .rangePoints([0, width]);
 
     // Create the svg.
     var svg = d3.select("body").append("svg")
