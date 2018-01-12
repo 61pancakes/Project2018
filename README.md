@@ -1,5 +1,5 @@
 #### Minor Programmeren: Programmeerproject 2018     
-**Titel:** Demografie van (bèta-)studies aan de UvA.
+**Titel:** Demografie van studies aan de UvA.
 **Auteur:** Andrea van den Hooff  
 **Samenvatting:** In dit project worden verschillende visualisaties gemaakt, die meer inzicht moeten geven in de man/vrouw-verhoudingen bij de FNWI, per studie en per academisch jaar.  
 
