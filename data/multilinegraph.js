@@ -1,56 +1,55 @@
+var margin = { top: 20, right: 50, bottom: 30, left: 40 },
+    width = 500 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom,
+    years = 5;
+
+var y = d3.scale.linear()
+    .domain([3500, 0])
+    .range([0, height]);
+
+var x = d3.scale.ordinal() // Jaren op de x-as 
+    .domain(d3.range(years))
+    .rangePoints([0, width]);
+
+var xLabels = d3.scale.ordinal() // Jaren op de x-as 
+    .domain(['\'12-\'13', '\'13-\'14', '\'14-\'15', '\'15-\'16', '\'16-\'17'])
+    .rangePoints([0, width]);
+
+// Create the svg.
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("svg:g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+// Show the axes.
+var xAxis = d3.svg.axis()
+    .scale(xLabels)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+var yAxisRight = d3.svg.axis()
+    .scale(y)
+    .orient("right");
+
+svg.append("g")
+    .attr("class", "y axis")
+    .call(yAxis);
+
+svg.append("g")
+    .attr("class", "y axis")
+    .attr("transform", "translate(" + width + ",0)")
+    .call(yAxisRight);
+
+svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(xAxis);
+
 d3.json("http://localhost:8000/totaalalgemeen.json", function (error, data) {
-
-    var margin = { top: 20, right: 50, bottom: 30, left: 40 },
-        width = 500 - margin.left - margin.right,
-        height = 300 - margin.top - margin.bottom,
-        years = 5;
-
-    var y = d3.scale.linear()
-        .domain([3500, 0])
-        .range([0, height]);
-
-    var x = d3.scale.ordinal() // Jaren op de x-as 
-        .domain(d3.range(years))
-        .rangePoints([0, width]);
-
-    var xLabels = d3.scale.ordinal() // Jaren op de x-as 
-        .domain(['\'12-\'13', '\'13-\'14', '\'14-\'15', '\'15-\'16', '\'16-\'17'])
-        .rangePoints([0, width]);
-
-    // Create the svg.
-    var svg = d3.select("body").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("svg:g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    // Show the axes.
-    var xAxis = d3.svg.axis()
-        .scale(xLabels)
-        .orient("bottom");
-
-    var yAxis = d3.svg.axis()
-        .scale(y)
-        .orient("left");
-
-    var yAxisRight = d3.svg.axis()
-        .scale(y)
-        .orient("right");
-
-    svg.append("g")
-        .attr("class", "y axis")
-        .call(yAxis);
-
-    svg.append("g")
-        .attr("class", "y axis")
-        .attr("transform", "translate(" + width + ",0)")
-        .call(yAxisRight);
-
-    svg.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0," + height + ")")
-        .call(xAxis);
-
     // Transform data from string to int in multidimensional array.
     var finalData = [];
     var jaren = ["twaalfdertien", "dertienveertien", "veertienvijftien", "vijftienzestien", "zestienzeventien"];
