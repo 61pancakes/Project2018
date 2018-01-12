@@ -3,6 +3,9 @@
 - Data opgezocht voor optie 2 en uiteindelijk knoop doorgehakt dat ook daadwerkelijk te gaan doen.
 - Proposal Document voor optie 2 uitgewerkt.
 
+![voortgang](/doc/Sketch.png).
+
+
 ## day 2 (9 January 2017)
 - Data handmatig verzameld en omgezet naar CSV & JSON-format. 
 - JSON-data aangepast om mannen en vrouwen in aparte sets te hebben.
@@ -17,7 +20,14 @@
 - Proposal aangepast op basis van gesprek met TA. 
 - Idee aangepast in README & Design Document.
 
+![voortgang](/doc/Sketchv2.png).
+
+
+![voortgang](/doc/voortgang_v1.png).
+
 ## day 5 (12 January 2017)
+- 
+- Multilijngrafiek redelijk werkende gekregen: legenda en kleurtjes moeten nog aangepast worden.
 ## day 6 (15 January 2017)
 ## day 7 (16 January 2017)
 ## day 8 (17 January 2017)
