@@ -14,7 +14,7 @@ Ik wil de ontwikkelingen in de man/vrouw-verhouding bij technische studies aan d
 * Visualisatie 3: Multilijngrafiek: Vergelijk de FNWI van de UvA met de UvA als geheel, haar staf, andere universiteiten zoals de TU Delft.
 
 Originele schets: 
-![Sketch](/doc/Sketch.jpg)
+![Sketch](/doc/Sketch.png)
 
 Geupdate schets:
 ![Sketch updated](/doc/Sketchv2.png)
