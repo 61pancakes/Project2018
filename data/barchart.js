@@ -10,27 +10,27 @@ d3.json("http://localhost:8000/totaalstudenten.json", function (error, data) {
             if (i < 2) {
                 finalData[i][j] = { begin: 0, end: parseInt(data.students[i][jaren[j]]) };
             } else {
-                finalData[i][j] = { begin: finalData[i - 2][j].end, end: parseInt(data.students[i][jaren[j]]) };
+                finalData[i][j] = { begin: finalData[i - 2][j].end, end: finalData[i - 2][j].end + parseInt(data.students[i][jaren[j]]) };
             }
         }
     }
-
-    console.log(finalData);
 
     // Create Domain variables
     var yearMax = 6;
     var studentMax = 0;
     for (var j = 0; j < 6; j++) {
-        for (var i = 0; i < 2; i++) {
+        for (var i = 2; i < 4; i++) {
             if (studentMax == 0) {
-                studentMax = finalData[i][j] + finalData[i + 2][j];
+                studentMax = finalData[i][j].end;
             } else {
-                if (studentMax < finalData[i][j] + finalData[i + 2][j]) {
-                    studentMax = finalData[i][j] + finalData[i + 2][j];
+                if (studentMax < finalData[i][j].end) {
+                    studentMax = finalData[i][j].end;
                 }
             }
         }
     }
+
+    console.log("MAX", studentMax);
 
     // Create the basis variables. Nu nog HARDCODED.
     var years = 6,
@@ -77,24 +77,38 @@ d3.json("http://localhost:8000/totaalstudenten.json", function (error, data) {
 
     svg.append("g")
         .attr("class", "y axis")
-        .call(yAxis);
+        .call(yAxis)
+        .append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 20)
+        .attr("dy", ".71em")
+        .style("text-anchor", "end")
+        .text("Aantal studenten");
 
     svg.append("g")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + height + ")")
-        .call(xAxis);
+        .call(xAxis)
+        .append("text")
+        .attr("x", 400)
+        .attr("y", -10)
+        .attr("dx", ".71em")
+        .style("text-anchor", "end")
+        .text("Academisch jaar");
 
     svg.append("g").selectAll("g")
         .data(finalData) // Voeg de data arrays toe.
         .enter().append("g")
-        .style("fill", function (i) { return z(i); }) // Kleur elke balk de juiste kleur. 
+        .style("fill", function (d, i) { return z(i); }) // Kleur elke balk de juiste kleur. 
         .attr("transform", function (d, i) { return "translate(" + x1(i % 2) + ",0)"; }) // Zet ze op de juiste plek links en rechts van een x coordinaat. // genders
         .selectAll("rect")
         .data(function (d) { return d; })
         .enter().append("rect")
         .attr("width", x1.rangeBand())
-        .attr("height", function (d, i) { return y(0) - y(d); }) // Top van de rechthoek
+        // .attr("height", function (d) { return (y(0) - y(d.end)); }) // Top van de rechthoek
+        .attr("height", function (d) { console.log(d, y(d.begin), y(d.end)); return (y(d.begin) - y(d.end)); }) // = Top van de rechthoek
         .attr("x", function (d, i) { return x0(i); })
-        .attr("y", function (d) { return y(d); }) // Begin van de rechthoek
+        // .attr("y", function (d) { return y(0); }) // Begin van de rechthoek
+        .attr("y", function (d) { return y(d.begin); }) // Begin van de rechthoek
 }
 )
