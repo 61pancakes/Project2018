@@ -105,10 +105,10 @@ d3.json("http://localhost:8000/totaalstudenten.json", function (error, data) {
         .data(function (d) { return d; })
         .enter().append("rect")
         .attr("width", x1.rangeBand())
-        // .attr("height", function (d) { return (y(0) - y(d.end)); }) // Top van de rechthoek
-        .attr("height", function (d) { console.log(d, y(d.begin), y(d.end)); return (y(d.begin) - y(d.end)); }) // = Top van de rechthoek
+        // .attr("height", function (d) { return (y(0) - y(data)); }) // Top van de rechthoek
+        .attr("height", function (d) { console.log(d); return (y(d.begin) - y(d.end)); }) // = Top van de rechthoek
         .attr("x", function (d, i) { return x0(i); })
         // .attr("y", function (d) { return y(0); }) // Begin van de rechthoek
-        .attr("y", function (d) { return y(d.begin); }) // Begin van de rechthoek
+        .attr("y", function (d) { return (y(d.begin)); }) // Begin van de rechthoek
 }
 )

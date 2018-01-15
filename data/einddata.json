@@ -1,0 +1,5043 @@
+{
+    "name": "years",
+    "children": [
+        {
+            "name": "studies in 12/13",
+            "children": [
+                {
+                    "name": "BA Artificial Intelligence",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 33
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 77
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 9
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 14
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Artificial Intelligence",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 37
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 45
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 5
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 5
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Astronomy and Astrophysics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 9
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 10
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 4
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Biological Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 26
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 10
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 21
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Biology",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Biomedical Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Brain and Cognitive Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 13
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 31
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 26
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 36
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Chemistry",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Computational Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Computer Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Computing Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 86
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 84
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 6
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 7
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Earth Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 4
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 18
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 6
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 25
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Forensic Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 6
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 9
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 24
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 37
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Future Planet Studies",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 41
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 86
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 22
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 63
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Information Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 38
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 58
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 15
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Information Studies ",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 42
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 36
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 16
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 7
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Life Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 9
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 4
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 5
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 4
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Logic",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 22
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 32
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 12
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 17
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Mathematical Physics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Mathematics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 37
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 59
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 21
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 20
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Natural and Social Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Physics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Physcis and Astronomy",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Psychobiology",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 86
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 120
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 203
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 260
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Software Engineering",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 29
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 15
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 3
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Stochastics and Financial Mathematics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 4
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 11
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 0
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 2
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA System and Network Engineering",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 30
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 2
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 2
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "studies in 13/14",
+            "children": [
+                {
+                    "name": "BA Artificial Intelligence",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 74
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 86
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 10
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 11
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Artificial Intelligence",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 17
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 67
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 4
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 7
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Astronomy and Astrophysics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 7
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 14
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 3
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 4
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Biological Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 29
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 14
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 26
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 4
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Biology",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Biomedical Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Brain and Cognitive Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 13
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 29
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 36
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 46
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Chemistry",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Computational Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Computer Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Computing Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 79
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 123
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 3
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 6
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Earth Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 7
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 20
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 6
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 21
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Forensic Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 7
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 10
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 21
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 27
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Future Planet Studies",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 95
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 99
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 57
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 75
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Information Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 63
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 72
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 18
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 11
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Information Studies ",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 71
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 25
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 31
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 9
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Life Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 3
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 9
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 7
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 5
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Logic",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 28
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 32
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 8
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 22
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Mathematical Physics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Mathematics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 45
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 66
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 18
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 29
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Natural and Social Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Physics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Physcis and Astronomy",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Psychobiology",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 103
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 145
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 250
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 300
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Software Engineering",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 16
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 26
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 5
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 5
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Stochastics and Financial Mathematics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 5
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 11
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA System and Network Engineering",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 21
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 10
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 3
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "studies in 14/15",
+            "children": [
+                {
+                    "name": "BA Artificial Intelligence",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 57
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 114
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 18
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 11
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Artificial Intelligence",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 33
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 62
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 8
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 12
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Astronomy and Astrophysics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 9
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 15
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 3
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 4
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Biological Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 28
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 15
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 30
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Biology",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Biomedical Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Brain and Cognitive Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 16
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 30
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 32
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 60
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Chemistry",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Computational Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Computer Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Computing Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 84
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 154
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 8
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 9
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Earth Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 8
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 21
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 3
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 13
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Forensic Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 7
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 13
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 16
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 30
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Future Planet Studies",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 102
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 154
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 83
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 102
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Information Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 51
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 106
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 10
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 28
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Information Studies ",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 64
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 26
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 29
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 11
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Life Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 6
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 7
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 4
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 6
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Logic",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 29
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 40
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 15
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 16
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Mathematical Physics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Mathematics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 46
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 74
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 13
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 28
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Natural and Social Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Physics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Physcis and Astronomy",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Psychobiology",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 56
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 164
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 147
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 349
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Software Engineering",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 26
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 14
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 2
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 2
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Stochastics and Financial Mathematics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 11
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 9
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 3
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA System and Network Engineering",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 24
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 4
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 2
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "studies in 15/16",
+            "children": [
+                {
+                    "name": "BA Artificial Intelligence",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 79
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 121
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 15
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 26
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Artificial Intelligence",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 36
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 69
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 10
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 15
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Astronomy and Astrophysics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 12
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 17
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 6
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 4
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Biological Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 18
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 17
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 21
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 4
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Biology",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Biomedical Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Brain and Cognitive Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 18
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 28
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 32
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 52
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Chemistry",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Computational Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Computer Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Computing Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 89
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 170
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 5
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 11
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Earth Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 12
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 29
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 6
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 16
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Forensic Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 8
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 12
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 30
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 31
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Future Planet Studies",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 85
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 202
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 61
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 145
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Information Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 65
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 120
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 17
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 29
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Information Studies ",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 83
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 28
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 25
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 16
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Life Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 9
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 10
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 8
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Logic",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 10
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 44
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 11
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 19
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Mathematical Physics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Mathematics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 51
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 87
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 17
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 27
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Natural and Social Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Physics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Physcis and Astronomy",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Psychobiology",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 46
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 155
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 135
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 331
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Software Engineering",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 20
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 18
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 0
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Stochastics and Financial Mathematics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 9
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 13
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA System and Network Engineering",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 25
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 7
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "studies in 16/17",
+            "children": [
+                {
+                    "name": "BA Artificial Intelligence",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 131
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 136
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 33
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 32
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Artificial Intelligence",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 71
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 82
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 14
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 21
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Astronomy and Astrophysics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 0
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 21
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 0
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 7
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Biological Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 26
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 21
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 29
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 4
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Biology",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Biomedical Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Brain and Cognitive Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 17
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 33
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 34
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 53
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Chemistry",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Computational Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Computer Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Computing Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 98
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 179
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 7
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 12
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Earth Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 16
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 30
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 11
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 19
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Forensic Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 5
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 7
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 27
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 38
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Future Planet Studies",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 100
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 205
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 66
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 163
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Information Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 49
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 143
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 26
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 35
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Information Studies ",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 89
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 30
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 45
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 14
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Life Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 6
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 14
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 11
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Logic",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 30
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 35
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 16
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 21
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Mathematical Physics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Mathematics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 41
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 96
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 15
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 27
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Natural and Social Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Physics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Physcis and Astronomy",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Psychobiology",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 59
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 115
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 145
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 322
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Software Engineering",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 30
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 10
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Stochastics and Financial Mathematics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 16
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 13
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 2
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 4
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA System and Network Engineering",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 18
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 7
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 1
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "studies in 17/18",
+            "children": [
+                {
+                    "name": "BA Artificial Intelligence",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 149
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 175
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 42
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 47
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Artificial Intelligence",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 108
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 119
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 35
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 22
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Astronomy and Astrophysics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 0
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 15
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 0
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Biological Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 25
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 15
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 32
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Biology",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {}
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Biomedical Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Brain and Cognitive Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 16
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 32
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 32
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 54
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Chemistry",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Computational Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Computer Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Computing Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 89
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 190
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 11
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 15
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Earth Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 10
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 39
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 16
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 30
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Forensic Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 4
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 10
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 23
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 40
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Future Planet Studies",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 81
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 213
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 87
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 164
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Information Science",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 73
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 139
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 14
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 51
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Information Studies ",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 106
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 34
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 50
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 19
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Life Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 6
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 10
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 9
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 11
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Logic",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 29
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 42
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 8
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 18
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Mathematical Physics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Mathematics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 47
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 91
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 19
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 21
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Natural and Social Sciences",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Physics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Physcis and Astronomy",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size":
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size":
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BA Psychobiology",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 38
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 113
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 161
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 324
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Software Engineering",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 35
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 12
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 2
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA Stochastics and Financial Mathematics",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 7
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 22
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 4
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MA System and Network Engineering",
+                    "children": [
+                        {
+                            "name": "boys",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 24
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 9
+                                }
+                            ]
+                        },
+                        {
+                            "name": "girls",
+                            "children": [
+                                {
+                                    "name": "Eerstejaars",
+                                    "size": 2
+                                },
+                                {
+                                    "name": "Postpropedeuse",
+                                    "size": 0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
