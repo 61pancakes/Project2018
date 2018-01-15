@@ -61,8 +61,6 @@ d3.json("http://localhost:8000/totaalalgemeen.json", function (error, data) {
         }
     }
 
-    console.log(finalData);
-
     // create a line function that can convert data[] into x and y points
     var line = d3.svg.line()
         .x(function (d, i) { return x(i); })

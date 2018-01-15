@@ -7,9 +7,15 @@ d3.json("http://localhost:8000/totaalstudenten.json", function (error, data) {
     for (var i = 0; i < 4; i++) {
         finalData[i] = [6];
         for (var j = 0; j < 6; j++) {
-            finalData[i][j] = parseInt(data.students[i][jaren[j]]);
+            if (i < 2) {
+                finalData[i][j] = { begin: 0, end: parseInt(data.students[i][jaren[j]]) };
+            } else {
+                finalData[i][j] = { begin: finalData[i - 2][j].end, end: parseInt(data.students[i][jaren[j]]) };
+            }
         }
     }
+
+    console.log(finalData);
 
     // Create Domain variables
     var yearMax = 6;
@@ -87,15 +93,8 @@ d3.json("http://localhost:8000/totaalstudenten.json", function (error, data) {
         .data(function (d) { return d; })
         .enter().append("rect")
         .attr("width", x1.rangeBand())
-        .attr("height", function (d, i) { console.log(i); return y(0) - y(d); }) // Top van de rechthoek
+        .attr("height", function (d, i) { return y(0) - y(d); }) // Top van de rechthoek
         .attr("x", function (d, i) { return x0(i); })
         .attr("y", function (d) { return y(d); }) // Begin van de rechthoek
-
-    // .attr("transform", function (d, i) { console.log(d, i); return "translate(0,-" + y(d) + ")"; });
-
-
-    // Height: if (i < 2) { return y(0) - y(d); } if (i < 4) { return height(dy(d - 2) - y(d) }
-    // Y: if (i < 2) { return y(d); } if (i < 4) { return y(d - 2) }
-
 }
 )
