@@ -1,8 +1,8 @@
 {
-    "name": "years",
+    "name": "STUDENTEN @ FNWI",
     "children": [
         {
-            "name": "studies in 12/13",
+            "name": "Studies in 2012 - 2013",
             "children": [
                 {
                     "name": "BA Artificial Intelligence",
@@ -844,7 +844,7 @@
             ]
         },
         {
-            "name": "studies in 13/14",
+            "name": "Studies in 2013 - 2014",
             "children": [
                 {
                     "name": "BA Artificial Intelligence",
@@ -1686,7 +1686,7 @@
             ]
         },
         {
-            "name": "studies in 14/15",
+            "name": "Studies in 2014 - 2015",
             "children": [
                 {
                     "name": "BA Artificial Intelligence",
@@ -1806,7 +1806,7 @@
                                 },
                                 {
                                     "name": "Postpropedeuse",
-                                    "size":
+                                    "size": 55
                                 }
                             ]
                         }
@@ -2528,7 +2528,7 @@
             ]
         },
         {
-            "name": "studies in 15/16",
+            "name": "Studies in 2015 - 2016",
             "children": [
                 {
                     "name": "BA Artificial Intelligence",
@@ -3370,7 +3370,7 @@
             ]
         },
         {
-            "name": "studies in 16/17",
+            "name": "Studies in 2016 - 2017",
             "children": [
                 {
                     "name": "BA Artificial Intelligence",
@@ -4212,7 +4212,7 @@
             ]
         },
         {
-            "name": "studies in 17/18",
+            "name": "Studies in 2017 - 2018",
             "children": [
                 {
                     "name": "BA Artificial Intelligence",
@@ -4780,7 +4780,7 @@
                             "children": [
                                 {
                                     "name": "Eerstejaars",
-                                    "size":
+                                    "size": 0
                                 },
                                 {
                                     "name": "Postpropedeuse",
@@ -4793,11 +4793,11 @@
                             "children": [
                                 {
                                     "name": "Eerstejaars",
-                                    "size":
+                                    "size": 0
                                 },
                                 {
                                     "name": "Postpropedeuse",
-                                    "size":
+                                    "size": 1
                                 }
                             ]
                         }
