@@ -5,6 +5,9 @@
 - Code visualisaties opschonen (functies)
 - Code visualisaties samenvoegen
 
+- Design + Readme updaten
+- Progress bijwerken
+
 #### DETAILS VISUALISATIES TOEVOEGEN
 - Kleuren van de lijnen bij lijndiagram onderscheiden 
 - Legenda + Hovers toevoegen bij lijndiagram
