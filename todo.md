@@ -1,7 +1,7 @@
 (Lijstje voor mezelf voor planning week 2 / week 3)
 
 #### VISUALISATIES AFMAKEN
-- Barchart afmaken
+~~- Barchart afmaken~~
 - Code visualisaties opschonen (functies)
 - Code visualisaties samenvoegen
 
