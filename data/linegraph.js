@@ -49,7 +49,7 @@ svg.append("g")
     .attr("transform", "translate(0," + height + ")")
     .call(xAxis);
 
-d3.json("http://localhost:8000/totaalalgemeen.json", function (error, data) {
+d3.json("http://localhost:8000/linegraph.json", function (error, data) {
     // Transform data from string to int in multidimensional array.
     var finalData = [];
     var jaren = ["twaalfdertien", "dertienveertien", "veertienvijftien", "vijftienzestien", "zestienzeventien"];
@@ -78,5 +78,6 @@ d3.json("http://localhost:8000/totaalalgemeen.json", function (error, data) {
                 .style("stroke", "#ffb3ff")
                 .attr("d", line(finalData[i]));
         }
+        console.log("TEST!!");
     }
 })

@@ -1,5 +1,5 @@
 // Load dataset from local server.
-d3.json("http://localhost:8000/totaalstudenten.json", function (error, data) {
+d3.json("http://localhost:8000/studentenperstudie.json", function (error, data) {
 
     // Transform data from string to int in multidimensional array.
     var finalData = [];

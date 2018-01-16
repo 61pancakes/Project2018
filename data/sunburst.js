@@ -11,7 +11,7 @@ var y = d3.scale.sqrt()
     .range([0, radius]);
 
 var color = d3.scale.ordinal()
-    .range(["#000000", "#000000", "#000000", "#33ccff", "#ff80ff", "#000000", "#000000", "#000000"]);
+    .range(["white", "white", "white", "white", "white", "white", "white", "white"]);
 
 var partition = d3.layout.partition()
     .value(function (d) { return d.size; });
@@ -28,7 +28,7 @@ var svg = d3.select("body").append("svg")
     .append("g")
     .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");
 
-d3.json("http://localhost:8000/einddata.json", function (error, root) {
+d3.json("http://localhost:8000/sunburst.json", function (error, root) {
     if (error) throw error;
 
     svg.selectAll("path")
