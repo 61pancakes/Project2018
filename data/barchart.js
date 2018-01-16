@@ -109,6 +109,6 @@ d3.json("http://localhost:8000/totaalstudenten.json", function (error, data) {
         .attr("height", function (d) { console.log(d); return (y(d.begin) - y(d.end)); }) // = Top van de rechthoek
         .attr("x", function (d, i) { return x0(i); })
         // .attr("y", function (d) { return y(0); }) // Begin van de rechthoek
-        .attr("y", function (d) { return (y(d.begin)); }) // Begin van de rechthoek
+        .attr("y", function (d) { return (y(d.end)); }) // Begin van de rechthoek
 }
 )

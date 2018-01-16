@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
-    path {
-        stroke: #fff;
-    }
 </style>
 
 <body>
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script>
 
-        var width = 960,
-            height = 700,
+        var width = 500,
+            height = 500,
             radius = (Math.min(width, height) / 2) - 10;
 
         var formatNumber = d3.format(",d");
@@ -23,7 +20,7 @@
             .range([0, radius]);
 
         var color = d3.scale.ordinal()
-            .range(["#8dd3c7", "#ffffb3", "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde5"]);
+            .range(["#000000", "#000000", "#000000", "#33ccff", "#ff80ff", "#000000", "#000000", "#000000"]);
 
         var partition = d3.layout.partition()
             .value(function (d) { return d.size; });
@@ -55,7 +52,7 @@
 
         function click(d) {
             svg.transition()
-                .duration(750)
+                .duration(1000)
                 .tween("scale", function () {
                     var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
                         yd = d3.interpolate(y.domain(), [d.y, 1]),
