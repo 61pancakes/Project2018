@@ -23,12 +23,15 @@
 ![voortgang](/doc/Sketchv2.png).
 
 
-![voortgang](/doc/voortgang_v1.png).
+![voortgang](/doc/voortgang_v1.png)
 
 ## day 5 (12 January 2017)
-- 
-- Multilijngrafiek redelijk werkende gekregen: legenda en kleurtjes moeten nog aangepast worden.
+- Multilijngrafiek gemaakt & redelijk werkende gekregen: legenda en kleurtjes moeten nog aangepast worden.
+
 ## day 6 (15 January 2017)
+- Sunburst gemaakt. Benodigde data had ik nog niet in een goed format, dus dat  herschreven zodat de sunburst het kon gebruiken. Sunburst is nu dynamisch, maar moet nog duidelijker worden + twijfel over of ik hem pas wil laten zien nadat een jaar is geselecteerd in de staafdiagram of dat hij enkel van niveau verandert door het klikken.
+![voortgang](/doc/Sunburstv1.png)
+
 ## day 7 (16 January 2017)
 ## day 8 (17 January 2017)
 ## day 9 (18 January 2017)
