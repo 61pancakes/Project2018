@@ -27,9 +27,8 @@
 
 ## day 5 (12 January 2017)
 - Multilijngrafiek gemaakt & redelijk werkende gekregen: legenda en kleurtjes moeten nog aangepast worden. 
-- Barchart kloppende gekregen.
+- Barchart kloppende gekregen (voor en na:)
 ![voortgang](/doc/barchartv1.png)
-![voortgang](/doc/barchartv2.png)
 
 ## day 6 (15 January 2017)
 - Sunburst gemaakt. Benodigde data had ik nog niet in een goed format, dus dat  herschreven zodat de sunburst het kon gebruiken. Sunburst werkt op zichzelf, maar moet nog duidelijker worden (tekst + kleuren aanpassen) + ik twijfel over of ik hem pas wil laten zien nadat een jaar is geselecteerd in de staafdiagram of dat hij enkel van niveau verandert door het klikken.
