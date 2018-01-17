@@ -1,11 +1,18 @@
-/* Create the basis variables for the axes (hardcoded). */
-var years = 6,
-    genders = 2,
-    studentMax = 3739;
+/*  
+ * Andrea van den Hooff
+ * Minor Programmeren
+ * 10439080
+ * barchart.js: This file creates a bar chart in d3 with data loaded in from a .json file.
+ */
 
+/* Create the basis variables for the svg. */
 var margin = { top: 50, right: 150, bottom: 50, left: 50 },
     width = 700 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
+
+var years = 6,
+    genders = 2,
+    studentMax = 3739;
 
 var y = d3.scale.linear()
     .domain([studentMax, 0])
@@ -23,7 +30,6 @@ var xLabels = d3.scale.ordinal()
     .domain(['\'12-\'13', '\'13-\'14', '\'14-\'15', '\'15-\'16', '\'16-\'17', '\'17-\'18',])
     .rangeBands([0, width], .5);
 
-/* Create the svg. */
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -61,10 +67,9 @@ svg.append("g")
     .style("text-anchor", "end")
     .text("→ Academisch jaar");
 
-svg.append("g")
-
 /* Add a title */
-svg.append("text")
+svg.append("g")
+    .append("text")
     .attr("x", (width / 2))
     .attr("y", -10)
     .attr("text-anchor", "middle")
@@ -72,8 +77,8 @@ svg.append("text")
     .style("text-decoration", "underline")
     .text("Studenten @ FNWI door de jaren heen");
 
-/* Load dataset from local server. to create the actual bars. */
-d3.json("http://localhost:8000/studentenperstudie.json", function (error, data) {
+/* Load dataset from local server to create the bars. */
+d3.json("http://localhost:8000/json/studentenperstudie.json", function (error, data) {
     var colors = ["#ffe6ff", "#99e6ff", "#ffb3ff", "#1ac6ff"];
 
     /* Transform the data from the dataset from string to int in a multidimensional array. */

@@ -1,3 +1,10 @@
+/*  
+ * Andrea van den Hooff
+ * Minor Programmeren
+ * 10439080
+ * linegraph.js: This file creates a multi line graph in d3 with data loaded in from a .json file.
+ */
+
 var margin = { top: 20, right: 50, bottom: 30, left: 40 },
     width = 500 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom,
@@ -49,7 +56,7 @@ svg.append("g")
     .attr("transform", "translate(0," + height + ")")
     .call(xAxis);
 
-d3.json("http://localhost:8000/linegraph.json", function (error, data) {
+d3.json("http://localhost:8000/json/linegraph.json", function (error, data) {
     // Transform data from string to int in multidimensional array.
     var finalData = [];
     var jaren = ["twaalfdertien", "dertienveertien", "veertienvijftien", "vijftienzestien", "zestienzeventien"];

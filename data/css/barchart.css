@@ -1,14 +1,18 @@
-svg {
-    font: 10px sans-serif;
-    shape-rendering: crispEdges;
-}
+    svg {
+        font: 10px sans-serif;
+        shape-rendering: crispEdges;
+    }
 
-.axis path,
-.axis line {
-    fill: none;
-    stroke: #000;
-}
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+    }
 
-.tick line {
-    opacity: 0.2;
-}
+    .tick line {
+        opacity: 0.2;
+    }
+
+    path {
+        fill: none;
+    }
