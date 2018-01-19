@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
+    path {
+        stroke: black;
+    }
 </style>
 
 <body>
@@ -20,7 +23,7 @@
             .range([0, radius]);
 
         var color = d3.scale.ordinal()
-            .range(["#8dd3c7", "#ffffb3", "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde50"]);
+            .range(["white"]);
 
         var partition = d3.layout.partition()
             .value(function (d) { return d.size; });

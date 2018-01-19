@@ -83,14 +83,18 @@ d3.json("http://localhost:8000/json/studentenperstudie.json", function (error, d
 
     /* Transform the data from the dataset from string to int in a multidimensional array. */
     var studentdata = [];
-    var jaren = ["twaalfdertien", "dertienveertien", "veertienvijftien", "vijftienzestien", "zestienzeventien", "zeventienachttien"];
+    var years = ["twaalfdertien", "dertienveertien", "veertienvijftien",
+        "vijftienzestien", "zestienzeventien", "zeventienachttien"];
     for (var i = 0; i < 4; i++) {
         studentdata[i] = [6];
         for (var j = 0; j < 6; j++) {
             if (i < 2) {
-                studentdata[i][j] = { begin: 0, end: parseInt(data.students[i][jaren[j]]) };
+                studentdata[i][j] = { begin: 0, end: parseInt(data.students[i][years[j]]) };
             } else {
-                studentdata[i][j] = { begin: studentdata[i - 2][j].end, end: studentdata[i - 2][j].end + parseInt(data.students[i][jaren[j]]) };
+                studentdata[i][j] = {
+                    begin: studentdata[i - 2][j].end,
+                    end: studentdata[i - 2][j].end + parseInt(data.students[i][years[j]])
+                };
             }
         }
     }
@@ -118,7 +122,7 @@ d3.json("http://localhost:8000/json/studentenperstudie.json", function (error, d
         })
         .on("mouseout", synchronizedMouseOut);
 
-    // Create a tooltip.
+    /* Create a tooltip. */
     var tooltip = svg.append("g")
         .attr("class", "tooltip")
         .style("display", "none");

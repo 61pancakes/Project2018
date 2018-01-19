@@ -1,17 +1,9 @@
 {
     "data": [
         {
-            "veertienvijftien": "1415",
-            "dertienveertien": "1314",
-            "naam": "Studie",
-            "zestienzeventien": "1617",
-            "twaalfdertien": "1213",
-            "vijftienzestien": "1516"
-        },
-        {
             "veertienvijftien": "1172",
             "dertienveertien": "1019",
-            "naam": "TU Delft Alles F",
+            "naam": "♀ TU Delft",
             "zestienzeventien": "1564",
             "twaalfdertien": "895",
             "vijftienzestien": "1249"
@@ -19,7 +11,7 @@
         {
             "veertienvijftien": "3073",
             "dertienveertien": "2930",
-            "naam": "TU Delft Alles M",
+            "naam": "♂ TU Delft",
             "zestienzeventien": "3464",
             "twaalfdertien": "2716",
             "vijftienzestien": "3460"
@@ -27,7 +19,7 @@
         {
             "veertienvijftien": "775",
             "dertienveertien": "675",
-            "naam": "TU Delft BA F",
+            "naam": "♀ TU Delft Bachelor",
             "zestienzeventien": "951",
             "twaalfdertien": "586",
             "vijftienzestien": "766"
@@ -35,7 +27,7 @@
         {
             "veertienvijftien": "2143",
             "dertienveertien": "2201",
-            "naam": "TU Delft BA M",
+            "naam": "♂ TU Delft Bachelor",
             "zestienzeventien": "2313",
             "twaalfdertien": "1980",
             "vijftienzestien": "2265"
@@ -43,7 +35,7 @@
         {
             "veertienvijftien": "397",
             "dertienveertien": "344",
-            "naam": "TU Delft MA F",
+            "naam": "♀ TU Delft Master",
             "zestienzeventien": "613",
             "twaalfdertien": "309",
             "vijftienzestien": "483"
@@ -51,7 +43,7 @@
         {
             "veertienvijftien": "930",
             "dertienveertien": "729",
-            "naam": "TU Delft MA M",
+            "naam": "♂ TU Delft Master",
             "zestienzeventien": "1151",
             "twaalfdertien": "736",
             "vijftienzestien": "1195"
@@ -59,7 +51,7 @@
         {
             "veertienvijftien": "1459",
             "dertienveertien": "1381",
-            "naam": "UvA BA FNWI F",
+            "naam": "♀ UvA Bachelor (FNWI)",
             "zestienzeventien": "1574",
             "twaalfdertien": "1180",
             "vijftienzestien": "1511"
@@ -67,7 +59,7 @@
         {
             "veertienvijftien": "2061",
             "dertienveertien": "1889",
-            "naam": "UvA BA FNWI M",
+            "naam": "♂ UvA Bachelor (FNWI)",
             "zestienzeventien": "2239",
             "twaalfdertien": "1593",
             "vijftienzestien": "2146"
@@ -75,7 +67,7 @@
         {
             "veertienvijftien": "702",
             "dertienveertien": "629",
-            "naam": "UvA MA FNWI F",
+            "naam": "♀ UvA Master (FNWI)",
             "zestienzeventien": "883",
             "twaalfdertien": "520",
             "vijftienzestien": "751"
@@ -83,7 +75,7 @@
         {
             "veertienvijftien": "1053",
             "dertienveertien": "971",
-            "naam": "UvA MA FNWI M",
+            "naam": "♂ UvA Master (FNWI)",
             "zestienzeventien": "1287",
             "twaalfdertien": "829",
             "vijftienzestien": "1140"
@@ -91,7 +83,7 @@
         {
             "veertienvijftien": "2719",
             "dertienveertien": "2935",
-            "naam": "UvA BA Geesteswetenschappen F",
+            "naam": "♀ UvA Bachelor (FGw)",
             "zestienzeventien": "2359",
             "twaalfdertien": "3051",
             "vijftienzestien": "2454"
@@ -99,7 +91,7 @@
         {
             "veertienvijftien": "1730",
             "dertienveertien": "1885",
-            "naam": "UvA BA Geesteswetenschappen M",
+            "naam": "♂ UvA Bachelor (FGw)",
             "zestienzeventien": "1572",
             "twaalfdertien": "1850",
             "vijftienzestien": "1621"
@@ -107,7 +99,7 @@
         {
             "veertienvijftien": "1286",
             "dertienveertien": "1344",
-            "naam": "UvA MA Geesteswetenschappen F",
+            "naam": "♀ UvA Master (FGw)",
             "zestienzeventien": "1268",
             "twaalfdertien": "1338",
             "vijftienzestien": "1271"
@@ -115,7 +107,7 @@
         {
             "veertienvijftien": "748",
             "dertienveertien": "759",
-            "naam": "UvA MA Geesteswetenschappen M",
+            "naam": "♂ UvA Master (FGw)",
             "zestienzeventien": "735",
             "twaalfdertien": "716",
             "vijftienzestien": "756"
@@ -123,7 +115,7 @@
         {
             "veertienvijftien": "209",
             "dertienveertien": "185",
-            "naam": "UvA Staf FNWI F",
+            "naam": "♀ UvA Staf (FNWI)",
             "zestienzeventien": "280",
             "twaalfdertien": "182",
             "vijftienzestien": "251"
@@ -131,7 +123,7 @@
         {
             "veertienvijftien": "565",
             "dertienveertien": "520",
-            "naam": "UvA Staf FNWI M",
+            "naam": "♂ UvA Staf (FNWI)",
             "zestienzeventien": "612",
             "twaalfdertien": "494",
             "vijftienzestien": "605"
@@ -139,7 +131,7 @@
         {
             "veertienvijftien": "1110",
             "dertienveertien": "1069",
-            "naam": "UvA Staf ALLES F",
+            "naam": "♀ UvA Staf (Geheel)",
             "zestienzeventien": "1215",
             "twaalfdertien": "1064",
             "vijftienzestien": "1161"
@@ -147,7 +139,7 @@
         {
             "veertienvijftien": "1527",
             "dertienveertien": "1477",
-            "naam": "UvA Staf ALLES M",
+            "naam": "♂ UvA Staf (Geheel)",
             "zestienzeventien": "1583",
             "twaalfdertien": "1433",
             "vijftienzestien": "1572"

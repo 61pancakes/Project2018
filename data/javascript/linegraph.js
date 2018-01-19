@@ -5,38 +5,40 @@
  * linegraph.js: This file creates a multi line graph in d3 with data loaded in from a .json file.
  */
 
-var margin = { top: 20, right: 50, bottom: 30, left: 40 },
-    width = 500 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom,
+/* Create the basis variables for the svg. */
+var margin = { top: 50, right: 250, bottom: 50, left: 50 },
+    width = 800 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom,
     years = 5;
 
 var y = d3.scale.linear()
-    .domain([3500, 0])
+    .domain([3739, 0])
     .range([0, height]);
 
-var x = d3.scale.ordinal() // Jaren op de x-as 
+var x = d3.scale.ordinal()
     .domain(d3.range(years))
     .rangePoints([0, width]);
 
-var xLabels = d3.scale.ordinal() // Jaren op de x-as 
+var xLabels = d3.scale.ordinal()
     .domain(['\'12-\'13', '\'13-\'14', '\'14-\'15', '\'15-\'16', '\'16-\'17'])
     .rangePoints([0, width]);
 
-// Create the svg.
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("svg:g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-// Show the axes.
+/* Show the axes. */
 var xAxis = d3.svg.axis()
     .scale(xLabels)
     .orient("bottom");
 
 var yAxis = d3.svg.axis()
     .scale(y)
-    .orient("left");
+    .innerTickSize(-width)
+    .orient("left")
+    .tickPadding(8);
 
 var yAxisRight = d3.svg.axis()
     .scale(y)
@@ -44,7 +46,13 @@ var yAxisRight = d3.svg.axis()
 
 svg.append("g")
     .attr("class", "y axis")
-    .call(yAxis);
+    .call(yAxis)
+    .append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", -40)
+    .attr("x", -10)
+    .style("text-anchor", "end")
+    .text("→ Aantal studenten");
 
 svg.append("g")
     .attr("class", "y axis")
@@ -54,37 +62,154 @@ svg.append("g")
 svg.append("g")
     .attr("class", "x axis")
     .attr("transform", "translate(0," + height + ")")
-    .call(xAxis);
+    .call(xAxis)
+    .append("text")
+    .attr("x", 500)
+    .attr("y", 30)
+    .style("text-anchor", "end")
+    .text("→ Academisch jaar");
 
+/* Add a title */
+svg.append("g")
+    .append("text")
+    .attr("x", (width / 2))
+    .attr("y", -10)
+    .attr("text-anchor", "middle")
+    .style("font", "sans-serif")
+    .style("text-decoration", "underline")
+    .text("Genderverdeling @ verschillende universiteiten.");
+
+/* Load dataset from local server to create the lines. */
 d3.json("http://localhost:8000/json/linegraph.json", function (error, data) {
-    // Transform data from string to int in multidimensional array.
     var finalData = [];
-    var jaren = ["twaalfdertien", "dertienveertien", "veertienvijftien", "vijftienzestien", "zestienzeventien"];
+    var years = ["twaalfdertien", "dertienveertien", "veertienvijftien",
+        "vijftienzestien", "zestienzeventien"];
 
-    for (var i = 0; i < 18; i++) {
-        finalData[i] = [6];
-        for (var j = 0; j < 5; j++) {
-            finalData[i][j] = parseInt(data.data[i + 1][jaren[j]]);
-        }
-    }
-
-    // create a line function that can convert data[] into x and y points
-    var line = d3.svg.line()
-        .x(function (d, i) { return x(i); })
-        .y(function (d) { return y(d); })
-
+    /* Create M/F sets made of integers of the data. */
+    var k = 0;
     for (var i = 0; i < 17; i++) {
-        if (i % 2 != 0) {
-            svg.append("path")		// Add the valueline path.
-                .attr("class", "line")
-                .style("stroke", "#1ac6ff")
-                .attr("d", line(finalData[i]));
-        } else {
-            svg.append("path")		// Add the valueline2 path.
-                .attr("class", "line")
-                .style("stroke", "#ffb3ff")
-                .attr("d", line(finalData[i]));
+        finalData[k] = [5];
+        for (var j = 0; j < 5; j++) {
+            finalData[k][j] = {
+                women: parseInt(data.data[i][years[j]]),
+                men: parseInt(data.data[i + 1][years[j]])
+            };
         }
-        console.log("TEST!!");
+        i += 1;
+        k += 1;
     }
-})
+
+    /* create a line function that can convert data[] into x and y coordinates. */
+    var lineF = d3.svg.line()
+        .x(function (d, i) { return x(i); })
+        .y(function (d) { return y(d.women); })
+
+    var lineM = d3.svg.line()
+        .x(function (d, i) { return x(i); })
+        .y(function (d) { return y(d.men); })
+
+    var colors = ["#BBCCEE", "#44AA99", "#332288", "#117733", "#999933",
+        "#DDCC77", "#CC6677", "#882255", "#AA4499"];
+    var legendData = [];
+    for (var l = 0; l < 9; l++) {
+        legendData[l] = { color: colors[l], name: data.data[l * 2].naam }
+    };
+
+
+    /* Show the lines. */
+    for (var i = 0; i < 9; i++) {
+        console.log(legendData[i]);
+        svg.append("path")
+            .attr("class", "line")
+            .style("stroke", colors[i])
+            .style("stroke-dasharray", ("5, 5"))
+            .attr("d", lineF(finalData[i]))
+        // .attr("id", "test")
+        // .on("click", onclick(i));
+
+        svg.append("path")
+            .attr("class", "line")
+            .style("stroke", colors[i])
+            .attr("d", lineM(finalData[i]))
+        // .attr("id", "test")
+        // .on("click", onclick());
+    }
+
+    /* Create and draw a legend */
+    var legend = svg.selectAll(".legend")
+        .data(legendData)
+        .enter().append("g")
+        .attr("class", "legend")
+        .attr("transform", function (d, i) { return "translate(70," + (i * 19 + 30) + ")"; });
+
+    legend.append("line")
+        .attr("x1", width - 28)
+        .attr("x2", width)
+        .attr("y1", 10)
+        .attr("y2", 10)
+        .style("stroke-dasharray", "5,5")
+        .style("stroke-width", "2")
+        .style("stroke", function (d, i) {
+            return legendData[i].color;
+        });
+
+
+    // function onclick(i) {
+    // Hide or show the elements
+    // switch (i) {
+    //     case 0: {
+    //         var active = legendData[i].name.active ? false : true,
+    //             newOpacity = active ? 0 : 1;
+    //         if (active == 0) {
+    //             d3.select(this).style("font-weight", "bold");
+    //         } else {
+    //             d3.select(this).style("font-weight", "normal");
+    //         }
+    //         legendData[i].name.active = active;
+
+    //         d3.select("#♀ TU Delft").style("opacity", newOpacity);
+    //     };
+    //     case 1: {
+    //         var active = legendData[i].name.active ? false : true,
+    //             newOpacity = active ? 0 : 1;
+    //         if (active == 0) {
+    //             d3.select(this).style("font-weight", "bold");
+    //         } else {
+    //             d3.select(this).style("font-weight", "normal");
+    //         }
+    //         legendData[i].name.active = active;
+    //         d3.select("#♀ TU Delft Bachelor").style("opacity", newOpacity);
+
+
+    //     };
+    // }
+
+    // Determine if current line is visible
+    //     var active = test.active ? false : true,
+    //         newOpacity = active ? 0 : 1;
+
+    //     if (active == 0) {
+    //         d3.select(this).style("font-weight", "bold");
+    //     } else {
+    //         d3.select(this).style("font-weight", "normal");
+    //     }
+
+
+    //     d3.select("#test").style("opacity", newOpacity);
+    //     d3.select("#test1").style("opacity", newOpacity);
+    //     // Update whether or not the elements are active
+    //     test.active = active;
+    // }
+
+    legend.append("text")
+        .attr("font", "sans-serif")
+        .attr("font-weight", "bold")
+        .attr("x", width + 5)
+        .attr("y", 10)
+        .attr("dy", ".35em")
+        .style("text-anchor", "start")
+        .text(function (d, i) {
+            return legendData[i].name.substr(2);
+        })
+        .on("click", onclick);
+});
