@@ -2,16 +2,16 @@
 
 #### VISUALISATIES AFMAKEN
 ~~- Barchart afmaken~~
-- Code visualisaties opschonen (functies)
+~~- Code visualisaties opschonen (functies)~~
 - Code visualisaties samenvoegen
 
 - Design + Readme updaten
-- Progress bijwerken
+~~- Progress bijwerken~~
 
 #### DETAILS VISUALISATIES TOEVOEGEN
-- Kleuren van de lijnen bij lijndiagram onderscheiden 
+~~- Kleuren van de lijnen bij lijndiagram onderscheiden ~~
 - Legenda + Hovers toevoegen bij lijndiagram
-- Legenda + Hovers toevoegen bij de staafdiagram
+~~- Legenda + Hovers toevoegen bij de staafdiagram~~
 - Kleuren van de sunburst aanpassen + Hovers toevoegen
 
 #### INTERACTIE TOEVOEGEN
