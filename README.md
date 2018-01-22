@@ -1,4 +1,4 @@
-# Pagina: https://61pancakes.github.io/Project2018/
+# Pagina: http://61pancakes.github.io/Project2018/
 
 #### Minor Programmeren: Programmeerproject 2018     
 **Titel:** Demografie van (bèta-)studies aan de UvA.  
@@ -17,9 +17,6 @@ Ik wil de ontwikkelingen in de man/vrouw-verhouding bij technische studies aan d
 
 Originele schets: 
 ![Sketch](/doc/Sketch.png)
-
-Geupdate schets:
-![Sketch updated](/doc/Sketchv2.png)
 
 #### Main Features: 
 - Laat het verschil in inschrijvingen van geslacht zien per academisch jaar. (MVP)  
