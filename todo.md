@@ -5,7 +5,7 @@
 ~~- Code visualisaties opschonen (functies)~~
 - Code visualisaties samenvoegen
 
-- Design + Readme updaten
+- Design + Readme updaten  
 ~~- Progress bijwerken~~
 
 #### DETAILS VISUALISATIES TOEVOEGEN
