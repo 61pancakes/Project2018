@@ -38,11 +38,13 @@
 
     // /* Coloring function. */
     var colorSlice = function (d) {
-        var pink = "#ffb3ff";
-        var blue = "#99e6ff";
-        var colors = ["#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c", "#98df8a", "#d62728",
-            "#ff9896", "#9467bd", "#c5b0d5", "#8c564b", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f",
-            "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5"];
+        var lightpink = "#ffe6ff",
+            pink = "#ffb3ff",
+            lightblue = "#1ac6ff",
+            blue = "#99e6ff",
+            colors = ["#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c", "#98df8a", "#d62728",
+                "#ff9896", "#9467bd", "#c5b0d5", "#8c564b", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f",
+                "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5"];
 
         /* Color the boys/girls the right colors. */
         if (d.depth == 0) {
@@ -50,17 +52,18 @@
         } else if (d.depth == 1) {
             return "grey";
         } else if (d.depth == 2) {
-            return colors[coloringIndex++ % 20];
+            return colors[coloringIndex++ % 19];
         } else if (d.depth == 3) {
             /* Boys / Girls coloring is important. */
 
             if (d.name == "boys") {
-                return blue;
+                return lightblue;
             } else {
-                return pink;
+                return lightpink;
             }
         } else {
-            if (d.parent == "boys") {
+            console.log(d.parent);
+            if (d.parent.name == "boys") {
                 return blue;
             } else {
                 return pink;
