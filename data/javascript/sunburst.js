@@ -66,6 +66,7 @@
 
     /* Load dataset from local server to create the circle partitions. */
     d3.json("data/json/sunburst.json", function (error, root) {
+        console.log("TEST!!!");
         var formatNumber = d3.format(",d");
 
         svg.selectAll("path")
