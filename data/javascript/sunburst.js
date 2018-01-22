@@ -37,20 +37,22 @@
         .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");
 
     // /* Coloring function. */
-    var colors = function (d) {
+    var colorSlice = function (d) {
         var pink = "#ffb3ff";
         var blue = "#99e6ff";
         var colors = ["#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c", "#98df8a", "#d62728",
             "#ff9896", "#9467bd", "#c5b0d5", "#8c564b", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f",
             "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5"];
 
-        console.log(d);
-
         /* Color the boys/girls the right colors. */
-        if (d == "boys") {
-            return blue;
+        if (d.depth == 3) {
+            if (d.name == "boys") {
+                return blue;
+            } else {
+                return pink;
+            }
         } else {
-            return pink;
+            return colors[Math.floor((Math.random() * 25) + 1)];
         }
     }
 
@@ -61,10 +63,7 @@
             .data(partition.nodes(root))
             .enter().append("path")
             .attr("d", arc)
-            .style("fill", function (d, i) {
-                console.log(d.depth);
-                return "blue";
-            })
+            .style("fill", colorSlice)
             .on("click", click)
             .append("title")
             .text(function (d) { return d.name + "\n" + formatNumber(d.value); });
