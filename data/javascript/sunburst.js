@@ -68,6 +68,7 @@
             .attr("d", arc)
             .style("fill", function (d, i) {
                 if (!d.children.children) {
+                    console.log(d.children);
                     return colors(d.children.name);
                 }
             })
