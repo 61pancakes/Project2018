@@ -1,3 +1,5 @@
+# Pagina: https://61pancakes.github.io/Project2018/
+
 #### Minor Programmeren: Programmeerproject 2018     
 **Titel:** Demografie van (bèta-)studies aan de UvA.  
 **Auteur:** Andrea van den Hooff  
@@ -34,4 +36,3 @@ Geupdate schets:
 3. Gerelateerde visualisaties zijn bijvoorbeeld: [WomenWhoTech](https://www.womenwhotech.com/womenintechinfographic) en [TU Delft](https://www.tudelft.nl/over-tu-delft/feiten-en-cijfers/onderwijs/studentenpopulatie/). WWT is een blitse, populistische visualisatie. Het is niet interactief en gooit vooral heel veel data naar de kijker. Het is waarschijnlijk niet geprogrammeerd, maar kan nog wel een goed voorbeeld zijn qua visualisatie. Het laat goed het verschil zien tussen de mannen en vrouwen (alhoewel cliché). De TU Delft is vergelijkbaar met, maar beter dan, de dataset van de UvA. De site heeft in tegenstelling tot WWT juist heel veel data verwerkt, maar laat dit wel maar in 1 compacte barchart zien. Sommige dingen, zoals de faculteiten, zijn niet erg begrijpelijk voor mensen buiten de TU. 
 4. Hardest parts: Ik heb de vorige vakken van de Minor Programmeren een jaar geleden gedaan en de d3/js is enigszins weggezakt. Het uitzoeken hoe ik de verschillende visualisaties met elkaar interactief moet maken zal een grote uitdaging zijn, maar hopelijk te doen met hulp van de TA's en Het Internet. Daarnaast zal het verzamelen van de data niet per se lastig zijn, maar wel redelijk wat werk, omdat ik het handmatig zal moeten invoeren via de gegevens van de UvA. Ik zal er relatief veel tijd voor moeten inplannen.
 
-Pagina: https://61pancakes.github.io/Project2018/
