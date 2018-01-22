@@ -35,9 +35,23 @@
 ![voortgang](/doc/sunburstv1.png)
 
 ## day 7 (16 January 2017)
+- Interactiviteit van de staafdiagram toegevoegd (tooltip + legenda).
+- Staafdiagramcode opgeschoond. 
+- Progress geupdate.
+
 ## day 8 (17 January 2017)
+- Code georganiseerd. 
+- Aan lijndiagram gewerkt.
+- Na zitten denken over indeling HTML.
+
 ## day 9 (18 January 2017)
+- IVM Storm thuisgebleven.
+
 ## day 10 (19 January 2017)
+- Legenda + aan/uitzetten van lijndiagram, maar kreeg dat laatste (nog) niet volledig werkende.
+- Twijfel over of ik de duo's (M/F) individueel wil kunnen uitzetten, of een soort voorselectie wil kunnen geven met een dropdown menu, of enkel als duo's. Hoeveel vrijheid geef je de gebruiker?
+- Presentatie gegeven. 
+
 ## day 11 (22 January 2017)
 ## day 12 (23 January 2017)
 ## day 13 (24 January 2017)
@@ -55,7 +69,7 @@ Your process book details your steps in developing your solution, including the 
 
 We strongly advise you to include many figures in your process book, including photos of your sketches of potential designs, screen shots from different visualization tools you explored, inspirations of visualizations you found online, etc. Several images illustrating changes in your design or focus over time will be far more informative than text describing those changes. Instead, use text to describe the rationale behind the evolution of your project.
 
-In the process book, at the end of each day, summarize important decisions you have made. Do not be afraid to do this somewhat crudely, probably with bullet points and the like. Do aim to provide inight in the process you’re going through while creating your application.
+In the process book, at the end of each day, summarize important decisions you have made. Do not be afraid to do this somewhat crudely, probably with bullet points and the like. Do aim to provide insight in the process you’re going through while creating your application.
 
 Doing this will make it easier to write your report, and we also use it during grading, to see if there were obvious problems we should know about.
 
