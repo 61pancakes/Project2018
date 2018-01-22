@@ -7,7 +7,7 @@
  */
 
 (function () {
-
+    var coloringIndex = 0;
     /* Create the basis variables for the svg. */
     var margin = { top: 50, right: 250, bottom: 50, left: 50 },
         width = 800 - margin.left - margin.right,
@@ -45,14 +45,22 @@
             "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5"];
 
         /* Color the boys/girls the right colors. */
-        if (d.depth == 3) {
+        if (d.depth == 0) {
+            return "white";
+        } else if (d.depth == 2) {
+            if (coloringIndex > 19) {
+                coloringIndex = 0;
+            }
+
+            return colors[coloringIndex++];
+        } else if (d.depth == 3) {
             if (d.name == "boys") {
                 return blue;
             } else {
                 return pink;
             }
         } else {
-            return colors[Math.floor((Math.random() * 25) + 1)];
+            return "red";
         }
     }
 
