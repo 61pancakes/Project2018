@@ -45,7 +45,7 @@
             "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5"];
 
         /* Color the boys/girls the right colors. */
-        if (typeof a_string === "string") {
+        if (typeof d === "string") {
             if (d.parent.name == "boys") {
                 return blue;
             } else {
