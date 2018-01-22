@@ -80,7 +80,7 @@ svg.append("g")
     .text("Genderverdeling @ verschillende universiteiten.");
 
 /* Load dataset from local server to create the lines. */
-d3.json("http://localhost:8000/json/linegraph.json", function (error, data) {
+d3.json("https://raw.githubusercontent.com/61pancakes/Project2018/master/data/json/linegraph.json", function (error, data) {
     var finalData = [];
     var years = ["twaalfdertien", "dertienveertien", "veertienvijftien",
         "vijftienzestien", "zestienzeventien"];
