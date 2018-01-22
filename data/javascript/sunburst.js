@@ -40,33 +40,38 @@
     var colorSlice = function (d) {
         var lightpink = "#ffe6ff",
             pink = "#ffb3ff",
-            lightblue = "#1ac6ff",
-            blue = "#99e6ff",
+            lightblue = "#99e6ff",
+            blue = "#1ac6ff",
             colors = ["#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c", "#98df8a", "#d62728",
-                "#ff9896", "#9467bd", "#c5b0d5", "#8c564b", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f",
-                "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5"];
+                "#ff9896", "#9467bd", "#c5b0d5", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f",
+                "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5", "#8c564b"];
 
-        /* Color the boys/girls the right colors. */
+        /* Color the boys/girls the right colors, rest is random. */
         if (d.depth == 0) {
             return "white";
         } else if (d.depth == 1) {
             return "grey";
         } else if (d.depth == 2) {
-            return colors[coloringIndex++ % 19];
+            return colors[coloringIndex++ % 20];
         } else if (d.depth == 3) {
-            /* Boys / Girls coloring is important. */
-
             if (d.name == "boys") {
                 return lightblue;
             } else {
                 return lightpink;
             }
         } else {
-            console.log(d.parent);
             if (d.parent.name == "boys") {
-                return blue;
+                if (d.name == "Postpropedeuse") {
+                    return blue;
+                } else {
+                    return lightblue;
+                }
             } else {
-                return pink;
+                if (d.name == "Postpropedeuse") {
+                    return pink;
+                } else {
+                    return lightpink;
+                }
             }
         }
     }
