@@ -47,14 +47,10 @@
         console.log(d);
 
         /* Color the boys/girls the right colors. */
-        if (typeof (d) === "string") {
-            if (d == "boys") {
-                return blue;
-            } else {
-                return pink;
-            }
+        if (d == "boys") {
+            return blue;
         } else {
-            return colors[Math.floor((Math.random() * 20) + 1)];
+            return pink;
         }
     }
 
@@ -67,9 +63,9 @@
             .enter().append("path")
             .attr("d", arc)
             .style("fill", function (d, i) {
-                if (!d.children.children) {
-                    console.log(d.children);
-                    return colors(d.children.name);
+                console.log(d);
+                if (!d.children) {
+                    return colors(d.name);
                 }
             })
             .on("click", click)
