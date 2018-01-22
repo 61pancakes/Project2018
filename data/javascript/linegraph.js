@@ -115,7 +115,6 @@ d3.json("http://localhost:8000/json/linegraph.json", function (error, data) {
         legendData[l] = { color: colors[l], name: data.data[l * 2].naam }
     };
 
-
     /* Show the lines. */
     for (var i = 0; i < 9; i++) {
         console.log(legendData[i]);
@@ -145,71 +144,24 @@ d3.json("http://localhost:8000/json/linegraph.json", function (error, data) {
     legend.append("line")
         .attr("x1", width - 28)
         .attr("x2", width)
-        .attr("y1", 10)
-        .attr("y2", 10)
-        .style("stroke-dasharray", "5,5")
+        .attr("y1", 20)
+        .attr("y2", 20)
         .style("stroke-width", "2")
         .style("stroke", function (d, i) {
             return legendData[i].color;
-        });
-
-
-    // function onclick(i) {
-    // Hide or show the elements
-    // switch (i) {
-    //     case 0: {
-    //         var active = legendData[i].name.active ? false : true,
-    //             newOpacity = active ? 0 : 1;
-    //         if (active == 0) {
-    //             d3.select(this).style("font-weight", "bold");
-    //         } else {
-    //             d3.select(this).style("font-weight", "normal");
-    //         }
-    //         legendData[i].name.active = active;
-
-    //         d3.select("#♀ TU Delft").style("opacity", newOpacity);
-    //     };
-    //     case 1: {
-    //         var active = legendData[i].name.active ? false : true,
-    //             newOpacity = active ? 0 : 1;
-    //         if (active == 0) {
-    //             d3.select(this).style("font-weight", "bold");
-    //         } else {
-    //             d3.select(this).style("font-weight", "normal");
-    //         }
-    //         legendData[i].name.active = active;
-    //         d3.select("#♀ TU Delft Bachelor").style("opacity", newOpacity);
-
-
-    //     };
-    // }
-
-    // Determine if current line is visible
-    //     var active = test.active ? false : true,
-    //         newOpacity = active ? 0 : 1;
-
-    //     if (active == 0) {
-    //         d3.select(this).style("font-weight", "bold");
-    //     } else {
-    //         d3.select(this).style("font-weight", "normal");
-    //     }
-
-
-    //     d3.select("#test").style("opacity", newOpacity);
-    //     d3.select("#test1").style("opacity", newOpacity);
-    //     // Update whether or not the elements are active
-    //     test.active = active;
-    // }
+        })
+        .on("click", onclick);
 
     legend.append("text")
         .attr("font", "sans-serif")
         .attr("font-weight", "bold")
         .attr("x", width + 5)
-        .attr("y", 10)
+        .attr("y", 20)
         .attr("dy", ".35em")
         .style("text-anchor", "start")
         .text(function (d, i) {
             return legendData[i].name.substr(2);
         })
-        .on("click", onclick);
+    // .on("click", onclick);
+
 });
