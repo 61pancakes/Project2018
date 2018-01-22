@@ -83,7 +83,7 @@
         .text("Genderverdeling @ verschillende universiteiten.");
 
     /* Load dataset from local server to create the lines. */
-    d3.json("/data/json/linegraph.json", function (error, data) {
+    d3.json("../json/linegraph.json", function (error, data) {
         var finalData = [];
         var years = ["twaalfdertien", "dertienveertien", "veertienvijftien",
             "vijftienzestien", "zestienzeventien"];
