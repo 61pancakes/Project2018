@@ -44,15 +44,16 @@
             "#ff9896", "#9467bd", "#c5b0d5", "#8c564b", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f",
             "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5"];
 
+        console.log(d);
+
         /* Color the boys/girls the right colors. */
-        if (typeof d === "string") {
-            if (d.parent.name == "boys") {
+        if (typeof (d) === "string") {
+            if (d == "boys") {
                 return blue;
             } else {
                 return pink;
             }
-        }
-        else {
+        } else {
             return colors[Math.floor((Math.random() * 20) + 1)];
         }
     }
