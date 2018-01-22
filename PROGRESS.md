@@ -39,6 +39,8 @@
 - Staafdiagramcode opgeschoond. 
 - Progress geupdate.
 
+![voortgang](/doc/barchartv2.png)
+
 ## day 8 (17 January 2017)
 - Code georganiseerd. 
 - Aan lijndiagram gewerkt.
@@ -51,6 +53,9 @@
 - Legenda + aan/uitzetten van lijndiagram, maar kreeg dat laatste (nog) niet volledig werkende.
 - Twijfel over of ik de duo's (M/F) individueel wil kunnen uitzetten, of een soort voorselectie wil kunnen geven met een dropdown menu, of enkel als duo's. Hoeveel vrijheid geef je de gebruiker?
 - Presentatie gegeven. 
+
+![voortgang](/doc/linechartv1.png)
+
 
 ## day 11 (22 January 2017)
 ## day 12 (23 January 2017)
