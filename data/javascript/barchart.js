@@ -115,6 +115,9 @@
             .attr("height", function (d) { return (y(d.begin) - y(d.end)); }) // = Top van de rechthoek
             .attr("x", function (d, i) { return x0(i); })
             .attr("y", function (d) { return (y(d.end)); })
+            .attr("class", function (d) {
+                return "hour bordered " + "color-" + colorScale(d.value).substring(1);
+            })
             .on('mouseover', synchronizedMouseOver)
             .on("mousemove", function (d) {
                 var xPosition = d3.mouse(this)[0] + 60;
@@ -171,6 +174,12 @@
                     case 2: return colors[1];
                     case 3: return colors[3];
                 }
+            })
+            .on("mouseover", function (d, i) {
+                svg.selectAll("rect.color-" + colors[i].substring(1)).style("stroke", "blue");
+            })
+            .on("mouseout", function (d, i) {
+                svg.selectAll("rect.color-" + colors[i].substring(1)).style("stroke", "white");
             });
 
         legend.append("text")

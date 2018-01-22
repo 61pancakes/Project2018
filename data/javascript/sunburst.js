@@ -40,33 +40,25 @@
     var colors = function (d) {
         var pink = "#ffb3ff";
         var blue = "#99e6ff";
-        //     var courses = "test";
-        //     var colors = ["#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c", "#98df8a", "#d62728",
-        //         "#ff9896", "#9467bd", "#c5b0d5", "#8c564b", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f",
-        //         "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5"];
+        var colors = ["#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c", "#98df8a", "#d62728",
+            "#ff9896", "#9467bd", "#c5b0d5", "#8c564b", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f",
+            "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5"];
 
-        //     /* Color the boys/girls the right colors. */
-        if (!d.children) {
+        /* Color the boys/girls the right colors. */
+        if (typeof a_string === "string") {
             if (d.parent.name == "boys") {
                 return blue;
             } else {
                 return pink;
             }
-            //     } else if (d.name == "boys") {
-            //         return blue;
-            //     } else if (d.name == "girls") {
-            //         return pink;
-            //     } else if (!d.parent) {
-            //         return "white";
-            //     } else if (d.parent.parent.name == "STUDENTEN @ FNWI") {
-            //         return colors[colors.indexOf(d.name)];
+        }
+        else {
+            return colors[Math.floor((Math.random() * 20) + 1)];
         }
     }
 
-
     /* Load dataset from local server to create the circle partitions. */
     d3.json("data/json/sunburst.json", function (error, root) {
-        console.log("TEST!!!");
         var formatNumber = d3.format(",d");
 
         svg.selectAll("path")
