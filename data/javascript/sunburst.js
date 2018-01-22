@@ -67,8 +67,8 @@
             .enter().append("path")
             .attr("d", arc)
             .style("fill", function (d, i) {
-                if (!d.children) {
-                    return colors(d.name);
+                if (!d.children.children) {
+                    return colors(d.children.name);
                 }
             })
             .on("click", click)
