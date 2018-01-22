@@ -47,20 +47,24 @@
         /* Color the boys/girls the right colors. */
         if (d.depth == 0) {
             return "white";
+        } else if (d.depth == 1) {
+            return "grey";
         } else if (d.depth == 2) {
-            if (coloringIndex > 19) {
-                coloringIndex = 0;
-            }
-
-            return colors[coloringIndex++];
+            return colors[coloringIndex++ % 20];
         } else if (d.depth == 3) {
+            /* Boys / Girls coloring is important. */
+
             if (d.name == "boys") {
                 return blue;
             } else {
                 return pink;
             }
         } else {
-            return "red";
+            if (d.parent == "boys") {
+                return blue;
+            } else {
+                return pink;
+            }
         }
     }
 
