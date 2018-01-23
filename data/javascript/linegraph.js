@@ -158,8 +158,8 @@
         legend.append("line2")
             .attr("x1", width + 30)
             .attr("x2", width + 58)
-            .attr("y1", 20)
-            .attr("y2", 20)
+            .attr("y1", 10)
+            .attr("y2", 10)
             .style("stroke-width", "2")
             .style("stroke-dasharray", ("5, 5"))
             .style("stroke", function (d, i) {
