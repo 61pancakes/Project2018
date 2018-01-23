@@ -95,7 +95,7 @@
             .style("stroke-width", "0.5")
             .on("click", click)
             .append("title")
-            .text(function (d) { return d.name + "\n" + formatNumber(d.value); });
+            .text(function (d) { return d.name + "\nAantal studenten: " + formatNumber(d.value); });
     });
 
     function click(d) {

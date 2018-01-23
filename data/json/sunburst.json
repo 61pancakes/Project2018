@@ -1,14 +1,14 @@
 {
-    "name": "STUDENTEN @ FNWI",
+    "name": "Studenten @ FNWI per studie",
     "children": [
         {
-            "name": "Studies in 2012 - 2013",
+            "name": "Opleidingen in 2012 - 2013",
             "children": [
                 {
                     "name": "BA Artificial Intelligence",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -21,7 +21,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -39,7 +39,7 @@
                     "name": "MA Artificial Intelligence",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -52,7 +52,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -70,7 +70,7 @@
                     "name": "MA Astronomy and Astrophysics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -83,7 +83,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -101,7 +101,7 @@
                     "name": "MA Biological Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -114,7 +114,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -132,7 +132,7 @@
                     "name": "BA Biology",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -145,7 +145,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -163,7 +163,7 @@
                     "name": "BA Biomedical Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -176,7 +176,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -194,7 +194,7 @@
                     "name": "MA Brain and Cognitive Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -207,7 +207,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -225,7 +225,7 @@
                     "name": "BA Chemistry",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -238,7 +238,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -256,7 +256,7 @@
                     "name": "MA Computational Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -269,7 +269,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -287,7 +287,7 @@
                     "name": "MA Computer Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -300,7 +300,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -318,7 +318,7 @@
                     "name": "BA Computing Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -331,7 +331,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -349,7 +349,7 @@
                     "name": "MA Earth Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -362,7 +362,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -380,7 +380,7 @@
                     "name": "MA Forensic Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -393,7 +393,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -411,7 +411,7 @@
                     "name": "BA Future Planet Studies",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -424,7 +424,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -442,7 +442,7 @@
                     "name": "BA Information Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -455,7 +455,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -470,10 +470,10 @@
                     ]
                 },
                 {
-                    "name": "MA Information Studies ",
+                    "name": "MA Information Studies",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -486,7 +486,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -504,7 +504,7 @@
                     "name": "MA Life Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -517,7 +517,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -535,7 +535,7 @@
                     "name": "MA Logic",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -548,7 +548,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -566,7 +566,7 @@
                     "name": "MA Mathematical Physics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -579,7 +579,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -597,7 +597,7 @@
                     "name": "BA Mathematics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -610,7 +610,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -628,7 +628,7 @@
                     "name": "BA Natural and Social Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -641,7 +641,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -659,7 +659,7 @@
                     "name": "MA Physics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -672,7 +672,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -690,7 +690,7 @@
                     "name": "BA Physics and Astronomy",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -703,7 +703,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -721,7 +721,7 @@
                     "name": "BA Psychobiology",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -734,7 +734,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -752,7 +752,7 @@
                     "name": "MA Software Engineering",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -765,7 +765,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -783,7 +783,7 @@
                     "name": "MA Stochastics and Financial Mathematics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -796,7 +796,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -814,7 +814,7 @@
                     "name": "MA System and Network Engineering",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -827,7 +827,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -844,13 +844,13 @@
             ]
         },
         {
-            "name": "Studies in 2013 - 2014",
+            "name": "Opleidingen in 2013 - 2014",
             "children": [
                 {
                     "name": "BA Artificial Intelligence",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -863,7 +863,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -881,7 +881,7 @@
                     "name": "MA Artificial Intelligence",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -894,7 +894,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -912,7 +912,7 @@
                     "name": "MA Astronomy and Astrophysics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -925,7 +925,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -943,7 +943,7 @@
                     "name": "MA Biological Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -956,7 +956,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -974,7 +974,7 @@
                     "name": "BA Biology",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -987,7 +987,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1005,7 +1005,7 @@
                     "name": "BA Biomedical Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1018,7 +1018,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1036,7 +1036,7 @@
                     "name": "MA Brain and Cognitive Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1049,7 +1049,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1067,7 +1067,7 @@
                     "name": "BA Chemistry",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1080,7 +1080,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1098,7 +1098,7 @@
                     "name": "MA Computational Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1111,7 +1111,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1129,7 +1129,7 @@
                     "name": "MA Computer Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1142,7 +1142,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1160,7 +1160,7 @@
                     "name": "BA Computing Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1173,7 +1173,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1191,7 +1191,7 @@
                     "name": "MA Earth Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1204,7 +1204,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1222,7 +1222,7 @@
                     "name": "MA Forensic Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1235,7 +1235,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1253,7 +1253,7 @@
                     "name": "BA Future Planet Studies",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1266,7 +1266,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1284,7 +1284,7 @@
                     "name": "BA Information Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1297,7 +1297,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1312,10 +1312,10 @@
                     ]
                 },
                 {
-                    "name": "MA Information Studies ",
+                    "name": "MA Information Studies",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1328,7 +1328,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1346,7 +1346,7 @@
                     "name": "MA Life Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1359,7 +1359,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1377,7 +1377,7 @@
                     "name": "MA Logic",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1390,7 +1390,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1408,7 +1408,7 @@
                     "name": "MA Mathematical Physics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1421,7 +1421,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1439,7 +1439,7 @@
                     "name": "BA Mathematics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1452,7 +1452,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1470,7 +1470,7 @@
                     "name": "BA Natural and Social Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1483,7 +1483,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1501,7 +1501,7 @@
                     "name": "MA Physics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1514,7 +1514,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1532,7 +1532,7 @@
                     "name": "BA Physics and Astronomy",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1545,7 +1545,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1563,7 +1563,7 @@
                     "name": "BA Psychobiology",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1576,7 +1576,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1594,7 +1594,7 @@
                     "name": "MA Software Engineering",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1607,7 +1607,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1625,7 +1625,7 @@
                     "name": "MA Stochastics and Financial Mathematics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1638,7 +1638,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1656,7 +1656,7 @@
                     "name": "MA System and Network Engineering",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1669,7 +1669,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1686,13 +1686,13 @@
             ]
         },
         {
-            "name": "Studies in 2014 - 2015",
+            "name": "Opleidingen in 2014 - 2015",
             "children": [
                 {
                     "name": "BA Artificial Intelligence",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1705,7 +1705,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1723,7 +1723,7 @@
                     "name": "MA Artificial Intelligence",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1736,7 +1736,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1754,7 +1754,7 @@
                     "name": "MA Astronomy and Astrophysics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1767,7 +1767,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1785,7 +1785,7 @@
                     "name": "MA Biological Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1798,7 +1798,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1816,7 +1816,7 @@
                     "name": "BA Biology",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1829,7 +1829,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1847,7 +1847,7 @@
                     "name": "BA Biomedical Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1860,7 +1860,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1878,7 +1878,7 @@
                     "name": "MA Brain and Cognitive Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1891,7 +1891,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1909,7 +1909,7 @@
                     "name": "BA Chemistry",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1922,7 +1922,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1940,7 +1940,7 @@
                     "name": "MA Computational Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1953,7 +1953,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1971,7 +1971,7 @@
                     "name": "MA Computer Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -1984,7 +1984,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2002,7 +2002,7 @@
                     "name": "BA Computing Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2015,7 +2015,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2033,7 +2033,7 @@
                     "name": "MA Earth Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2046,7 +2046,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2064,7 +2064,7 @@
                     "name": "MA Forensic Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2077,7 +2077,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2095,7 +2095,7 @@
                     "name": "BA Future Planet Studies",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2108,7 +2108,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2126,7 +2126,7 @@
                     "name": "BA Information Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2139,7 +2139,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2154,10 +2154,10 @@
                     ]
                 },
                 {
-                    "name": "MA Information Studies ",
+                    "name": "MA Information Studies",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2170,7 +2170,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2188,7 +2188,7 @@
                     "name": "MA Life Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2201,7 +2201,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2219,7 +2219,7 @@
                     "name": "MA Logic",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2232,7 +2232,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2250,7 +2250,7 @@
                     "name": "MA Mathematical Physics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2263,7 +2263,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2281,7 +2281,7 @@
                     "name": "BA Mathematics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2294,7 +2294,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2312,7 +2312,7 @@
                     "name": "BA Natural and Social Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2325,7 +2325,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2343,7 +2343,7 @@
                     "name": "MA Physics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2356,7 +2356,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2374,7 +2374,7 @@
                     "name": "BA Physics and Astronomy",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2387,7 +2387,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2405,7 +2405,7 @@
                     "name": "BA Psychobiology",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2418,7 +2418,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2436,7 +2436,7 @@
                     "name": "MA Software Engineering",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2449,7 +2449,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2467,7 +2467,7 @@
                     "name": "MA Stochastics and Financial Mathematics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2480,7 +2480,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2498,7 +2498,7 @@
                     "name": "MA System and Network Engineering",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2511,7 +2511,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2528,13 +2528,13 @@
             ]
         },
         {
-            "name": "Studies in 2015 - 2016",
+            "name": "Opleidingen in 2015 - 2016",
             "children": [
                 {
                     "name": "BA Artificial Intelligence",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2547,7 +2547,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2565,7 +2565,7 @@
                     "name": "MA Artificial Intelligence",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2578,7 +2578,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2596,7 +2596,7 @@
                     "name": "MA Astronomy and Astrophysics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2609,7 +2609,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2627,7 +2627,7 @@
                     "name": "MA Biological Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2640,7 +2640,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2658,7 +2658,7 @@
                     "name": "BA Biology",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2671,7 +2671,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2689,7 +2689,7 @@
                     "name": "BA Biomedical Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2702,7 +2702,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2720,7 +2720,7 @@
                     "name": "MA Brain and Cognitive Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2733,7 +2733,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2751,7 +2751,7 @@
                     "name": "BA Chemistry",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2764,7 +2764,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2782,7 +2782,7 @@
                     "name": "MA Computational Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2795,7 +2795,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2813,7 +2813,7 @@
                     "name": "MA Computer Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2826,7 +2826,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2844,7 +2844,7 @@
                     "name": "BA Computing Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2857,7 +2857,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2875,7 +2875,7 @@
                     "name": "MA Earth Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2888,7 +2888,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2906,7 +2906,7 @@
                     "name": "MA Forensic Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2919,7 +2919,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2937,7 +2937,7 @@
                     "name": "BA Future Planet Studies",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2950,7 +2950,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2968,7 +2968,7 @@
                     "name": "BA Information Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2981,7 +2981,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -2996,10 +2996,10 @@
                     ]
                 },
                 {
-                    "name": "MA Information Studies ",
+                    "name": "MA Information Studies",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3012,7 +3012,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3030,7 +3030,7 @@
                     "name": "MA Life Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3043,7 +3043,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3061,7 +3061,7 @@
                     "name": "MA Logic",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3074,7 +3074,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3092,7 +3092,7 @@
                     "name": "MA Mathematical Physics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3105,7 +3105,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3123,7 +3123,7 @@
                     "name": "BA Mathematics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3136,7 +3136,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3154,7 +3154,7 @@
                     "name": "BA Natural and Social Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3167,7 +3167,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3185,7 +3185,7 @@
                     "name": "MA Physics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3198,7 +3198,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3216,7 +3216,7 @@
                     "name": "BA Physics and Astronomy",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3229,7 +3229,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3247,7 +3247,7 @@
                     "name": "BA Psychobiology",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3260,7 +3260,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3278,7 +3278,7 @@
                     "name": "MA Software Engineering",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3291,7 +3291,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3309,7 +3309,7 @@
                     "name": "MA Stochastics and Financial Mathematics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3322,7 +3322,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3340,7 +3340,7 @@
                     "name": "MA System and Network Engineering",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3353,7 +3353,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3370,13 +3370,13 @@
             ]
         },
         {
-            "name": "Studies in 2016 - 2017",
+            "name": "Opleidingen in 2016 - 2017",
             "children": [
                 {
                     "name": "BA Artificial Intelligence",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3389,7 +3389,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3407,7 +3407,7 @@
                     "name": "MA Artificial Intelligence",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3420,7 +3420,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3438,7 +3438,7 @@
                     "name": "MA Astronomy and Astrophysics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3451,7 +3451,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3469,7 +3469,7 @@
                     "name": "MA Biological Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3482,7 +3482,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3500,7 +3500,7 @@
                     "name": "BA Biology",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3513,7 +3513,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3531,7 +3531,7 @@
                     "name": "BA Biomedical Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3544,7 +3544,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3562,7 +3562,7 @@
                     "name": "MA Brain and Cognitive Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3575,7 +3575,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3593,7 +3593,7 @@
                     "name": "BA Chemistry",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3606,7 +3606,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3624,7 +3624,7 @@
                     "name": "MA Computational Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3637,7 +3637,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3655,7 +3655,7 @@
                     "name": "MA Computer Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3668,7 +3668,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3686,7 +3686,7 @@
                     "name": "BA Computing Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3699,7 +3699,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3717,7 +3717,7 @@
                     "name": "MA Earth Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3730,7 +3730,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3748,7 +3748,7 @@
                     "name": "MA Forensic Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3761,7 +3761,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3779,7 +3779,7 @@
                     "name": "BA Future Planet Studies",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3792,7 +3792,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3810,7 +3810,7 @@
                     "name": "BA Information Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3823,7 +3823,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3838,10 +3838,10 @@
                     ]
                 },
                 {
-                    "name": "MA Information Studies ",
+                    "name": "MA Information Studies",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3854,7 +3854,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3872,7 +3872,7 @@
                     "name": "MA Life Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3885,7 +3885,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3903,7 +3903,7 @@
                     "name": "MA Logic",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3916,7 +3916,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3934,7 +3934,7 @@
                     "name": "MA Mathematical Physics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3947,7 +3947,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3965,7 +3965,7 @@
                     "name": "BA Mathematics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3978,7 +3978,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -3996,7 +3996,7 @@
                     "name": "BA Natural and Social Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4009,7 +4009,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4027,7 +4027,7 @@
                     "name": "MA Physics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4040,7 +4040,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4058,7 +4058,7 @@
                     "name": "BA Physics and Astronomy",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4071,7 +4071,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4089,7 +4089,7 @@
                     "name": "BA Psychobiology",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4102,7 +4102,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4120,7 +4120,7 @@
                     "name": "MA Software Engineering",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4133,7 +4133,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4151,7 +4151,7 @@
                     "name": "MA Stochastics and Financial Mathematics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4164,7 +4164,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4182,7 +4182,7 @@
                     "name": "MA System and Network Engineering",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4195,7 +4195,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4212,13 +4212,13 @@
             ]
         },
         {
-            "name": "Studies in 2017 - 2018",
+            "name": "Opleidingen in 2017 - 2018",
             "children": [
                 {
                     "name": "BA Artificial Intelligence",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4231,7 +4231,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4249,7 +4249,7 @@
                     "name": "MA Artificial Intelligence",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4262,7 +4262,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4280,7 +4280,7 @@
                     "name": "MA Astronomy and Astrophysics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4293,7 +4293,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4311,7 +4311,7 @@
                     "name": "MA Biological Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4324,7 +4324,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4342,7 +4342,7 @@
                     "name": "BA Biology",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4355,7 +4355,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4373,7 +4373,7 @@
                     "name": "BA Biomedical Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4386,7 +4386,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4404,7 +4404,7 @@
                     "name": "MA Brain and Cognitive Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4417,7 +4417,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4435,7 +4435,7 @@
                     "name": "BA Chemistry",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4448,7 +4448,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4466,7 +4466,7 @@
                     "name": "MA Computational Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4479,7 +4479,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4497,7 +4497,7 @@
                     "name": "MA Computer Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4510,7 +4510,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4528,7 +4528,7 @@
                     "name": "BA Computing Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4541,7 +4541,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4559,7 +4559,7 @@
                     "name": "MA Earth Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4572,7 +4572,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4590,7 +4590,7 @@
                     "name": "MA Forensic Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4603,7 +4603,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4621,7 +4621,7 @@
                     "name": "BA Future Planet Studies",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4634,7 +4634,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4652,7 +4652,7 @@
                     "name": "BA Information Science",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4665,7 +4665,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4680,10 +4680,10 @@
                     ]
                 },
                 {
-                    "name": "MA Information Studies ",
+                    "name": "MA Information Studies",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4696,7 +4696,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4714,7 +4714,7 @@
                     "name": "MA Life Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4727,7 +4727,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4745,7 +4745,7 @@
                     "name": "MA Logic",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4758,7 +4758,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4776,7 +4776,7 @@
                     "name": "MA Mathematical Physics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4789,7 +4789,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4807,7 +4807,7 @@
                     "name": "BA Mathematics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4820,7 +4820,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4838,7 +4838,7 @@
                     "name": "BA Natural and Social Sciences",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4851,7 +4851,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4869,7 +4869,7 @@
                     "name": "MA Physics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4882,7 +4882,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4900,7 +4900,7 @@
                     "name": "BA Physics and Astronomy",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4913,7 +4913,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4931,7 +4931,7 @@
                     "name": "BA Psychobiology",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4944,7 +4944,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4962,7 +4962,7 @@
                     "name": "MA Software Engineering",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4975,7 +4975,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -4993,7 +4993,7 @@
                     "name": "MA Stochastics and Financial Mathematics",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -5006,7 +5006,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -5024,7 +5024,7 @@
                     "name": "MA System and Network Engineering",
                     "children": [
                         {
-                            "name": "boys",
+                            "name": "Mannen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
@@ -5037,7 +5037,7 @@
                             ]
                         },
                         {
-                            "name": "girls",
+                            "name": "Vrouwen",
                             "children": [
                                 {
                                     "name": "Eerstejaars",
