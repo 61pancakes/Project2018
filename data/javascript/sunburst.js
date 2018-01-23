@@ -19,8 +19,7 @@ var y = d3.scale.sqrt()
     .range([0, radius]);
 
 var partition = d3.layout.partition()
-    .value(function (d) { return d.size; })
-    .style("stroke-width", "2");
+    .value(function (d) { return d.size; });
 
 var arc = d3.svg.arc()
     .startAngle(function (d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })

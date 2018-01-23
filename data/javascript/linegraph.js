@@ -126,6 +126,8 @@
                 .style("stroke", colors[i])
                 .style("stroke-dasharray", ("5, 5"))
                 .attr("d", lineF(finalData[i]))
+                .on("mouseover", d3.select(this).style("stroke-width", "2"))
+                .on("mouseout", d3.select(this).style("stroke-width", "1"));
             // .attr("id", "test")
             // .on("click", onclick(i));
 
@@ -133,6 +135,8 @@
                 .attr("class", "line")
                 .style("stroke", colors[i])
                 .attr("d", lineM(finalData[i]))
+                .on("mouseover", d3.select(this).style("stroke-width", "2"))
+                .on("mouseout", d3.select(this).style("stroke-width", "1"));
             // .attr("id", "test")
             // .on("click", onclick());
         }
@@ -188,8 +192,6 @@
                 return legendData[i].name.substr(2);
             })
         // .on("click", onclick);
-
     });
-
 })();
 
