@@ -96,7 +96,7 @@ d3.json("data/json/sunburst.json", function (error, root) {
 function click(d) {
     console.log(d);
     svg.transition()
-        .duration(750)
+        .duration(1200)
         .tween("scale", function () {
             var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
                 yd = d3.interpolate(y.domain(), [d.y, 1]),
@@ -119,7 +119,7 @@ function sunburstYear(year) {
         d = f[0];
 
         svg.transition()
-            .duration(750)
+            .duration(2000)
             .tween("scale", function () {
                 var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
                     yd = d3.interpolate(y.domain(), [d.y, 1]),
