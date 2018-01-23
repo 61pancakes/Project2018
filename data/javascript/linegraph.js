@@ -140,12 +140,12 @@
         /* Add legend 'columns' */
         svg.append("g")
             .append("text")
-            .attr("x", width + 50)
-            .attr("y", 20)
+            .attr("x", width + 55)
+            .attr("y", 30)
             .attr("text-anchor", "middle")
             .style("font", "sans-serif")
             .style("font-weight", "bold")
-            .text("♂ \t \t \t \t ♀");
+            .text("↓ ♂            ↓ ♀");
 
         /* Create and draw a legend */
         var legend = svg.selectAll(".legend")
