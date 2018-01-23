@@ -108,3 +108,7 @@ function click(d) {
 }
 
 d3.select(self.frameElement).style("height", height + "px");
+
+function test(d) {
+    console.log("Testing interactivity.");
+}
