@@ -123,7 +123,9 @@
                 tooltip.select("text")
                     .html((d.end - d.begin) + " studenten");
             })
-            .on("mouseout", synchronizedMouseOut);
+            .on("mouseout", synchronizedMouseOut)
+            .on("click", clickSunburst);
+
 
         /* Create and draw a legend */
         var legend = svg.selectAll(".legend")
@@ -186,6 +188,12 @@
         function synchronizedMouseOut(d) {
             tooltip.style("display", "none");
             d3.select(this).style("stroke", "none");
+        };
+
+        function clickSunburst(d) {
+            console.log(d);
+            click(d);
+            console.log("TEST");
         };
 
     }
