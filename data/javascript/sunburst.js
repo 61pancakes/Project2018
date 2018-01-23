@@ -118,7 +118,7 @@ function gotoyear(year) {
 
         console.log(data);
         console.log(year);
-        console.log(d);
+        console.log(d[0]);
 
         svg.transition()
             .duration(750)
