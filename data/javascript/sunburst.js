@@ -92,7 +92,9 @@
             .enter().append("path")
             .attr("d", arc)
             .style("fill", colorSlice)
+            .style("stroke", "none")
             .on("click", click)
+            .on("mouseover", d3.select(this).style("stroke", "black"))
             .append("title")
             .text(function (d) { return d.name + "\n" + formatNumber(d.value); });
     });
