@@ -7,14 +7,12 @@
  */
 
 (function () {
-    var coloringIndex = 0;
     /* Create the basis variables for the svg. */
     var margin = { top: 50, right: 250, bottom: 50, left: 50 },
         width = 800 - margin.left - margin.right,
         height = 600 - margin.top - margin.bottom,
         radius = (Math.min(width, height) / 2) - 10;
 
-    /* x = radius */
     var x = d3.scale.linear()
         .range([0, 2 * Math.PI]);
 
@@ -47,15 +45,13 @@
                 "BA Future Planet Studies", "BA Information Science", "MA Information Studies ", "MA Life Sciences", "MA Logic",
                 "MA Mathematical Physics", "BA Mathematics", "BA Natural and Social Sciences", "MA Physics",
                 "BA Physics and Astronomy", "BA Psychobiology", "MA Software Engineering", "MA Stochastics and Financial Mathematics", "MA System and Network Engineering"],
-            colors = colors = ["#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c", "#98df8a", "#d62728",
+            colors = ["#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c", "#98df8a", "#d62728",
                 "#ff9896", "#9467bd", "#c5b0d5", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f",
                 "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5", "#8c564b", "#393b79",
                 "#5254a3", "#6b6ecf", "#9c9ede", "#637939", "#8ca252", "#b5cf6b"];
 
-        /* Color the boys/girls the right colors, rest is random. */
-        if (d.depth == 0) {
-            return "white";
-        } else if (d.depth == 1) {
+        /* Color each section the right color. */
+        if (d.depth == 1) {
             return "grey";
         } else if (d.depth == 2) {
             return colors[courses.indexOf(d.name)];
@@ -79,8 +75,6 @@
                     return lightpink;
                 }
             }
-        } else {
-            return "black";
         }
     }
 
