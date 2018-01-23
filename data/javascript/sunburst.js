@@ -60,13 +60,13 @@
         } else if (d.depth == 2) {
             return colors[courses.indexOf(d.name)];
         } else if (d.depth == 3) {
-            if (d.name == "boys") {
+            if (d.name == "Mannen") {
                 return lightblue;
             } else {
                 return lightpink;
             }
         } else if (d.depth == 4) {
-            if (d.parent.name == "boys") {
+            if (d.parent.name == "Mannen") {
                 if (d.name == "Postpropedeuse") {
                     return blue;
                 } else {
