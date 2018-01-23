@@ -140,12 +140,12 @@
         /* Add legend 'columns' */
         svg.append("g")
             .append("text")
-            .attr("x", width + 55)
-            .attr("y", 30)
+            .attr("x", width + 65)
+            .attr("y", 40)
             .attr("text-anchor", "middle")
             .style("font", "sans-serif")
             .style("font-weight", "bold")
-            .text("↓ ♂            ↓ ♀");
+            .text("↓♂   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         ↓♀");
 
         /* Create and draw a legend */
         var legend = svg.selectAll(".legend")
@@ -173,7 +173,7 @@
             .style("stroke-width", "2")
             .style("stroke-dasharray", ("5, 5"))
             .style("stroke", function (d, i) {
-                console.log("Test"); return legendData[i].color;
+                return legendData[i].color;
             })
         // .on("click", onclick);
 
