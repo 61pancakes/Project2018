@@ -36,12 +36,21 @@
         .append("g")
         .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");
 
-    // /* Coloring function. */
+    /* Coloring function. */
+    var colorCourse = ;
+
+
     var colorSlice = function (d) {
         var lightpink = "#ffe6ff",
             pink = "#ffb3ff",
             lightblue = "#99e6ff",
             blue = "#1ac6ff",
+            courses = ["BA Artificial Intelligence", "MA Artificial Intelligence", "MA Astronomy and Astrophysics",
+                "MA Biological Sciences", "BA Biology", "BA Biomedical Sciences", "MA Brain and Cognitive Sciences",
+                "BA Chemistry", "MA Computational Science", "MA Computer Science", "BA Computing Science", "MA Earth Science", "MA Forensic Science",
+                "BA Future Planet Studies", "BA Information Science", "MA Information Studies ", "MA Life Sciences", "MA Logic",
+                "MA Mathematical Physics", "BA Mathematics", "BA Natural and Social Sciences", "MA Physics",
+                "BA Physics and Astronomy", "BA Psychobiology", "MA Software Engineering", "MA Stochastics and Financial Mathematics", "MA System and Network Engineering"],
             colors = ["#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c", "#98df8a", "#d62728",
                 "#ff9896", "#9467bd", "#c5b0d5", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f",
                 "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5", "#8c564b"];
@@ -52,14 +61,14 @@
         } else if (d.depth == 1) {
             return "grey";
         } else if (d.depth == 2) {
-            return colors[coloringIndex++ % 20];
+            return colors[course.indexOf(d.name)];
         } else if (d.depth == 3) {
             if (d.name == "boys") {
                 return lightblue;
             } else {
                 return lightpink;
             }
-        } else {
+        } else if (d.depth == 4) {
             if (d.parent.name == "boys") {
                 if (d.name == "Postpropedeuse") {
                     return blue;
@@ -73,6 +82,8 @@
                     return lightpink;
                 }
             }
+        } else {
+            return "black";
         }
     }
 
