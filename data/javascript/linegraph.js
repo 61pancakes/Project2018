@@ -145,7 +145,7 @@
             .attr("text-anchor", "middle")
             .style("font", "sans-serif")
             .style("font-size", "140%")
-            .text("↓♂ \t \t \t \t \t \t \t \t \t \t ↓♀");
+            .text("↓♂         ↓♀");
 
         /* Create and draw a legend */
         var legend = svg.selectAll(".legend")
