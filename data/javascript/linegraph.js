@@ -121,7 +121,6 @@
 
         /* Show the lines. */
         for (var i = 0; i < 9; i++) {
-            console.log(legendData[i]);
             svg.append("path")
                 .attr("class", "line")
                 .style("stroke", colors[i])

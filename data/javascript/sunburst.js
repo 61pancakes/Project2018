@@ -51,7 +51,9 @@
                 "#5254a3", "#6b6ecf", "#9c9ede", "#637939", "#8ca252", "#b5cf6b"];
 
         /* Color each section the right color. */
-        if (d.depth == 1) {
+        if (d.depth == 0) {
+            return "white";
+        } else if (d.depth == 1) {
             return "grey";
         } else if (d.depth == 2) {
             return colors[courses.indexOf(d.name)];
@@ -93,6 +95,7 @@
     });
 
     function click(d) {
+        console.log(d);
         svg.transition()
             .duration(1000)
             .tween("scale", function () {
