@@ -145,7 +145,7 @@
             .attr("transform", function (d, i) { return "translate(70," + (i * 19 + 30) + ")"; });
 
         legend.append("line")
-            .attr("x1", width - 20)
+            .attr("x1", width - 28)
             .attr("x2", width)
             .attr("y1", 20)
             .attr("y2", 20)
@@ -156,21 +156,21 @@
         // .on("click", onclick);
 
         legend.append("line2")
-            .attr("x1", width + 20)
-            .attr("x2", width)
+            .attr("x1", width + 30)
+            .attr("x2", width + 58)
             .attr("y1", 20)
             .attr("y2", 20)
             .style("stroke-width", "2")
             .style("stroke-dasharray", ("5, 5"))
             .style("stroke", function (d, i) {
-                return legendData[i].color;
+                console.log("STREEPJES"); return legendData[i].color;
             })
-            .on("click", onclick);
+        // .on("click", onclick);
 
         legend.append("text")
             .attr("font", "sans-serif")
             .attr("font-weight", "bold")
-            .attr("x", width + 5)
+            .attr("x", width + 10)
             .attr("y", 20)
             .attr("dy", ".35em")
             .style("text-anchor", "start")
