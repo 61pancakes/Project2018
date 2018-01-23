@@ -137,6 +137,15 @@
             // .on("click", onclick());
         }
 
+        /* Add legend 'columns' */
+        svg.append("g")
+            .append("text")
+            .attr("x", 70)
+            .attr("y", -30)
+            .attr("text-anchor", "middle")
+            .style("font", "sans-serif")
+            .text("♂       ♀");
+
         /* Create and draw a legend */
         var legend = svg.selectAll(".legend")
             .data(legendData)
@@ -155,7 +164,7 @@
             })
         // .on("click", onclick);
 
-        legend.append("line2")
+        legend.append("line")
             .attr("x1", width + 30)
             .attr("x2", width + 58)
             .attr("y1", 10)
@@ -163,7 +172,7 @@
             .style("stroke-width", "2")
             .style("stroke-dasharray", ("5, 5"))
             .style("stroke", function (d, i) {
-                console.log("STREEPJES"); return legendData[i].color;
+                console.log("Streepjes"); return legendData[i].color;
             })
         // .on("click", onclick);
 
