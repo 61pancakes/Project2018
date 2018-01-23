@@ -62,6 +62,10 @@
 ![voortgang](/doc/sunburst.gif)
 
 ## day 12 (23 January 2017)
+- Legenda van line chart afgemaakt (Statisch)
+- Opnieuw poging gewaagd eigen interactie line chart (lines & legenda) - wat precies uit en aan kunnen zetten waar?
+- Interactiviteit tussen barchart en sunburst toegevoegd! :) Er moet nog wel uitleg komen over wat je kan doen en waarom je dat zou doen.
+
 ## day 13 (24 January 2017)
 ## day 14 (25 January 2017)
 ## day 15 (26 January 2017)
