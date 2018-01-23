@@ -57,7 +57,7 @@
         } else if (d.depth == 1) {
             return "grey";
         } else if (d.depth == 2) {
-            return colors[course.indexOf(d.name)];
+            return colors[courses.indexOf(d.name)];
         } else if (d.depth == 3) {
             if (d.name == "boys") {
                 return lightblue;
