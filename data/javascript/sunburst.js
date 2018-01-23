@@ -36,10 +36,6 @@
         .append("g")
         .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");
 
-    /* Coloring function. */
-    var colorCourse = ;
-
-
     var colorSlice = function (d) {
         var lightpink = "#ffe6ff",
             pink = "#ffb3ff",
