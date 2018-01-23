@@ -140,7 +140,7 @@
         /* Add legend 'columns' */
         svg.append("g")
             .append("text")
-            .attr("x", width + 69)
+            .attr("x", width + 75)
             .attr("y", 40)
             .attr("text-anchor", "middle")
             .style("font", "sans-serif")
