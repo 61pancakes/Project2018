@@ -35,6 +35,7 @@
     /* Show the axes. */
     var xAxis = d3.svg.axis()
         .scale(xLabels)
+        .innerTickSize(-height)
         .orient("bottom");
 
     var yAxis = d3.svg.axis()
@@ -144,8 +145,8 @@
             .attr("y", 40)
             .attr("text-anchor", "middle")
             .style("font", "sans-serif")
-            .style("font-weight", "bold")
-            .text("↓♂   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         ↓♀");
+            .style("font-size", "140%")
+            .text("↓♂   ↓♀");
 
         /* Create and draw a legend */
         var legend = svg.selectAll(".legend")
