@@ -199,7 +199,7 @@ function createBarchart() {
         function clickSunburst(d) {
             console.log(this.id);
 
-            createSunburst();
+            test(d);
             // Access sunburstdata.
             // Zoom in this.id.
         };

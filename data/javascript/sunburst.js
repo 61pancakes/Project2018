@@ -112,3 +112,7 @@ function updateSunburst(d) {
 }
 
 createSunburst();
+
+function test(d) {
+    console.log("TEST");
+}
