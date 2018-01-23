@@ -3,24 +3,25 @@
 #### VISUALISATIES AFMAKEN
 ~~- Barchart afmaken~~  
 ~~- Code visualisaties opschonen (functies)~~
-- Code visualisaties samenvoegen
-
-- Design + Readme updaten  
+~~- Code visualisaties samenvoegen~~
 ~~- Progress bijwerken~~
+- Design + Readme updaten 
 
 #### DETAILS VISUALISATIES TOEVOEGEN
 ~~- Kleuren van de lijnen bij lijndiagram onderscheiden ~~
-- Legenda + Hovers toevoegen bij lijndiagram  
+~~- Legenda~~
 ~~- Legenda + Hovers toevoegen bij de staafdiagram~~  
-- Kleuren van de sunburst aanpassen + Hovers toevoegen
+~~- Kleuren van de sunburst aanpassen~~
+- Line chart: Mouseover toevoegen   ? (Ga ik dat nog doen qua stijl?)
+- Sunburst: mouseover + mouseclick toevoegen
 
-#### INTERACTIE TOEVOEGEN
-- Staafdiagram on click toevoegen
-- Lijngrafiek on click toevoegen
-- Sunburst - Highlight andere visualisaties toevoegen
+#### INTERACTIE TUSSEN VISUALISATIES TOEVOEGEN
+~~- Staafdiagram on click toevoegen~~
+- Line chart: on click toevoegen (Wat precies highlighten waar?)
+- Sunburst: Highlight andere visualisaties toevoegen
 
-#### Extra's
+#### WEEK 4: EXTRA'S
 - Vergelijkingstabel maken
-- Legenda lijnen aan/uitzetten
-- Layout fixen
+- Line chart: legenda lijnen aan/uitzetten
+- Layout fixen in Bootstrap
 - Links naar de opleidingwebsites toevoegen?
