@@ -6,7 +6,7 @@
  */
 
 /* Create the basis variables for the svg. */
-function createSVG() {
+function createBarchart() {
     var margin = { top: 50, right: 150, bottom: 50, left: 50 },
         width = 700 - margin.left - margin.right,
         height = 600 - margin.top - margin.bottom;
@@ -36,9 +36,7 @@ function createSVG() {
         .attr("height", height + margin.top + margin.bottom)
         .append("svg:g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-}
 
-function createBarchart() {
     /* Show the axes. */
     var xAxis = d3.svg.axis()
         .scale(xLabels)
