@@ -5,8 +5,8 @@
  * barchart.js: This file creates a bar chart in d3 with data loaded in from a .json file.
  */
 
-/* Create the basis variables for the svg. */
 function createBarchart() {
+    /* Create the basis variables for the svg. */
     var margin = { top: 50, right: 150, bottom: 50, left: 50 },
         width = 700 - margin.left - margin.right,
         height = 600 - margin.top - margin.bottom;
@@ -47,7 +47,6 @@ function createBarchart() {
         .innerTickSize(-width)
         .orient("left")
         .tickPadding(8);
-
     svg.append("g")
         .attr("class", "y axis")
         .call(yAxis)
@@ -199,5 +198,4 @@ function createBarchart() {
     )
 };
 
-createSVG();
 createBarchart();
