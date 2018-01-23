@@ -1,4 +1,4 @@
-## day 1 (8 January 2017)
+### day 1 (8 January 2017)
 - Proposal Document geschreven, met twee opties. Optie 1, het visualiseren van het kaartspel 'Hanabi'. Optie 2, verdiepen in statistieken van studenten aan de UvA.
 - Data opgezocht voor optie 2 en uiteindelijk knoop doorgehakt dat ook daadwerkelijk te gaan doen.
 - Proposal Document voor optie 2 uitgewerkt.
@@ -6,16 +6,16 @@
 ![voortgang](/doc/Sketch.png).
 
 
-## day 2 (9 January 2017)
+### day 2 (9 January 2017)
 - Data handmatig verzameld en omgezet naar CSV & JSON-format. 
 - JSON-data aangepast om mannen en vrouwen in aparte sets te hebben.
 
-## day 3 (10 January 2017)
+### day 3 (10 January 2017)
 - Proposal besproken met TA.
 - Begonnen aan Design Document.
 - Begonnen aan Grouped & Stacked Staafdiagram (visualisatie #1).
 
-## day 4 (11 January 2017)
+### day 4 (11 January 2017)
 - De Staafdiagram redelijk werkende gekregen: grouped werkt, nu nog het 'stacked' gedeeltde van de Masters.
 - Proposal aangepast op basis van gesprek met TA. 
 - Idee aangepast in README & Design Document.
@@ -30,26 +30,26 @@
 - Barchart kloppende gekregen (voor en na:)
 ![voortgang](/doc/barchart.png)
 
-## day 6 (15 January 2017)
+### day 6 (15 January 2017)
 - Sunburst gemaakt. Benodigde data had ik nog niet in een goed format, dus dat  herschreven zodat de sunburst het kon gebruiken. Sunburst werkt op zichzelf, maar moet nog duidelijker worden (tekst + kleuren aanpassen) + ik twijfel over of ik hem pas wil laten zien nadat een jaar is geselecteerd in de staafdiagram of dat hij enkel van niveau verandert door het klikken.
 ![voortgang](/doc/sunburstv1.png)
 
-## day 7 (16 January 2017)
+### day 7 (16 January 2017)
 - Interactiviteit van de staafdiagram toegevoegd (tooltip + legenda).
 - Staafdiagramcode opgeschoond. 
 - Progress geupdate.
 
 ![voortgang](/doc/barchartv2.png)
 
-## day 8 (17 January 2017)
+### day 8 (17 January 2017)
 - Code georganiseerd. 
 - Aan lijndiagram gewerkt.
 - Na zitten denken over indeling HTML.
 
-## day 9 (18 January 2017)
+### day 9 (18 January 2017)
 - IVM Storm thuisgebleven.
 
-## day 10 (19 January 2017)
+### day 10 (19 January 2017)
 - Legenda + aan/uitzetten van lijndiagram, maar kreeg dat laatste (nog) niet volledig werkende.
 - Twijfel over of ik de duo's (M/F) individueel wil kunnen uitzetten, of een soort voorselectie wil kunnen geven met een dropdown menu, of enkel als duo's. Hoeveel vrijheid geef je de gebruiker?
 - Presentatie gegeven. 
@@ -57,7 +57,9 @@
 ![voortgang](/doc/linechartv1.png)
 
 
-## day 11 (22 January 2017)
+### day 11 (22 January 2017)
+- Heel erg veel gekloot met pages & kleuren van de sunburst.
+
 ## day 12 (23 January 2017)
 ## day 13 (24 January 2017)
 ## day 14 (25 January 2017)
