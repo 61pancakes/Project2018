@@ -59,6 +59,7 @@
 
 ### day 11 (22 January 2017)
 - Heel erg veel gekloot met pages & kleuren van de sunburst.
+![voortgang](/doc/sunburst.gif)
 
 ## day 12 (23 January 2017)
 ## day 13 (24 January 2017)
