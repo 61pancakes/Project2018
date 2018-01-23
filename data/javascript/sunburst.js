@@ -6,7 +6,7 @@
  * Used https://bl.ocks.org/mbostock/4348373 as example.
  */
 
-(function () {
+function createSunburst() {
     /* Create the basis variables for the svg. */
     var margin = { top: 50, right: 250, bottom: 50, left: 50 },
         width = 800 - margin.left - margin.right,
@@ -89,24 +89,26 @@
             .attr("d", arc)
             .style("fill", colorSlice)
             .style("stroke-width", "0.5")
-            .on("click", click)
+            .on("click", updateSunburst)
             .append("title")
             .text(function (d) { return d.name + "\nAantal studenten: " + formatNumber(d.value); });
     });
 
-    function click(d) {
-        console.log(d);
-        svg.transition()
-            .duration(1000)
-            .tween("scale", function () {
-                var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
-                    yd = d3.interpolate(y.domain(), [d.y, 1]),
-                    yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
-                return function (t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
-            })
-            .selectAll("path")
-            .attrTween("d", function (d) { return function () { return arc(d); }; });
-    }
-
     d3.select(self.frameElement).style("height", height + "px");
-})();
+};
+
+function updateSunburst(d) {
+    console.log(d);
+    svg.transition()
+        .duration(1000)
+        .tween("scale", function () {
+            var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
+                yd = d3.interpolate(y.domain(), [d.y, 1]),
+                yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
+            return function (t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
+        })
+        .selectAll("path")
+        .attrTween("d", function (d) { return function () { return arc(d); }; });
+}
+
+createSunburst();

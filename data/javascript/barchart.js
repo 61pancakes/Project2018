@@ -198,9 +198,11 @@ function createBarchart() {
 
         function clickSunburst(d) {
             console.log(this.id);
-            // click(d);
-        };
 
+            createSunburst();
+            // Access sunburstdata.
+            // Zoom in this.id.
+        };
     }
     )
 };
