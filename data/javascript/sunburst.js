@@ -112,13 +112,15 @@ function gotoyear(year) {
     d3.json("data/json/sunburst.json", function (error, root) {
         data = partition.nodes(root);
 
-        d = data.filter(
+        f = data.filter(
             function (data) { return data.name == year }
         );
 
         console.log(data);
         console.log(year);
-        console.log(d[0]);
+        console.log(f[0]);
+
+        d = f[0];
 
         svg.transition()
             .duration(750)
