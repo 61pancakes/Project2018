@@ -112,6 +112,7 @@ function createBarchart() {
             .attr("height", function (d) { return (y(d.begin) - y(d.end)); }) // = Top van de rechthoek
             .attr("x", function (d, i) { return x0(i); })
             .attr("y", function (d) { return (y(d.end)); })
+            .attr("id", function (d, i) { console.log(d, i); return d; })
             .on('mouseover', synchronizedMouseOver)
             .on("mousemove", function (d) {
                 var xPosition = d3.mouse(this)[0] + 60;
@@ -122,7 +123,6 @@ function createBarchart() {
             })
             .on("mouseout", synchronizedMouseOut)
             .on("click", clickSunburst);
-
 
         /* Create and draw a legend */
         var legend = svg.selectAll(".legend")
@@ -191,7 +191,6 @@ function createBarchart() {
         function clickSunburst(d) {
             console.log(d);
             click(d);
-            console.log("TEST");
         };
 
     }
