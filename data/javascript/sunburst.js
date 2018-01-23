@@ -116,6 +116,10 @@ function gotoyear(year) {
             function (data) { return data.name == year }
         );
 
+        console.log(data);
+        console.log(year);
+        console.log(d);
+
         svg.transition()
             .duration(750)
             .tween("scale", function () {
