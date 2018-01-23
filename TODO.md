@@ -5,7 +5,6 @@
 ~~- Code visualisaties opschonen (functies)~~  
 ~~- Code visualisaties samenvoegen~~  
 ~~- Progress bijwerken~~  
-- Design + Readme updaten 
 
 #### DETAILS VISUALISATIES TOEVOEGEN
 ~~- Kleuren van de lijnen bij lijndiagram onderscheiden~~  
@@ -25,3 +24,7 @@
 - Line chart: legenda lijnen aan/uitzetten
 - Layout fixen in Bootstrap
 - Links naar de opleidingwebsites toevoegen?
+
+
+
+- Moet je de Readme en Design updaten naar het eindproduct?
