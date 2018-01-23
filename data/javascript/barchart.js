@@ -200,6 +200,7 @@ function createBarchart() {
             console.log(this.id);
 
             test(d);
+            gotoyear(this.id);
             // Access sunburstdata.
             // Zoom in this.id.
         };
