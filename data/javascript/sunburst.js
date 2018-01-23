@@ -89,7 +89,7 @@ function createSunburst() {
             .attr("d", arc)
             .style("fill", colorSlice)
             .style("stroke-width", "0.5")
-            .on("click", updateSunburst(d, svg))
+            .on("click", updateSunburst)
             .append("title")
             .text(function (d) { return d.name + "\nAantal studenten: " + formatNumber(d.value); });
     });
@@ -97,9 +97,9 @@ function createSunburst() {
     d3.select(self.frameElement).style("height", height + "px");
 };
 
-function updateSunburst(d, svg) {
+function updateSunburst(d) {
     console.log(d);
-    svg.transition()
+    var svg = d3.select("body").transition()
         .duration(1000)
         .tween("scale", function () {
             var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
@@ -112,7 +112,3 @@ function updateSunburst(d, svg) {
 }
 
 createSunburst();
-
-function test(d) {
-    console.log("TEST");
-}
