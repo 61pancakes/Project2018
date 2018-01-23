@@ -109,20 +109,24 @@ function click(d) {
 
 
 function gotoyear(year) {
-    d = data.filter(
-        function (data) { return data.name == year }
-    );
+    d3.json("data/json/sunburst.json", function (error, root) {
+        data = partition.nodes(root);
 
-    svg.transition()
-        .duration(750)
-        .tween("scale", function () {
-            var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
-                yd = d3.interpolate(y.domain(), [d.y, 1]),
-                yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
-            return function (t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
-        })
-        .selectAll("path")
-        .attrTween("d", function (d) { return function () { return arc(d); }; });
+        d = data.filter(
+            function (data) { return data.name == year }
+        );
+
+        svg.transition()
+            .duration(750)
+            .tween("scale", function () {
+                var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
+                    yd = d3.interpolate(y.domain(), [d.y, 1]),
+                    yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
+                return function (t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
+            })
+            .selectAll("path")
+            .attrTween("d", function (d) { return function () { return arc(d); }; });
+    });
 }
 
 d3.select(self.frameElement).style("height", height + "px");
