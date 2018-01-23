@@ -112,7 +112,16 @@ function createBarchart() {
             .attr("height", function (d) { return (y(d.begin) - y(d.end)); }) // = Top van de rechthoek
             .attr("x", function (d, i) { return x0(i); })
             .attr("y", function (d) { return (y(d.end)); })
-            .attr("id", function (d, i) { console.log(d, i); return d; })
+            .attr("id", function (d, i) {
+                switch (i) {
+                    case 0: return "Opleidingen in 2012 - 2013";
+                    case 1: return "Opleidingen in 2013 - 2014";
+                    case 2: return "Opleidingen in 2014 - 2015";
+                    case 3: return "Opleidingen in 2015 - 2016";
+                    case 4: return "Opleidingen in 2016 - 2017";
+                    case 5: return "Opleidingen in 2017 - 2018";
+                }
+            })
             .on('mouseover', synchronizedMouseOver)
             .on("mousemove", function (d) {
                 var xPosition = d3.mouse(this)[0] + 60;
@@ -190,7 +199,7 @@ function createBarchart() {
 
         function clickSunburst(d) {
             console.log(d);
-            click(d);
+            // click(d);
         };
 
     }
