@@ -134,10 +134,11 @@
                 .style("stroke", colors[i])
                 .attr("d", lineM(finalData[i]))
                 .on("mouseover", function (d) {
-                    console.log(d, this);
-                    d3.select(this).style("stroke-width", "4")
+                    d3.select(this).style("stroke-width", "5")
                 })
-            // .on("mouseout", d3.select(this).style("stroke-width", "1"));
+                .on("mouseout", function (d) {
+                    d3.select(this).style("stroke-width", "2")
+                })
             // .attr("id", "test")
             // .on("click", onclick());
         }
