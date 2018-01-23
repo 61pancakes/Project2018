@@ -125,34 +125,6 @@
             })
             .on("mouseout", synchronizedMouseOut);
 
-        /* Create a tooltip. */
-        var tooltip = svg.append("g")
-            .attr("class", "tooltip")
-            .style("display", "none");
-
-        tooltip.append("rect")
-            .attr("width", 60)
-            .attr("height", 20)
-            .attr("fill", "white")
-            .style("opacity", 0.5);
-
-        tooltip.append("text")
-            .attr("x", 15)
-            .attr("dy", "1.2em")
-            .style("text-anchor", "middle")
-            .attr("font-size", "12px")
-            .attr("font-weight", "bold");
-
-        function synchronizedMouseOver(d) {
-            tooltip.style("display", null);
-            d3.select(this).style("stroke", "black");
-        };
-
-        function synchronizedMouseOut(d) {
-            tooltip.style("display", "none");
-            d3.select(this).style("stroke", "none");
-        };
-
         /* Create and draw a legend */
         var legend = svg.selectAll(".legend")
             .data(colors)
@@ -187,6 +159,34 @@
                     case 3: return "♂ Master";
                 }
             });
+
+        /* Create a tooltip. */
+        var tooltip = svg.append("g")
+            .attr("class", "tooltip")
+            .style("display", "none");
+
+        tooltip.append("rect")
+            .attr("width", 60)
+            .attr("height", 20)
+            .attr("fill", "white")
+            .style("opacity", 0.5);
+
+        tooltip.append("text")
+            .attr("x", 15)
+            .attr("dy", "1.2em")
+            .style("text-anchor", "middle")
+            .attr("font-size", "12px")
+            .attr("font-weight", "bold");
+
+        function synchronizedMouseOver(d) {
+            tooltip.style("display", null);
+            d3.select(this).style("stroke", "black");
+        };
+
+        function synchronizedMouseOut(d) {
+            tooltip.style("display", "none");
+            d3.select(this).style("stroke", "none");
+        };
 
     }
     )
