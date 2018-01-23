@@ -22,17 +22,17 @@ function createSunburst() {
     var partition = d3.layout.partition()
         .value(function (d) { return d.size; });
 
-    var arc = d3.svg.arc()
-        .startAngle(function (d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
-        .endAngle(function (d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
-        .innerRadius(function (d) { return Math.max(0, y(d.y)); })
-        .outerRadius(function (d) { return Math.max(0, y(d.y + d.dy)); });
-
     var svg = d3.select("body").append("svg")
         .attr("width", width)
         .attr("height", height)
         .append("g")
         .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");
+
+    var arc = d3.svg.arc()
+        .startAngle(function (d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
+        .endAngle(function (d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
+        .innerRadius(function (d) { return Math.max(0, y(d.y)); })
+        .outerRadius(function (d) { return Math.max(0, y(d.y + d.dy)); });
 
     var colorSlice = function (d) {
         var lightpink = "#ffe6ff",
@@ -89,7 +89,7 @@ function createSunburst() {
             .attr("d", arc)
             .style("fill", colorSlice)
             .style("stroke-width", "0.5")
-            .on("click", updateSunburst)
+            .on("click", updateSunburst(d, svg))
             .append("title")
             .text(function (d) { return d.name + "\nAantal studenten: " + formatNumber(d.value); });
     });
@@ -97,7 +97,7 @@ function createSunburst() {
     d3.select(self.frameElement).style("height", height + "px");
 };
 
-function updateSunburst(d) {
+function updateSunburst(d, svg) {
     console.log(d);
     svg.transition()
         .duration(1000)
