@@ -81,7 +81,7 @@
         .text("Studenten @ FNWI door de jaren heen");
 
     /* Load dataset from local server to create the bars. */
-    d3.json("data/json/studentenperstudie.json", function (error, data) {
+    d3.json("data/json/barchart.json", function (error, data) {
         var colors = ["#ffe6ff", "#99e6ff", "#ffb3ff", "#1ac6ff"];
 
         /* Transform the data from the dataset from string to int in a multidimensional array. */
