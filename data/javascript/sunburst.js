@@ -108,17 +108,13 @@ function click(d) {
 }
 
 
-function gotoyear(year) {
+function sunburstYear(year) {
     d3.json("data/json/sunburst.json", function (error, root) {
         data = partition.nodes(root);
 
         f = data.filter(
             function (data) { return data.name == year }
         );
-
-        console.log(data);
-        console.log(year);
-        console.log(f[0]);
 
         d = f[0];
 
@@ -136,7 +132,3 @@ function gotoyear(year) {
 }
 
 d3.select(self.frameElement).style("height", height + "px");
-
-function test(d) {
-    console.log("Testing interactivity.");
-}
