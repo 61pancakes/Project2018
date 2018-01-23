@@ -21,17 +21,17 @@ var y = d3.scale.sqrt()
 var partition = d3.layout.partition()
     .value(function (d) { return d.size; });
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height)
-    .append("g")
-    .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");
-
 var arc = d3.svg.arc()
     .startAngle(function (d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
     .endAngle(function (d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
     .innerRadius(function (d) { return Math.max(0, y(d.y)); })
     .outerRadius(function (d) { return Math.max(0, y(d.y + d.dy)); });
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .append("g")
+    .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");
 
 var colorSlice = function (d) {
     var lightpink = "#ffe6ff",
@@ -78,23 +78,24 @@ var colorSlice = function (d) {
         }
     }
 }
-function createSunburst() {
-    /* Load dataset from local server to create the circle partitions. */
-    d3.json("data/json/sunburst.json", function (error, root) {
-        var formatNumber = d3.format(",d");
-        svg.selectAll("path")
-            .data(partition.nodes(root))
-            .enter().append("path")
-            .attr("d", arc)
-            .style("fill", colorSlice)
-            .style("stroke-width", "0.5")
-            .on("click", updateSunburst)
-            .append("title")
-            .text(function (d) { return d.name + "\nAantal studenten: " + formatNumber(d.value); });
-    });
 
-    d3.select(self.frameElement).style("height", height + "px");
-};
+// function createSunburst() {
+/* Load dataset from local server to create the circle partitions. */
+d3.json("data/json/sunburst.json", function (error, root) {
+    var formatNumber = d3.format(",d");
+    svg.selectAll("path")
+        .data(partition.nodes(root))
+        .enter().append("path")
+        .attr("d", arc)
+        .style("fill", colorSlice)
+        .style("stroke-width", "0.5")
+        .on("click", updateSunburst)
+        .append("title")
+        .text(function (d) { return d.name + "\nAantal studenten: " + formatNumber(d.value); });
+});
+
+d3.select(self.frameElement).style("height", height + "px");
+// };
 
 function updateSunburst(d) {
     console.log(d);
@@ -110,4 +111,4 @@ function updateSunburst(d) {
         .attrTween("d", function (d) { return function () { return arc(d); }; });
 }
 
-createSunburst();
+// createSunburst();
