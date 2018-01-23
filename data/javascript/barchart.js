@@ -189,7 +189,6 @@ function createBarchart() {
         function synchronizedMouseOver(d) {
             tooltip.style("display", null);
             d3.select(this).style("stroke", "black");
-            console.log(this);
         };
 
         function synchronizedMouseOut(d) {
@@ -198,7 +197,7 @@ function createBarchart() {
         };
 
         function clickSunburst(d) {
-            console.log(d);
+            console.log(this.id);
             // click(d);
         };
 
