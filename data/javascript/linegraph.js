@@ -128,16 +128,13 @@
                 .style("stroke", colors[i])
                 .style("stroke-dasharray", ("5, 5"))
                 .attr("d", lineF(finalData[i]))
-                .attr("id", ids[i])
+                .attr("id", "test")
                 .on("mouseover", function (d) {
-                    console.log("F");
-                    console.log(d3.selectAll(this.id));
-                    console.log(d3.select(this.id));
-                    d3.selectAll("#nul").style("stroke-width", "5")
+                    d3.selectAll("#test").style("stroke-width", "5")
+                })
+                .on("mouseout", function (d) {
+                    d3.selectAll("#" + this.id).style("stroke-width", "2")
                 });
-            // .on("mouseout", function (d) {
-            // d3.select("path").style("stroke-width", "2")
-            // });
             // .on("click", onclick(i));
 
             svg.append("path")
