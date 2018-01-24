@@ -110,6 +110,8 @@ d3.json("data/json/sunburst.json", function (error, root) {
 
 function click(d) {
     console.log(d);
+    text.transition().attr("opacity", 0);
+
     svg.transition()
         .duration(1200)
         .tween("scale", function () {
@@ -119,9 +121,20 @@ function click(d) {
             return function (t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
         })
         .selectAll("path")
-        .attrTween("d", function (d) { return function () { return arc(d); }; });
+        .attrTween("d", function (d) { return function () { return arc(d); }; })
+        .each("end", function (e, i) {
+            // check if the animated element's data e lies within the visible angle span given in d
+            if (e.x >= d.x && e.x < (d.x + d.dx)) {
+                // get a selection of the associated text element
+                var arcText = d3.select(this.parentNode).select("text");
+                // fade in the text element and recalculate positions
+                arcText.transition().duration(750)
+                    .attr("opacity", 1)
+                    .attr("transform", function () { return "rotate(" + computeTextRotation(e) + ")" })
+                    .attr("x", function (d) { return y(d.y); });
+            }
+        });
 }
-
 
 function sunburstYear(year) {
     d3.json("data/json/sunburst.json", function (error, root) {
