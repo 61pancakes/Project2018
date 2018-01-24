@@ -134,7 +134,7 @@
                     console.log(d3.selectAll(this.id));
                     console.log(d3.select(this.id));
                     d3.selectAll("#nul").style("stroke-width", "5")
-                })
+                });
             // .on("mouseout", function (d) {
             // d3.select("path").style("stroke-width", "2")
             // });
