@@ -128,11 +128,12 @@
                 .style("stroke", colors[i])
                 .style("stroke-dasharray", ("5, 5"))
                 .attr("d", lineF(finalData[i]))
-                // .attr("id", ids[i])
+                .attr("id", ids[i])
                 .on("mouseover", function (d) {
                     console.log("F");
-                    console.log(d3.selectAll(this.class));
-                    d3.selectAll("line1").style("stroke-width", "5")
+                    console.log(d3.selectAll(this.id));
+                    console.log(d3.select(this.id));
+                    d3.selectAll("#nul").style("stroke-width", "5")
                 })
             // .on("mouseout", function (d) {
             // d3.select("path").style("stroke-width", "2")
@@ -143,11 +144,10 @@
                 .attr("class", "line" + i)
                 .style("stroke", colors[i])
                 .attr("d", lineM(finalData[i]))
-                // .attr("id", ids[i])
+                .attr("id", ids[i])
                 .on("mouseover", function (d) {
-                    console.log("M");
-                    console.log(d3.select(this.class));
-                    d3.select("line1").style("stroke-width", "5")
+                    // console.log("M");
+                    // d3.select("line1").style("stroke-width", "5")
                 })
                 .on("mouseout", function (d) {
                     // d3.select("path").style("stroke-width", "2")
