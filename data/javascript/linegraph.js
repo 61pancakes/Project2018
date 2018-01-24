@@ -131,10 +131,10 @@
                 .attr("id", "test")
                 .on("mouseover", function (d) {
                     console.log(this);
-                    d3.selectAll("#test").style("stroke-width", "5")
+                    d3.select("#test").style("stroke-width", "5")
                 })
                 .on("mouseout", function (d) {
-                    d3.selectAll("#" + this.id).style("stroke-width", "2")
+                    d3.select("#" + this.id).style("stroke-width", "2")
                 });
             // .on("click", onclick(i));
 
