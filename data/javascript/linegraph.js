@@ -131,10 +131,10 @@
                 .attr("id", ids[i])
                 .on("mouseover", function (d) {
                     console.log(this);
-                    d3.select(this.id).style("stroke-width", "5")
+                    d3.select(this).style("stroke-width", "5")
                 })
                 .on("mouseout", function (d) {
-                    d3.select(this.id).style("stroke-width", "2")
+                    d3.select(this).style("stroke-width", "2")
                 });
             // .on("click", onclick(i));
 
@@ -145,10 +145,10 @@
                 .attr("id", ids[i])
                 .on("mouseover", function (d) {
                     console.log(this);
-                    d3.select(this.id).style("stroke-width", "5")
+                    d3.select(this).style("stroke-width", "5")
                 })
                 .on("mouseout", function (d) {
-                    d3.select(this.id).style("stroke-width", "2")
+                    d3.select(this).style("stroke-width", "2")
                 });
             // .on("click", onclick());
         }
