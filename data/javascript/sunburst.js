@@ -106,35 +106,35 @@ d3.json("data/json/sunburst.json", function (error, root) {
     function computeTextRotation(d) {
         return (x(d.x + d.dx / 2) - Math.PI / 2) / Math.PI * 180;
     }
+
+    function click(d) {
+        console.log(d);
+        text.transition().attr("opacity", 0);
+
+        svg.transition()
+            .duration(1200)
+            .tween("scale", function () {
+                var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
+                    yd = d3.interpolate(y.domain(), [d.y, 1]),
+                    yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
+                return function (t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
+            })
+            .selectAll("path")
+            .attrTween("d", function (d) { return function () { return arc(d); }; })
+            .each("end", function (e, i) {
+                // check if the animated element's data e lies within the visible angle span given in d
+                if (e.x >= d.x && e.x < (d.x + d.dx)) {
+                    // get a selection of the associated text element
+                    var arcText = d3.select(this.parentNode).select("text");
+                    // fade in the text element and recalculate positions
+                    arcText.transition().duration(750)
+                        .attr("opacity", 1)
+                        .attr("transform", function () { return "rotate(" + computeTextRotation(e) + ")" })
+                        .attr("x", function (d) { return y(d.y); });
+                }
+            });
+    }
 });
-
-function click(d) {
-    console.log(d);
-    text.transition().attr("opacity", 0);
-
-    svg.transition()
-        .duration(1200)
-        .tween("scale", function () {
-            var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
-                yd = d3.interpolate(y.domain(), [d.y, 1]),
-                yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
-            return function (t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
-        })
-        .selectAll("path")
-        .attrTween("d", function (d) { return function () { return arc(d); }; })
-        .each("end", function (e, i) {
-            // check if the animated element's data e lies within the visible angle span given in d
-            if (e.x >= d.x && e.x < (d.x + d.dx)) {
-                // get a selection of the associated text element
-                var arcText = d3.select(this.parentNode).select("text");
-                // fade in the text element and recalculate positions
-                arcText.transition().duration(750)
-                    .attr("opacity", 1)
-                    .attr("transform", function () { return "rotate(" + computeTextRotation(e) + ")" })
-                    .attr("x", function (d) { return y(d.y); });
-            }
-        });
-}
 
 function sunburstYear(year) {
     d3.json("data/json/sunburst.json", function (error, root) {
