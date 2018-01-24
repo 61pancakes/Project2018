@@ -92,6 +92,10 @@ d3.json("data/json/sunburst.json", function (error, root) {
     // .append("title")
     // .text(function (d) { return d.name + "\nAantal studenten: " + formatNumber(d.value); });
 
+    var g = svg.selectAll("g")
+        .data(partition.nodes(root))
+        .enter().append("g");
+
     var text = g.append("text")
         .attr("transform", function (d) { return "rotate(" + computeTextRotation(d) + ")"; })
         .attr("x", function (d) { return y(d.y); })
