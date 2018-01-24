@@ -128,24 +128,26 @@
                 .style("stroke", colors[i])
                 .style("stroke-dasharray", ("5, 5"))
                 .attr("d", lineF(finalData[i]))
-                .attr("id", ids[i])
+                // .attr("id", ids[i])
                 .on("mouseover", function (d) {
-                    console.log("THIS", d3.select(this));
-                    // d3.select("line").style("stroke-width", "5")
+                    console.log("F");
+                    console.log(d3.select(this));
+                    d3.selectAll("line1").style("stroke-width", "5")
                 })
-                .on("mouseout", function (d) {
-                    // d3.select("path").style("stroke-width", "2")
-                });
+            // .on("mouseout", function (d) {
+            // d3.select("path").style("stroke-width", "2")
+            // });
             // .on("click", onclick(i));
 
             svg.append("path")
                 .attr("class", "line" + i)
                 .style("stroke", colors[i])
                 .attr("d", lineM(finalData[i]))
-                .attr("id", ids[i])
+                // .attr("id", ids[i])
                 .on("mouseover", function (d) {
-                    console.log("THIS", d3.select(this));
-                    // d3.select("path").style("stroke-width", "5")
+                    console.log("M");
+                    console.log(d3.select(this));
+                    d3.select("line1").style("stroke-width", "5")
                 })
                 .on("mouseout", function (d) {
                     // d3.select("path").style("stroke-width", "2")
