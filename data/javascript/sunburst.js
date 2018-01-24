@@ -92,25 +92,8 @@ d3.json("data/json/sunburst.json", function (error, root) {
     // .append("title")
     // .text(function (d) { return d.name + "\nAantal studenten: " + formatNumber(d.value); });
 
-    var g = svg.selectAll("g")
-        .data(partition.nodes(root))
-        .enter().append("g");
-
-    var text = g.append("text")
-        .attr("transform", function (d) { return "rotate(" + computeTextRotation(d) + ")"; })
-        .attr("x", function (d) { return y(d.y); })
-        .attr("dx", "6") // margin
-        .attr("dy", ".35em") // vertical-align
-        .text(function (d) { return d.name; });
-
-    function computeTextRotation(d) {
-        return (x(d.x + d.dx / 2) - Math.PI / 2) / Math.PI * 180;
-    }
-
     function click(d) {
         console.log(d);
-        text.transition().attr("opacity", 0);
-
         svg.transition()
             .duration(1200)
             .tween("scale", function () {
@@ -120,32 +103,18 @@ d3.json("data/json/sunburst.json", function (error, root) {
                 return function (t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
             })
             .selectAll("path")
-            .attrTween("d", function (d) { return function () { return arc(d); }; })
-            .each("end", function (e, i) {
-                // check if the animated element's data e lies within the visible angle span given in d
-                if (e.x >= d.x && e.x < (d.x + d.dx)) {
-                    // get a selection of the associated text element
-                    var arcText = d3.select(this.parentNode).select("text");
-                    // fade in the text element and recalculate positions
-                    arcText.transition().duration(750)
-                        .attr("opacity", 1)
-                        .attr("transform", function () { return "rotate(" + computeTextRotation(e) + ")" })
-                        .attr("x", function (d) { return y(d.y); });
-                }
-            });
+            .attrTween("d", function (d) { return function () { return arc(d); }; });
     }
 });
 
 function sunburstYear(year) {
     d3.json("data/json/sunburst.json", function (error, root) {
         data = partition.nodes(root);
-
         f = data.filter(
             function (data) { return data.name == year }
         );
 
         d = f[0];
-
         svg.transition()
             .duration(2000)
             .tween("scale", function () {

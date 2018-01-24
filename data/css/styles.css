@@ -1,7 +1,6 @@
 svg {
     font: 10px sans-serif;
     shape-rendering: crispEdges;
-    cursor: pointer;
 }
 
 .axis path,
