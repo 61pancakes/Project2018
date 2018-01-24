@@ -67,8 +67,19 @@
 - Interactiviteit tussen barchart en sunburst toegevoegd! :) Er moet nog wel uitleg komen over wat je kan doen en waarom je dat zou doen.
 
 ## day 13 (24 January 2017)
+- Line chart legenda interactie werkende gekregen! 
+- Begin gemaakt aan tabel in Bootstrap - hoeveel studies met elkaar vergelijken?
+- Planning voor laatste dagen gemaakt.
+
 ## day 14 (25 January 2017)
 ## day 15 (26 January 2017)
+## day 16 (29 January 2017)
+## day 17 (30 January 2017)
+## day 18 (31 January 2017)
+## day 19 (32 January 2017)
+
+
+
 
 
 
