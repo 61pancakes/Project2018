@@ -122,36 +122,35 @@
         };
 
         /* Show the lines. */
-        for (var i = 0; i < 2; i++) {
+        for (var i = 0; i < 9; i++) {
             svg.append("path")
+                .attr("id", "true")
                 .attr("class", "line" + i)
                 .style("stroke", colors[i])
                 .style("stroke-dasharray", ("5, 5"))
                 .attr("d", lineF(finalData[i]))
-                .attr("id", "test")
                 .on("mouseover", function (d) {
-                    console.log("TEST!");
-                    console.log(d3.select("#test"));
-                    d3.select("#test").style("stroke-width", "5")
+                    d3.select(this).style("cursor", "pointer");
+                    d3.selectAll("." + this.classList[0]).style("stroke-width", "5")
                 })
                 .on("mouseout", function (d) {
-                    d3.select("#" + this.id).style("stroke-width", "2")
+                    d3.select(this).style("cursor", "default");
+                    d3.selectAll("." + this.classList[0]).style("stroke-width", "2")
                 });
-            // .on("click", onclick(i));
 
             svg.append("path")
+                .attr("id", "true")
                 .attr("class", "line" + i)
                 .style("stroke", colors[i])
                 .attr("d", lineM(finalData[i]))
-                .attr("id", "test");
-            // .on("mouseover", function (d) {
-            // console.log("M");
-            // d3.select("line1").style("stroke-width", "5")
-            // })
-            // .on("mouseout", function (d) {
-            // d3.select("path").style("stroke-width", "2")
-            // });
-            // .on("click", onclick());
+                .on("mouseover", function (d) {
+                    d3.select(this).style("cursor", "pointer");
+                    d3.selectAll("." + this.classList[0]).style("stroke-width", "5")
+                })
+                .on("mouseout", function (d) {
+                    d3.select(this).style("cursor", "default");
+                    d3.selectAll("." + this.classList[0]).style("stroke-width", "2")
+                });
         }
 
         /* Add legend 'columns' */
@@ -180,7 +179,7 @@
             .style("stroke", function (d, i) {
                 return legendData[i].color;
             })
-        // .on("click", onclick);
+            .on("click", onclick);
 
         legend.append("line")
             .attr("x1", width + 5)
@@ -192,9 +191,10 @@
             .style("stroke", function (d, i) {
                 return legendData[i].color;
             })
-        // .on("click", onclick);
+            .on("click", onclick);
 
         legend.append("text")
+            .attr("class", function (d, i) { return legendData[i].name.substr(2) })
             .attr("font", "sans-serif")
             .attr("font-weight", "bold")
             .attr("x", width + 35)
@@ -204,7 +204,27 @@
             .text(function (d, i) {
                 return legendData[i].name.substr(2);
             })
-        // .on("click", onclick);
+            .on("mouseover", function (d) { d3.select(this).style("cursor", "pointer") })
+            .on("mouseout", function (d) { d3.select(this).style("cursor", "default") })
+            .on("click", onclick);
+
+        function onclick(d, i) {
+            var lineid = "line" + i;
+            var lines = d3.selectAll("." + lineid);
+            var active = (lines[0][0].id) == "true" ? true : false;
+            if (active) {
+                d3.selectAll("." + lineid)
+                    .style("opacity", 0)
+                    .attr("id", "false");
+                d3.select(this).attr("font-weight", "normal");
+            } else {
+                d3.selectAll("." + lineid)
+                    .style("opacity", 1)
+                    .attr("id", "true");
+                d3.select(this).attr("font-weight", "bold");
+
+            }
+        };
     });
 })();
 
