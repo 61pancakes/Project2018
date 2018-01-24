@@ -130,11 +130,11 @@
                 .attr("d", lineF(finalData[i]))
                 .attr("id", ids[i])
                 .on("mouseover", function (d) {
-                    console.log(this);
-                    d3.select(this).style("stroke-width", "5")
+                    console.log(d3.selectAll(this.id));
+                    d3.selectAll(this.id).style("stroke-width", "5")
                 })
                 .on("mouseout", function (d) {
-                    d3.select(this).style("stroke-width", "2")
+                    d3.selectAll(this.id).style("stroke-width", "2")
                 });
             // .on("click", onclick(i));
 
@@ -144,11 +144,11 @@
                 .attr("d", lineM(finalData[i]))
                 .attr("id", ids[i])
                 .on("mouseover", function (d) {
-                    console.log(this);
-                    d3.select(this).style("stroke-width", "5")
+                    console.log(d3.selectAll(this.id));
+                    d3.selectAll(this.id).style("stroke-width", "5")
                 })
                 .on("mouseout", function (d) {
-                    d3.select(this).style("stroke-width", "2")
+                    d3.selectAll(this.id).style("stroke-width", "2")
                 });
             // .on("click", onclick());
         }
