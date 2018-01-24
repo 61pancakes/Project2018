@@ -7,9 +7,9 @@
  */
 
 /* Create the basis variables for the svg. */
-var margin = { top: 50, right: 50, bottom: 50, left: 50 },
-    width = 600 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom,
+var margin = { top: 100, right: 0, bottom: 0, left: 0 },
+    width = 700 - margin.left - margin.right,
+    height = 700 - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10;
 
 var x = d3.scale.linear()
@@ -89,6 +89,8 @@ d3.json("data/json/sunburst.json", function (error, root) {
         .style("fill", colorSlice)
         .style("stroke-width", "0.5")
         .on("click", click)
+        .on("mouseover", function (d) { d3.select(this).style("cursor", "pointer") })
+        .on("mouseout", function (d) { d3.select(this).style("cursor", "default") })
         .append("title")
         .text(function (d) { return d.name + "\nAantal studenten: " + formatNumber(d.value); });
 
