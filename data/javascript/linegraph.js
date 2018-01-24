@@ -130,6 +130,7 @@
                 .attr("d", lineF(finalData[i]))
                 .attr("id", "test")
                 .on("mouseover", function (d) {
+                    console.log(this);
                     d3.selectAll("#test").style("stroke-width", "5")
                 })
                 .on("mouseout", function (d) {

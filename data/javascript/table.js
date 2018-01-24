@@ -20,10 +20,24 @@ var data = [
 ];
 
 $(function () {
-    console.log("test");
+    $('#table').bootstrapTable('insertData', {
+        data: data
+
+    });
+
     $('#table').bootstrapTable({
         data: data
-    });
+    })
+
+});
+
+$table.bootstrapTable('insertRow', {
+    index: 1,
+    row: {
+        id: randomId,
+        name: 'Item ' + randomId,
+        price: '$' + randomId
+    }
 });
 
 // d3.json("data/json/barchart.json", function (jsonData) {
