@@ -1,22 +1,23 @@
-    svg {
-        font: 10px sans-serif;
-        shape-rendering: crispEdges;
-    }
+svg {
+    font: 10px sans-serif;
+    shape-rendering: crispEdges;
+    cursor: pointer;
+}
 
-    .axis path,
-    .axis line {
-        fill: none;
-        stroke: #000;
-        stroke-width: 1;
-    }
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1;
+}
 
-    .tick line {
-        opacity: 0.2;
-    }
+.tick line {
+    opacity: 0.2;
+}
 
-    /* Andere SVG */
-    path {
-        stroke: black;
-        stroke-width: 2;
-        fill: none;
-    }
+/* Andere SVG */
+path {
+    stroke: black;
+    stroke-width: 2;
+    fill: none;
+}

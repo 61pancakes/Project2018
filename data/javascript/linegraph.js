@@ -141,14 +141,14 @@
                 .attr("class", "line" + i)
                 .style("stroke", colors[i])
                 .attr("d", lineM(finalData[i]))
-                .attr("id", ids[i])
-                .on("mouseover", function (d) {
-                    // console.log("M");
-                    // d3.select("line1").style("stroke-width", "5")
-                })
-                .on("mouseout", function (d) {
-                    // d3.select("path").style("stroke-width", "2")
-                });
+                .attr("id", "test");
+            // .on("mouseover", function (d) {
+            // console.log("M");
+            // d3.select("line1").style("stroke-width", "5")
+            // })
+            // .on("mouseout", function (d) {
+            // d3.select("path").style("stroke-width", "2")
+            // });
             // .on("click", onclick());
         }
 

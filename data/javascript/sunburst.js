@@ -88,9 +88,20 @@ d3.json("data/json/sunburst.json", function (error, root) {
         .attr("d", arc)
         .style("fill", colorSlice)
         .style("stroke-width", "0.5")
-        .on("click", click)
-        .append("title")
-        .text(function (d) { return d.name + "\nAantal studenten: " + formatNumber(d.value); });
+        .on("click", click);
+    // .append("title")
+    // .text(function (d) { return d.name + "\nAantal studenten: " + formatNumber(d.value); });
+
+    var text = g.append("text")
+        .attr("transform", function (d) { return "rotate(" + computeTextRotation(d) + ")"; })
+        .attr("x", function (d) { return y(d.y); })
+        .attr("dx", "6") // margin
+        .attr("dy", ".35em") // vertical-align
+        .text(function (d) { return d.name; });
+
+    function computeTextRotation(d) {
+        return (x(d.x + d.dx / 2) - Math.PI / 2) / Math.PI * 180;
+    }
 });
 
 function click(d) {
