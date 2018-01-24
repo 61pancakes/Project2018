@@ -115,6 +115,8 @@
         var colors = ["#BBCCEE", "#44AA99", "#332288", "#117733", "#999933",
             "#DDCC77", "#CC6677", "#882255", "#AA4499"];
         var legendData = [];
+        var ids = ["#nul", "#een", "#twee", "#drie", "#vier", "#vijf", "#zes", "#zeven", "#acht"];
+
         for (var l = 0; l < 9; l++) {
             legendData[l] = { color: colors[l], name: data.data[l * 2].naam }
         };
@@ -126,7 +128,7 @@
                 .style("stroke", colors[i])
                 .style("stroke-dasharray", ("5, 5"))
                 .attr("d", lineF(finalData[i]))
-                .attr("id", legendData[i].color)
+                .attr("id", ids[i])
                 .on("mouseover", function (d) {
                     console.log(this);
                     d3.selectAll(this.id).style("stroke-width", "5")
@@ -140,7 +142,7 @@
                 .attr("class", "line")
                 .style("stroke", colors[i])
                 .attr("d", lineM(finalData[i]))
-                .attr("id", legendData[i].color)
+                .attr("id", ids[i])
                 .on("mouseover", function (d) {
                     d3.selectAll(this.id).style("stroke-width", "5")
                 })
