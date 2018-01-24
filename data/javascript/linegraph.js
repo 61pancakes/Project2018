@@ -129,10 +129,10 @@
                 .attr("id", legendData[i].color)
                 .on("mouseover", function (d) {
                     console.log(this);
-                    d3.selectAll("#" + this.id).style("stroke-width", "5")
+                    d3.selectAll(this.id).style("stroke-width", "5")
                 })
                 .on("mouseout", function (d) {
-                    d3.selectAll("#" + this.id).style("stroke-width", "2")
+                    d3.selectAll(this.id).style("stroke-width", "2")
                 });
             // .on("click", onclick(i));
 
@@ -142,10 +142,10 @@
                 .attr("d", lineM(finalData[i]))
                 .attr("id", legendData[i].color)
                 .on("mouseover", function (d) {
-                    d3.selectAll("#" + this.id).style("stroke-width", "5")
+                    d3.selectAll(this.id).style("stroke-width", "5")
                 })
                 .on("mouseout", function (d) {
-                    d3.selectAll("#" + this.id).style("stroke-width", "2")
+                    d3.selectAll(this.id).style("stroke-width", "2")
                 });
             // .on("click", onclick());
         }
