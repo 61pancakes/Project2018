@@ -1,6 +1,6 @@
 ### day 1 (8 January 2017)
-- Proposal Document geschreven, met twee opties. Optie 1, het visualiseren van het kaartspel 'Hanabi'. Optie 2, verdiepen in statistieken van studenten aan de UvA.
-- Data opgezocht voor optie 2 en uiteindelijk knoop doorgehakt dat ook daadwerkelijk te gaan doen.
+- Proposal Document geschreven, met twee opties: Optie 1, het visualiseren van het kaartspel 'Hanabi', Optie 2, verdiepen in statistieken van studenten aan de UvA.
+- Data opgezocht voor optie 2 en uiteindelijk knoop doorgehakt dat ook daadwerkelijk te gaan doen (past beter bij dit vak).
 - Proposal Document voor optie 2 uitgewerkt.
 
 ![voortgang](/doc/Sketch.png).
@@ -8,10 +8,10 @@
 
 ### day 2 (9 January 2017)
 - Data handmatig verzameld en omgezet naar CSV & JSON-format. 
-- JSON-data aangepast om mannen en vrouwen in aparte sets te hebben.
+- JSON-data aangepast om mannen en vrouwen in aparte sets te hebben, dat leek me beter qua code.
 
 ### day 3 (10 January 2017)
-- Proposal besproken met TA.
+- Proposal besproken met TA: bubble chart gaat een multilijngrafiek worden, dat voegt meer toe aan het verhaal.
 - Begonnen aan Design Document.
 - Begonnen aan Grouped & Stacked Staafdiagram (visualisatie #1).
 
@@ -21,25 +21,25 @@
 - Idee aangepast in README & Design Document.
 
 ![voortgang](/doc/Sketchv2.png).
-
-
 ![voortgang](/doc/voortgang_v1.png)
 
 ## day 5 (12 January 2017)
-- Multilijngrafiek gemaakt & redelijk werkende gekregen: legenda en kleurtjes moeten nog aangepast worden. 
+- Multilijngrafiek gemaakt & redelijk werkende gekregen: legenda en kleurtjes moeten nog aangepast worden. Nu zijn namelijk alle lijnen die mannen representeren blauw, en de andere vrouwen. Die scheiding moet wel zichtbaar blijven, maar de lijnen moeten allemaal wel verschillende kleuren hebben. Ik weet nog niet zo goed hoe ik die scheiding duidelijk wil aangeven.
 - Barchart kloppende gekregen (voor en na:)
 ![voortgang](/doc/barchart.png)
 
 ### day 6 (15 January 2017)
-- Sunburst gemaakt. Benodigde data had ik nog niet in een goed format, dus dat  herschreven zodat de sunburst het kon gebruiken. Sunburst werkt op zichzelf, maar moet nog duidelijker worden (tekst + kleuren aanpassen) + ik twijfel over of ik hem pas wil laten zien nadat een jaar is geselecteerd in de staafdiagram of dat hij enkel van niveau verandert door het klikken.
+- Sunburst gemaakt. Benodigde data had ik nog niet in een goed format, dus dat eerst herschreven, zodat de sunburst het kon gebruiken. Sunburst werkt op zichzelf, maar moet nog duidelijker worden (tekst + kleuren aanpassen) + ik twijfel over of ik hem pas wil laten zien nadat een jaar is geselecteerd in de staafdiagram of dat hij enkel van niveau verandert door het klikken.
 ![voortgang](/doc/sunburstv1.png)
 
 ### day 7 (16 January 2017)
-- Interactiviteit van de staafdiagram toegevoegd (tooltip + legenda).
+- Interactiviteit van de staafdiagram toegevoegd (tooltip + legenda) - nu is het duidelijker.
 - Staafdiagramcode opgeschoond. 
 - Progress geupdate.
 
 ![voortgang](/doc/barchartv2.png)
+
+--------
 
 ### day 8 (17 January 2017)
 - Code georganiseerd. 
@@ -73,8 +73,13 @@
 
 ![voortgang](/doc/linegraph.gif)
 
-
 ## day 14 (25 January 2017)
+- Besloten datapunten toe te voegen aan de lijngrafiek, om de data beter te visualiseren.
+- Daar een tooltip bijgemaakt, zelfde als bij staafdiagram.
+
+- Poging tot legenda bij sunburst gedaan. Te veel kleuren dus geen goed idee:
+![voortgang](/doc/sunburstlegenda.png)
+
 ## day 15 (26 January 2017)
 ## day 16 (29 January 2017)
 ## day 17 (30 January 2017)
