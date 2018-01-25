@@ -12,4 +12,6 @@
 - Filmpje maken
 - Verslag maken
 
+NB: Information Studies sunburst fixen
+
 - Moet je de Readme en Design updaten naar het eindproduct?
