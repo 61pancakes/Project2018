@@ -78,7 +78,7 @@
 - Daar een tooltip bijgemaakt, zelfde als bij staafdiagram.
 
 - Poging tot legenda bij sunburst gedaan. Te veel kleuren dus geen goed idee:
-![voortgang](/doc/sunburstlegenda.png)
+![voortgang](/doc/sunburstlegend.png)
 
 ## day 15 (26 January 2017)
 ## day 16 (29 January 2017)
