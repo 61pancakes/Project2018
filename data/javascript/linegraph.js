@@ -129,8 +129,8 @@
                 .attr("d", lineF(finalData[i]))
                 .on("mouseover", function (d, i, j) {
                     d3.select(this).style("cursor", "pointer");
-                    d3.selectAll("." + this.classList[0]).style("stroke-width", "5")
-                    d3.selectAll(".dot" + this.classList[0].slice(-1)).attr("r", "6");
+                    d3.selectAll("." + this.classList[0]).style("stroke-width", "4")
+                    d3.selectAll(".dot" + this.classList[0].slice(-1)).attr("r", "5");
                 })
                 .on("mouseout", function (d) {
                     d3.select(this).style("cursor", "default");
@@ -145,8 +145,8 @@
                 .attr("d", lineM(finalData[i]))
                 .on("mouseover", function (d) {
                     d3.select(this).style("cursor", "pointer");
-                    d3.selectAll("." + this.classList[0]).style("stroke-width", "5")
-                    d3.selectAll(".dot" + this.classList[0].slice(-1)).attr("r", "6");
+                    d3.selectAll("." + this.classList[0]).style("stroke-width", "4")
+                    d3.selectAll(".dot" + this.classList[0].slice(-1)).attr("r", "5");
                 })
                 .on("mouseout", function (d) {
                     d3.select(this).style("cursor", "default");
@@ -216,9 +216,8 @@
             .attr("x", width + 75)
             .attr("y", 40)
             .attr("text-anchor", "middle")
-            .style("font", "sans-serif")
-            .style("font-size", "140%")
-            .text("↓♂          ↓♀");
+            .style("font-size", "150%")
+            .text("↓♂  ↓♀");
 
         /* Create and draw a legend */
         var legend = svg.selectAll(".legend")
@@ -232,7 +231,7 @@
             .attr("x2", width)
             .attr("y1", 20)
             .attr("y2", 20)
-            .style("stroke-width", "2")
+            .style("stroke-width", "3")
             .style("stroke", function (d, i) {
                 return legendData[i].color;
             })
@@ -243,7 +242,7 @@
             .attr("x2", width + 33)
             .attr("y1", 20)
             .attr("y2", 20)
-            .style("stroke-width", "2")
+            .style("stroke-width", "3")
             .style("stroke-dasharray", ("5, 5"))
             .style("stroke", function (d, i) {
                 return legendData[i].color;
