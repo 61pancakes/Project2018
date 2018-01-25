@@ -77,8 +77,8 @@
 - Besloten datapunten toe te voegen aan de lijngrafiek, om de data beter te visualiseren.
 - Daar een tooltip bijgemaakt, zelfde als bij staafdiagram.
 
-- Poging tot legenda bij sunburst gedaan. Te veel kleuren dus geen goed idee:
-![voortgang](/doc/sunburstlegend.png)
+- Poging tot legenda bij sunburst gedaan. Te veel kleuren dus geen goed idee:  
+![voortgang](/doc/sunburstlegenda.png)
 
 ## day 15 (26 January 2017)
 ## day 16 (29 January 2017)
