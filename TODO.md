@@ -3,6 +3,7 @@
 #### VISUALISATIES
 - Sunburst: mouseover toevoegen ?
 - Sunburst: Tekst / legenda toevoegen
+- Line chart: values toevoegen bij hover
 
 #### INTERACTIE TUSSEN VISUALISATIES TOEVOEGEN
 - Line chart: on click toevoegen (?)
