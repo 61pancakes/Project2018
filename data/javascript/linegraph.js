@@ -115,8 +115,6 @@
         var colors = ["#BBCCEE", "#44AA99", "#332288", "#117733", "#999933",
             "#DDCC77", "#CC6677", "#882255", "#AA4499"];
         var legendData = [];
-        var ids = ["#nul", "#een", "#twee", "#drie", "#vier", "#vijf", "#zes", "#zeven", "#acht"];
-
         for (var l = 0; l < 9; l++) {
             legendData[l] = { color: colors[l], name: data.data[l * 2].naam }
         };
@@ -129,13 +127,15 @@
                 .style("stroke", colors[i])
                 .style("stroke-dasharray", ("5, 5"))
                 .attr("d", lineF(finalData[i]))
-                .on("mouseover", function (d) {
+                .on("mouseover", function (d, i, j) {
                     d3.select(this).style("cursor", "pointer");
                     d3.selectAll("." + this.classList[0]).style("stroke-width", "5")
+                    d3.selectAll(".dot" + this.classList[0].slice(-1)).attr("r", "6");
                 })
                 .on("mouseout", function (d) {
                     d3.select(this).style("cursor", "default");
                     d3.selectAll("." + this.classList[0]).style("stroke-width", "2")
+                    d3.selectAll(".dot" + this.classList[0].slice(-1)).attr("r", "3");
                 });
 
             svg.append("path")
@@ -146,12 +146,69 @@
                 .on("mouseover", function (d) {
                     d3.select(this).style("cursor", "pointer");
                     d3.selectAll("." + this.classList[0]).style("stroke-width", "5")
+                    d3.selectAll(".dot" + this.classList[0].slice(-1)).attr("r", "6");
                 })
                 .on("mouseout", function (d) {
                     d3.select(this).style("cursor", "default");
                     d3.selectAll("." + this.classList[0]).style("stroke-width", "2")
+                    d3.selectAll(".dot" + this.classList[0].slice(-1)).attr("r", "3");
                 });
         }
+
+        for (var j = 0; j < 9; j++) {
+            svg.selectAll(".dot")
+                .data(finalData[j])
+                .enter().append("circle")
+                .attr("class", "dot" + j)
+                .attr("fill", function (d) { return colors[j] })
+                .attr("cx", function (d, j) { return x(j) })
+                .attr("cy", function (d) { return y(d.women) })
+                .attr("r", 3)
+                .on("mouseover", function (d, j) {
+                    d3.select(this).style("cursor", "pointer");
+                    var xPosition = d3.mouse(this)[0] + 30;
+                    var yPosition = d3.mouse(this)[1] - 20;
+                    tooltip.style("display", null);
+                    tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
+                    tooltip.select("text")
+                        .html((d.women) + " vrouwen");
+                    d3.selectAll("." + this.classList[0]).attr("r", "6")
+                    d3.selectAll(".line" + this.classList[0].slice(-1)).style("stroke-width", "5")
+                })
+                .on("mouseout", function (d) {
+                    d3.select(this).style("cursor", "default");
+                    tooltip.style("display", "none");
+                    d3.selectAll("." + this.classList[0]).attr("r", "3")
+                    d3.selectAll(".line" + this.classList[0].slice(-1)).style("stroke-width", "2")
+                });
+
+            svg.selectAll(".dot")
+                .data(finalData[j])
+                .enter().append("circle")
+                .attr("class", "dot" + j)
+                .attr("fill", function (d) { return colors[j] })
+                .attr("cx", function (d, j) { return x(j) })
+                .attr("cy", function (d) { return y(d.men) })
+                .attr("r", 3)
+                .on("mouseover", function (d, j) {
+                    d3.select(this).style("cursor", "pointer");
+                    var xPosition = d3.mouse(this)[0] + 30;
+                    var yPosition = d3.mouse(this)[1] - 20;
+                    tooltip.style("display", null);
+                    tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
+                    tooltip.select("text")
+                        .html((d.men) + " mannen");
+                    d3.selectAll("." + this.classList[0]).attr("r", "6")
+                    d3.selectAll(".line" + this.classList[0].slice(-1)).style("stroke-width", "5")
+                })
+                .on("mouseout", function (d) {
+                    d3.select(this).style("cursor", "default");
+                    tooltip.style("display", "none");
+                    d3.selectAll("." + this.classList[0]).attr("r", "3")
+                    d3.selectAll(".line" + this.classList[0].slice(-1)).style("stroke-width", "2")
+                });
+        }
+
 
         /* Add legend 'columns' */
         svg.append("g")
@@ -161,7 +218,7 @@
             .attr("text-anchor", "middle")
             .style("font", "sans-serif")
             .style("font-size", "140%")
-            .text("↓♂ ↓♀");
+            .text("↓♂          ↓♀");
 
         /* Create and draw a legend */
         var legend = svg.selectAll(".legend")
@@ -208,8 +265,27 @@
             .on("mouseout", function (d) { d3.select(this).style("cursor", "default") })
             .on("click", onclick);
 
+        /* Create a tooltip. */
+        var tooltip = svg.append("g")
+            .attr("class", "tooltip")
+            .style("display", "none");
+
+        tooltip.append("rect")
+            .attr("width", 60)
+            .attr("height", 20)
+            .attr("fill", "white")
+            .style("opacity", 0.5);
+
+        tooltip.append("text")
+            .attr("x", 15)
+            .attr("dy", "1.2em")
+            .style("text-anchor", "middle")
+            .attr("font-size", "12px")
+            .attr("font-weight", "bold");
+
         function onclick(d, i) {
             var lineid = "line" + i;
+            var dotid = "dot" + i;
             var lines = d3.selectAll("." + lineid);
             var active = (lines[0][0].id) == "true" ? true : false;
             if (active) {
@@ -217,11 +293,15 @@
                     .style("opacity", 0)
                     .attr("id", "false");
                 d3.select(this).attr("font-weight", "normal");
+                d3.selectAll("." + dotid)
+                    .style("opacity", 0);
             } else {
                 d3.selectAll("." + lineid)
                     .style("opacity", 1)
                     .attr("id", "true");
                 d3.select(this).attr("font-weight", "bold");
+                d3.selectAll("." + dotid)
+                    .style("opacity", 1);
 
             }
         };
