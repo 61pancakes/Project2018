@@ -1,4 +1,4 @@
-var data = [
+var mydata = [
     {
         "veertienvijftien": "29",
         "zeventienachttien": "89",
@@ -19,26 +19,28 @@ var data = [
     }
 ];
 
+var $table = $('#table');
+
 $(function () {
-    $('#table').bootstrapTable('insertData', {
-        data: data
-
-    });
-
-    $('#table').bootstrapTable({
-        data: data
-    })
-
+    // for row (i) -> add a value to column [1]
+    // $('#table').bootstrapTable({
+    data: mydata
+    // });
 });
 
-$table.bootstrapTable('insertRow', {
-    index: 1,
-    row: {
-        id: randomId,
-        name: 'Item ' + randomId,
-        price: '$' + randomId
-    }
-});
+// $(function () {
+//     $('#table').bootstrapTable('insertData', {
+//         data: data
+//     });
+
+// $('#table').bootstrapTable('insertRow', {
+//     index: 1,
+//     row: {
+//         id: randomId,
+//         name: 'Item ' + randomId,
+//         price: '$' + randomId
+//     }
+// });
 
 // d3.json("data/json/barchart.json", function (jsonData) {
 //     $('#table').bootstrapTable({

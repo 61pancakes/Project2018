@@ -21,7 +21,7 @@ var legend = {
 var courses = ["BA Artificial Intelligence", "MA Artificial Intelligence", "MA Astronomy and Astrophysics",
     "MA Biological Sciences", "BA Biology", "BA Biomedical Sciences", "MA Brain and Cognitive Sciences",
     "BA Chemistry", "MA Computational Science", "MA Computer Science", "BA Computing Science", "MA Earth Science", "MA Forensic Science",
-    "BA Future Planet Studies", "BA Information Science", "MA Information Studies ", "MA Life Sciences", "MA Logic",
+    "BA Future Planet Studies", "BA Information Science", "MA Information Studies", "MA Life Sciences", "MA Logic",
     "MA Mathematical Physics", "BA Mathematics", "BA Natural and Social Sciences", "MA Physics",
     "BA Physics and Astronomy", "BA Psychobiology", "MA Software Engineering", "MA Stochastics and Financial Mathematics", "MA System and Network Engineering"],
 
@@ -101,6 +101,7 @@ d3.json("data/json/sunburst.json", function (error, root) {
         .data(partition.nodes(root))
         .enter().append("svg:path")
         .attr("d", arc)
+        .attr("class", "sunburst")
         .style("fill", colorSlice)
         .style("stroke-width", "0.5")
         .on("click", click)
@@ -149,8 +150,6 @@ d3.select(self.frameElement).style("height", height + "px");
 // Fade all but the current sequence, and show it in the breadcrumb trail.
 function mouseover(d) {
     var studentcount = d.value + " studenten";
-    console.log(studentcount);
-
     d3.select("#explanation")
         .style("visibility", "");
 
@@ -161,12 +160,12 @@ function mouseover(d) {
     updateLegend(ancestors, studentcount);
 
     // Fade all the segments.
-    d3.selectAll("path")
+    d3.selectAll("path.sunburst")
         .style("stroke-width", 0.5)
         .style("opacity", 0.3);
 
     // Then highlight only those that are an ancestor of the current segment.
-    svg.selectAll("path")
+    svg.selectAll("path.sunburst")
         .filter(function (node) {
             return (ancestors.indexOf(node) >= 0);
         })
@@ -182,10 +181,10 @@ function mouseleave(d) {
         .style("visibility", "hidden");
 
     // Deactivate all segments during transition.
-    d3.selectAll("path").on("mouseover", null);
+    d3.selectAll("path.sunburst").on("mouseover", null);
 
     // Transition each segment to full opacity and then reactivate it.
-    d3.selectAll("path")
+    d3.selectAll("path.sunburst")
         .transition()
         .duration(1)
         .style("opacity", 1)
