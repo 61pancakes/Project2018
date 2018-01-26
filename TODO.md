@@ -8,7 +8,7 @@
 - Vergelijkingstabel Bootstrap maken
 - Dropdown bij tabel fixen
 - Layout fixen (informatie + indeling toevoegen)
-- Links naar de opleidingwebsites toevoegen (?)
+- Links naar de opleidingwebsites toevoegen (alleen als tijd over?)
 - Filmpje maken
 - Verslag maken
 
