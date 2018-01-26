@@ -2,7 +2,6 @@
 
 #### INTERACTIE TUSSEN VISUALISATIES TOEVOEGEN
 - ?????
-- Line chart: on click toevoegen (?)
 
 #### WEEK 4: EXTRA'S
 - Vergelijkingstabel Bootstrap maken
@@ -12,5 +11,4 @@
 - Filmpje maken
 - Verslag maken
 
-- Bug Information Studies sunburst fixen
 - Moet je de Readme en Design updaten naar het eindproduct?
