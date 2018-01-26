@@ -7,7 +7,6 @@
 
 
 (function () {
-
     /* Create the basis variables for the svg. */
     var margin = { top: 50, right: 250, bottom: 50, left: 50 },
         width = 800 - margin.left - margin.right,
@@ -123,35 +122,55 @@
         for (var i = 0; i < 9; i++) {
             svg.append("path")
                 .attr("id", "true")
-                .attr("class", "line" + i)
+                .attr("class", "lineV" + i)
                 .style("stroke", colors[i])
-                .style("stroke-dasharray", ("5, 5"))
+                .style("stroke-dasharray", ("10, 10"))
                 .attr("d", lineF(finalData[i]))
                 .on("mouseover", function (d, i, j) {
                     d3.select(this).style("cursor", "pointer");
-                    d3.selectAll("." + this.classList[0]).style("stroke-width", "4")
-                    d3.selectAll(".dot" + this.classList[0].slice(-1)).attr("r", "5");
+                    d3.select(this).style("stroke-width", "4")
+                    d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "5");
+                    if (this.classList == "lineV4") {
+                        d3.selectAll("rect.MV").style("stroke", "black").style("stroke-width", 3);
+                    } else if (this.classList == "lineV3") {
+                        d3.selectAll("rect.BV").style("stroke", "black").style("stroke-width", 3);
+                    }
                 })
                 .on("mouseout", function (d) {
                     d3.select(this).style("cursor", "default");
-                    d3.selectAll("." + this.classList[0]).style("stroke-width", "2")
-                    d3.selectAll(".dot" + this.classList[0].slice(-1)).attr("r", "3");
+                    d3.select(this).style("stroke-width", "2")
+                    d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "3");
+                    if (this.classList == "lineV4") {
+                        d3.selectAll("rect.MV").style("stroke-width", 0);
+                    } else if (this.classList == "lineV3") {
+                        d3.selectAll("rect.BV").style("stroke-width", 0);
+                    }
                 });
 
             svg.append("path")
                 .attr("id", "true")
-                .attr("class", "line" + i)
+                .attr("class", "lineM" + i)
                 .style("stroke", colors[i])
                 .attr("d", lineM(finalData[i]))
                 .on("mouseover", function (d) {
                     d3.select(this).style("cursor", "pointer");
-                    d3.selectAll("." + this.classList[0]).style("stroke-width", "4")
-                    d3.selectAll(".dot" + this.classList[0].slice(-1)).attr("r", "5");
+                    d3.select(this).style("stroke-width", "4")
+                    d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "5");
+                    if (this.classList == "lineM4") { // master
+                        d3.selectAll("rect.MM").style("stroke", "black").style("stroke-width", 3);
+                    } else if (this.classList == "lineM3") {
+                        d3.selectAll("rect.BM").style("stroke", "black").style("stroke-width", 3);
+                    }
                 })
                 .on("mouseout", function (d) {
                     d3.select(this).style("cursor", "default");
-                    d3.selectAll("." + this.classList[0]).style("stroke-width", "2")
-                    d3.selectAll(".dot" + this.classList[0].slice(-1)).attr("r", "3");
+                    d3.select(this).style("stroke-width", "2")
+                    d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "3");
+                    if (this.classList == "lineM4") {
+                        d3.selectAll("rect.MM").style("stroke-width", 0);
+                    } else if (this.classList == "lineM3") {
+                        d3.selectAll("rect.BM").style("stroke-width", 0);
+                    }
                 });
         }
 
@@ -159,7 +178,7 @@
             svg.selectAll(".dot")
                 .data(finalData[j])
                 .enter().append("circle")
-                .attr("class", "dot" + j)
+                .attr("class", "dotF" + j)
                 .attr("fill", function (d) { return colors[j] })
                 .attr("cx", function (d, j) { return x(j) })
                 .attr("cy", function (d) { return y(d.women) })
@@ -172,20 +191,22 @@
                     tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
                     tooltip.select("text")
                         .html((d.women) + " vrouwen");
-                    d3.selectAll("." + this.classList[0]).attr("r", "6")
-                    d3.selectAll(".line" + this.classList[0].slice(-1)).style("stroke-width", "5")
+                    d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "6")
+                    // d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "6")
+                    d3.selectAll(".lineV" + this.classList[0].slice(-1)).style("stroke-width", "5")
                 })
                 .on("mouseout", function (d) {
                     d3.select(this).style("cursor", "default");
                     tooltip.style("display", "none");
-                    d3.selectAll("." + this.classList[0]).attr("r", "3")
-                    d3.selectAll(".line" + this.classList[0].slice(-1)).style("stroke-width", "2")
+                    d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "3")
+                    // d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "3")
+                    d3.selectAll(".lineV" + this.classList[0].slice(-1)).style("stroke-width", "2")
                 });
 
             svg.selectAll(".dot")
                 .data(finalData[j])
                 .enter().append("circle")
-                .attr("class", "dot" + j)
+                .attr("class", "dotM" + j)
                 .attr("fill", function (d) { return colors[j] })
                 .attr("cx", function (d, j) { return x(j) })
                 .attr("cy", function (d) { return y(d.men) })
@@ -198,14 +219,14 @@
                     tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
                     tooltip.select("text")
                         .html((d.men) + " mannen");
-                    d3.selectAll("." + this.classList[0]).attr("r", "6")
-                    d3.selectAll(".line" + this.classList[0].slice(-1)).style("stroke-width", "5")
+                    d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "6")
+                    d3.selectAll(".lineM" + this.classList[0].slice(-1)).style("stroke-width", "5")
                 })
                 .on("mouseout", function (d) {
                     d3.select(this).style("cursor", "default");
                     tooltip.style("display", "none");
-                    d3.selectAll("." + this.classList[0]).attr("r", "3")
-                    d3.selectAll(".line" + this.classList[0].slice(-1)).style("stroke-width", "2")
+                    d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "3")
+                    d3.selectAll(".lineM" + this.classList[0].slice(-1)).style("stroke-width", "2")
                 });
         }
 
@@ -217,7 +238,7 @@
             .attr("y", 40)
             .attr("text-anchor", "middle")
             .style("font-size", "150%")
-            .text("↓♂  ↓♀");
+            .text("↓♂  ↓♀  ");
 
         /* Create and draw a legend */
         var legend = svg.selectAll(".legend")
@@ -243,7 +264,7 @@
             .attr("y1", 20)
             .attr("y2", 20)
             .style("stroke-width", "3")
-            .style("stroke-dasharray", ("5, 5"))
+            .style("stroke-dasharray", ("10, 5"))
             .style("stroke", function (d, i) {
                 return legendData[i].color;
             })
@@ -260,8 +281,8 @@
             .text(function (d, i) {
                 return legendData[i].name.substr(2);
             })
-            .on("mouseover", function (d) { d3.select(this).style("cursor", "pointer") })
-            .on("mouseout", function (d) { d3.select(this).style("cursor", "default") })
+            .on("mouseover", onhover)
+            .on("mouseout", onmouseout)
             .on("click", onclick);
 
         /* Create a tooltip. */
@@ -283,25 +304,80 @@
             .attr("font-weight", "bold");
 
         function onclick(d, i) {
-            var lineid = "line" + i;
-            var dotid = "dot" + i;
-            var lines = d3.selectAll("." + lineid);
+            var lineidV = "lineV" + i;
+            var lineidM = "lineM" + i;
+
+            var dotidF = "dotF" + i;
+            var dotidM = "dotM" + i;
+            var lines = d3.selectAll("." + lineidV);
             var active = (lines[0][0].id) == "true" ? true : false;
             if (active) {
-                d3.selectAll("." + lineid)
+                d3.selectAll("." + lineidV)
+                    .style("opacity", 0)
+                    .attr("id", "false");
+                d3.selectAll("." + lineidM)
                     .style("opacity", 0)
                     .attr("id", "false");
                 d3.select(this).attr("font-weight", "normal");
-                d3.selectAll("." + dotid)
+                d3.selectAll("." + dotidF)
+                    .style("opacity", 0);
+                d3.selectAll("." + dotidM)
                     .style("opacity", 0);
             } else {
-                d3.selectAll("." + lineid)
+                d3.selectAll("." + lineidV)
+                    .style("opacity", 1)
+                    .attr("id", "true");
+                d3.selectAll("." + lineidM)
                     .style("opacity", 1)
                     .attr("id", "true");
                 d3.select(this).attr("font-weight", "bold");
-                d3.selectAll("." + dotid)
+                d3.selectAll("." + dotidF)
+                    .style("opacity", 1);
+                d3.selectAll("." + dotidM)
                     .style("opacity", 1);
 
+            }
+        };
+
+
+        function onhover(d, i) {
+            d3.select(this).style("cursor", "pointer")
+            var lineidV = "lineV" + i;
+            var lineidM = "lineM" + i;
+            var dotidF = "dotF" + i;
+            var dotidM = "dotM" + i;
+            var lines = d3.selectAll("." + lineidV);
+            var active = (lines[0][0].id) == "true" ? true : false;
+            if (active) {
+                d3.selectAll("." + lineidV)
+                    .style("stroke-width", "5");
+                d3.selectAll("." + lineidM)
+                    .style("stroke-width", "5");
+                d3.selectAll("." + dotidM)
+                    .attr("r", "6")
+                d3.selectAll("." + dotidF)
+                    .attr("r", "6")
+            }
+        };
+
+        function onmouseout(d, i) {
+            d3.select(this).style("cursor", "default")
+            var dotidF = "dotF" + i;
+            var dotidM = "dotM" + i;
+            var lineidV = "lineV" + i;
+            var lineidM = "lineM" + i;
+            var dotid = "dot" + i;
+            var lines = d3.selectAll("." + lineidV);
+            var active = (lines[0][0].id) == "true" ? true : false;
+            if (active) {
+                d3.selectAll("." + lineidV)
+                    .style("stroke-width", "2");
+                d3.selectAll("." + lineidM)
+                    .style("stroke-width", "2");
+                d3.selectAll("." + dotidM)
+                    .attr("r", "3")
+                d3.selectAll("." + dotidF)
+                    .attr("r", "3")
             }
         };
     });

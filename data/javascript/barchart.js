@@ -6,6 +6,8 @@
  */
 
 function createBarchart() {
+    var test = 0;
+
     /* Create the basis variables for the svg. */
     var margin = { top: 50, right: 150, bottom: 50, left: 50 },
         width = 700 - margin.left - margin.right,
@@ -122,6 +124,12 @@ function createBarchart() {
                     case 5: return "Opleidingen in 2017 - 2018";
                 }
             })
+            .attr("class", function (d, i) {
+                if (test < 6) { test++; return "BV" }
+                else if (test < 12) { test++; return "BM" }
+                else if (test < 18) { test++; return "MV" }
+                else { test++; return "MM" }
+            })
             .on('mouseover', synchronizedMouseOver)
             .on("mousemove", function (d) {
                 var xPosition = d3.mouse(this)[0] + 60;
@@ -190,12 +198,16 @@ function createBarchart() {
             tooltip.style("display", null);
             d3.select(this).style("cursor", "pointer");
             d3.select(this).style("stroke", "black");
+
+            d3.select(this).style("stroke-width", "2");
+
         };
 
         function synchronizedMouseOut(d) {
             tooltip.style("display", "none");
             d3.select(this).style("stroke", "none");
             d3.select(this).style("cursor", "default");
+
         };
 
         function clickSunburst(d) {
