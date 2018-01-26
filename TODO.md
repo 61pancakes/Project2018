@@ -13,6 +13,4 @@
 - Verslag maken
 
 - Bug Information Studies sunburst fixen
-- Bug Linechart path dikte fixen
-
 - Moet je de Readme en Design updaten naar het eindproduct?
