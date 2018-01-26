@@ -12,6 +12,7 @@
 - Filmpje maken
 - Verslag maken
 
-NB: Information Studies sunburst fixen
+- Bug Information Studies sunburst fixen
+- Bug Linechart path dikte fixen
 
 - Moet je de Readme en Design updaten naar het eindproduct?
