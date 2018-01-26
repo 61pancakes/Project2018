@@ -43,14 +43,14 @@
 
 ### day 8 (17 January 2017)
 - Code georganiseerd. 
-- Aan lijndiagram gewerkt.
-- Na zitten denken over indeling HTML.
+- Aan lijngrafiek gewerkt.
+- Na zitten denken over indeling HTML, geen verstand van Bootstrap dus beetje rond zitten kijken naar voorbeelden op de site wat mogelijkheden zijn.
 
 ### day 9 (18 January 2017)
 - IVM Storm thuisgebleven.
 
 ### day 10 (19 January 2017)
-- Legenda + aan/uitzetten van lijndiagram, maar kreeg dat laatste (nog) niet volledig werkende.
+- Gewerkt aan de legenda + aan/uitzetten van lijnen in de lijngrafiek, maar kreeg dat laatste (nog) niet volledig werkende.
 - Twijfel over of ik de duo's (M/F) individueel wil kunnen uitzetten, of een soort voorselectie wil kunnen geven met een dropdown menu, of enkel als duo's. Hoeveel vrijheid geef je de gebruiker?
 - Presentatie gegeven. 
 
@@ -58,17 +58,17 @@
 
 
 ### day 11 (22 January 2017)
-- Heel erg veel gekloot met pages & kleuren van de sunburst.
+- Heel erg veel gekloot met pages & kleuren van de sunburst. Ik wil de laatste twee ringen specifieke kleuren geven en ook de studies in verschillende jaren wel consistent kleuren, en in alle voorbeelden zijn die random dus daar moet ik nog wat op vinden.
 ![voortgang](/doc/sunburst.gif)
 
 ## day 12 (23 January 2017)
-- Legenda van line chart afgemaakt (Statisch)
-- Opnieuw poging gewaagd eigen interactie line chart (lines & legenda) - wat precies uit en aan kunnen zetten waar?
+- Legenda van de lijngrafiek afgemaakt (Statisch)
+- Opnieuw poging gewaagd aan de interactie van de lijngrafiek (lines & legenda) - wat precies uit en aan kunnen zetten waar? 
 - Interactiviteit tussen barchart en sunburst toegevoegd! :) Er moet nog wel uitleg komen over wat je kan doen en waarom je dat zou doen.
 
 ## day 13 (24 January 2017)
-- Line chart legenda interactie werkende gekregen! 
-- Begin gemaakt aan tabel in Bootstrap - hoeveel studies met elkaar vergelijken?
+- Lijngrafieklegenda interactie werkende gekregen! Ik had ook graag gewild dat je lijnen uit kon zetten door op de lijnen zelf te klikken, in plaats van op de legenda, maar dat is wel nog meer werk en ik weet niet zo snel hoe ik dat netjes zou oplossen, dus doe ik dat maar (voorlopig) niet.
+- Begin gemaakt aan tabel in Bootstrap, besloten de tabel 'verticaal' met elkaar te vergelijken, in plaats van de standaard 'horizontale' tabellen waarbij een dataset in 1 rij in kolommen wordt geplaatst. Nu is nog de vraag - hoeveel studies met elkaar vergelijken? Beginnen met kijken of ik 2 kan laten werken.
 - Planning voor laatste dagen gemaakt.
 
 ![voortgang](/doc/linegraph.gif)
@@ -76,11 +76,16 @@
 ## day 14 (25 January 2017)
 - Besloten datapunten toe te voegen aan de lijngrafiek, om de data beter te visualiseren.
 - Daar een tooltip bijgemaakt, zelfde als bij staafdiagram.
-
-- Poging tot legenda bij sunburst gedaan. Te veel kleuren dus geen goed idee:  
+- Poging tot legenda bij sunburst gedaan. Dat zijn echter te veel kleuren, dus bleek geen goed idee:  
 ![voortgang](/doc/sunburstlegenda.png)
 
+- Daarna gekeken of ik de 'hoverable' legenda kon maken. Dat is gelukt en ik vind het duidelijk genoeg. Code is nu wel een zooitje maar dat komt volgende week wel.
+![voortgang](/doc/sunburstv2.png)
+
 ## day 15 (26 January 2017)
+
+
+- Presentatie gegeven. 
 ## day 16 (29 January 2017)
 ## day 17 (30 January 2017)
 ## day 18 (31 January 2017)
