@@ -308,11 +308,11 @@ function createLinegraph() {
                 .style("stroke-width", "4");
             d3.selectAll(".dotM" + this.classList[0].slice(-1))
                 .attr("r", "5");
-            if (this.classList == "drawLineM4") {
+            if (this.classList == "lineM4") {
                 d3.selectAll("rect.MM")
                     .style("stroke", "black")
                     .style("stroke-width", 3);
-            } else if (this.classList == "drawLineM3") {
+            } else if (this.classList == "lineM3") {
                 d3.selectAll("rect.BM")
                     .style("stroke", "black")
                     .style("stroke-width", 3);
@@ -395,9 +395,9 @@ function createLinegraph() {
             d3.select(this).style("stroke-width", "2");
             d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "3");
             if (this.classList == "lineF4") {
-                d3.selectAll("rect.MV").style("stroke-width", 0);
+                d3.selectAll("rect.MF").style("stroke-width", 0);
             } else if (this.classList == "lineF3") {
-                d3.selectAll("rect.BV").style("stroke-width", 0);
+                d3.selectAll("rect.BF").style("stroke-width", 0);
             }
         }
 
@@ -405,9 +405,9 @@ function createLinegraph() {
             d3.select(this).style("cursor", "default");
             d3.select(this).style("stroke-width", "2");
             d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "3");
-            if (this.classList == "drawLineM4") {
+            if (this.classList == "lineM4") {
                 d3.selectAll("rect.MM").style("stroke-width", 0);
-            } else if (this.classList == "drawLineM3") {
+            } else if (this.classList == "lineM3") {
                 d3.selectAll("rect.BM").style("stroke-width", 0);
             }
         }
