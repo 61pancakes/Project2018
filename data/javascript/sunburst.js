@@ -7,12 +7,14 @@
  */
 
 /* Create the basis variables for the svg. */
-var margin = { top: 0, right: 50, bottom: 50, left: 150 },
+var root;
+
+var margin = { top: 0, right: 0, bottom: 0, left: 0 },
     width = 1000 - margin.left - margin.right,
     height = 1000 - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     legend = {
-        width: 150, height: 30, slice: 3, arrow: 10
+        width: 190, height: 30, slice: 3, arrow: 10
     };
 
 var x = d3.scale.linear()
@@ -37,6 +39,11 @@ var svg = d3.select("body").append("svg:svg")
     .attr("id", "container")
     .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");
 
+/* Create a background circle for correct hovering.*/
+svg.append("circle")
+    .attr("r", radius)
+    .style("opacity", 0);
+
 /* Create the variables for the coloring. */
 var courses = ["BA Artificial Intelligence", "MA Artificial Intelligence", "MA Astronomy and Astrophysics",
     "MA Biological Sciences", "BA Biology", "BA Biomedical Sciences", "MA Brain and Cognitive Sciences",
@@ -53,96 +60,46 @@ var courses = ["BA Artificial Intelligence", "MA Artificial Intelligence", "MA A
     lightblue = "#99e6ff",
     blue = "#1ac6ff";
 
-/* Function to color each section the right color. */
-function fillSunburst(d) {
-    if (d.depth == 0) {
-        return "lightgrey";
-    } else if (d.depth == 1) {
-        return "grey";
-    } else if (d.depth == 2) {
-        return colors[courses.indexOf(d.name)];
-    } else if (d.depth == 3) {
-        if (d.name == "Mannen") {
-            return lightblue;
-        } else {
-            return lightpink;
-        }
-    } else if (d.depth == 4) {
-        if (d.parent.name == "Mannen") {
-            if (d.name == "Postpropedeuse") {
-                return blue;
-            } else {
-                return lightblue;
-            }
-        } else {
-            if (d.name == "Postpropedeuse") {
-                return pink;
-            } else {
-                return lightpink;
-            }
-        }
-    }
-}
-
-/* Load dataset from local server to create the circle partitions. */
-d3.json("data/json/sunburst.json", function (error, root) {
-    createLegend();
-
-    /* Create a background circle for correct hovering.*/
-    svg.append("circle")
-        .attr("r", radius)
-        .style("opacity", 0);
-
-    /* Create the sunburst. */
-    svg.selectAll("path")
-        .data(partition.nodes(root))
-        .enter().append("svg:path")
-        .attr("d", arc)
-        .attr("class", "sunburst")
-        .style("fill", fillSunburst)
-        .style("stroke-width", "0.5")
-        .on("click", clickSunburst)
-        .on("mouseover", mouseoverSunburst);
-
-    d3.select("#container").on("mouseleave", mouseleaveSunburst);
-
-    function clickSunburst(d) {
-        svg.transition()
-            .duration(1200)
-            .tween("scale", function () {
-                var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
-                    yd = d3.interpolate(y.domain(), [d.y, 1]),
-                    yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
-                return function (t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
-            })
-            .selectAll("path")
-            .attrTween("d", function (d) { return function () { return arc(d); }; });
-    }
-});
-
-function callSunburst(year) {
+function updateSunburst(year) {/* Load dataset from local server to create the circle partitions. */
     d3.json("data/json/sunburst.json", function (error, root) {
-        data = partition.nodes(root);
-        f = data.filter(
-            function (data) { return data.name == year }
-        );
+        createLegend();
+        data = partition.nodes(root.children[year]);
 
-        d = f[0];
-        svg.transition()
-            .duration(2000)
-            .tween("scale", function () {
-                var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
-                    yd = d3.interpolate(y.domain(), [d.y, 1]),
-                    yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
-                return function (t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
-            })
-            .selectAll("path")
-            .attrTween("d", function (d) { return function () { return arc(d); }; });
+        svg.selectAll("path")
+            .data(data)
+            .exit().remove();
+
+        /* Create the sunburst. */
+        svg.selectAll("path")
+            .data(data)
+            .attr("d", arc)
+            .attr("class", "sunburst")
+            .enter().append("path")
+            .style("stroke-width", "0.5")
+            .style("fill", fillSunburst)
+            .on("click", clickSunburst)
+            .on("mouseover", mouseover)
+        clickSunburst(data[0]);
+
+        function clickSunburst(d) {
+            svg.transition()
+                .duration(750)
+                .tween("scale", function () {
+                    var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
+                        yd = d3.interpolate(y.domain(), [d.y, 1]),
+                        yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
+                    return function (t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); };
+                })
+                .selectAll("path")
+                .attrTween("d", function (d) { return function () { return arc(d); }; });
+        }
+
+        d3.select("#container").on("mouseleave", mouseleave);
     });
 };
 
 /* Fade all but the current sequence, and show correct legend. */
-function mouseoverSunburst(d) {
+function mouseover(d) {
     var studentcount = d.value + " studenten",
         ancestors = getAncestors(d);
     updateLegend(ancestors, studentcount);
@@ -163,7 +120,7 @@ function mouseoverSunburst(d) {
 }
 
 /* Set sunburst back to default CSS. */
-function mouseleaveSunburst(d) {
+function mouseleave(d) {
     d3.select("#legend")
         .style("visibility", "hidden");
     d3.select("#explanation")
@@ -175,7 +132,7 @@ function mouseleaveSunburst(d) {
         .style("opacity", 1)
         .style("stroke-width", 0.5)
         .each("end", function () {
-            d3.select(this).on("mouseover", mouseoverSunburst);
+            d3.select(this).on("mouseover", mouseover);
         });
 }
 
@@ -187,6 +144,8 @@ function getAncestors(node) {
         ancestors.unshift(current);
         current = current.parent;
     }
+    ancestors.unshift(current);
+
     return ancestors;
 }
 
@@ -256,5 +215,33 @@ function updateLegend(ancestors, studentcount) {
 
     d3.select("#legend")
         .style("visibility", "");
+}
 
+/* Function to color each section the right color. */
+function fillSunburst(d) {
+    if (d.depth == 0) {
+        return "wheat";
+    } else if (d.depth == 1) {
+        return colors[courses.indexOf(d.name)];
+    } else if (d.depth == 2) {
+        if (d.name == "Mannen") {
+            return lightblue;
+        } else {
+            return lightpink;
+        }
+    } else if (d.depth == 3) {
+        if (d.parent.name == "Mannen") {
+            if (d.name == "Postpropedeuse") {
+                return blue;
+            } else {
+                return lightblue;
+            }
+        } else {
+            if (d.name == "Postpropedeuse") {
+                return pink;
+            } else {
+                return lightpink;
+            }
+        }
+    }
 }

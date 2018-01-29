@@ -6,6 +6,7 @@
  */
 
 function createBarchart() {
+    var begin = false;
     /* Create the basis variables for the svg (hardcoded). */
     var margin = { top: 50, right: 150, bottom: 50, left: 50 },
         width = 700 - margin.left - margin.right,
@@ -115,17 +116,7 @@ function createBarchart() {
             .attr("height", function (d) { return (y(d.begin) - y(d.end)); })
             .attr("x", function (d, i) { return x0(i); })
             .attr("y", function (d) { return (y(d.end)); })
-            .attr("id", function (d, i) {
-                /* The id is used in interactivity with the sunburst. */
-                switch (i) {
-                    case 0: return "Opleidingen in 2012 - 2013";
-                    case 1: return "Opleidingen in 2013 - 2014";
-                    case 2: return "Opleidingen in 2014 - 2015";
-                    case 3: return "Opleidingen in 2015 - 2016";
-                    case 4: return "Opleidingen in 2016 - 2017";
-                    case 5: return "Opleidingen in 2017 - 2018";
-                }
-            })
+            .attr("id", function (d, i) { return i; })
             .attr("class", function (d, i) {
                 /* The class is used in interactivity with the line graph. */
                 if (classCounter < 6) { classCounter++; return "BF" }
@@ -133,10 +124,10 @@ function createBarchart() {
                 else if (classCounter < 18) { classCounter++; return "MF" }
                 else { classCounter++; return "MM" }
             })
-            .on('mouseover', mouseoverBars)
-            .on("mousemove", mousemoveBars)
-            .on("mouseout", mouseoutBars)
-            .on("click", mouseclickBars);
+            .on('mouseover', mouseover)
+            .on("mousemove", mousemove)
+            .on("mouseout", mouseout)
+            .on("click", click);
 
         /* Create and draw a legend */
         var legend = svg.selectAll(".legend")
@@ -192,7 +183,7 @@ function createBarchart() {
             .attr("font-weight", "bold");
 
         /* Show data on mouseover & highlight the bar. */
-        function mouseoverBars(d) {
+        function mouseover(d) {
             tooltip.style("display", null);
             d3.select(this).style("cursor", "pointer");
             d3.select(this).style("stroke", "black");
@@ -200,7 +191,7 @@ function createBarchart() {
         };
 
         /* Let the tooltip follow the mouse while on a bar. */
-        function mousemoveBars(d) {
+        function mousemove(d) {
             var xPos = d3.mouse(this)[0] + 60;
             var yPos = d3.mouse(this)[1] - 20;
             tooltip.attr("transform", "translate(" + xPos + "," + yPos + ")");
@@ -209,14 +200,15 @@ function createBarchart() {
         }
 
         /* Hide data & remove highlight of the bar. */
-        function mouseoutBars(d) {
+        function mouseout(d) {
             tooltip.style("display", "none");
             d3.select(this).style("stroke", "none");
             d3.select(this).style("cursor", "default");
         };
 
-        function mouseclickBars(d) {
-            callSunburst(this.id);
+        /* Show the sunburst when clicked on a year. */
+        function click(d) {
+            updateSunburst(this.id);
         };
     })
 };
