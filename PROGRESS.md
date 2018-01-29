@@ -86,10 +86,16 @@
 
 
 ## day 15 (26 January 2017)
-
+- 
 - Presentatie gegeven. 
 
 ## day 16 (29 January 2017)
+- Code grotendeels opgeschoond, ik moet nog kijken of ik de line chart nog verder kan inkorten. Ik heb nu alle M/F-functies bijna dubbel.
+- Sunburst veranderd naar enkel aanroepen door staafdiagram (max. 1 academisch jaar visualiseren) - er zit nog een bug in de eerste keer klikken, dan kan je nog niet hoveren, dus dat moet ik morgen nog even oplossen.
+- Begin gemaakt aan layout website.
+
+![voortgang](/doc/websitev1.png)
+
 ## day 17 (30 January 2017)
 ## day 18 (31 January 2017)
 ## day 19 (32 January 2017)
