@@ -105,11 +105,11 @@ function createLinegraph() {
         }
 
         /* Create the lines. */
-        var drawLineF = d3.svg.line()
+        var drawlineF = d3.svg.line()
             .x(function (d, i) { return x(i); })
             .y(function (d) { return y(d.women); })
 
-        var drawLineM = d3.svg.line()
+        var drawlineM = d3.svg.line()
             .x(function (d, i) { return x(i); })
             .y(function (d) { return y(d.men); })
 
@@ -122,7 +122,7 @@ function createLinegraph() {
                 .attr("class", "lineF" + i)
                 .style("stroke", colors[i])
                 .style("stroke-dasharray", ("10, 10"))
-                .attr("d", drawLineF(lineData[i]))
+                .attr("d", drawlineF(lineData[i]))
                 .on("mouseover", mouseoverL("F"))
                 .on("mouseout", mouseoutL("F"));
 
@@ -130,8 +130,8 @@ function createLinegraph() {
                 .attr("id", "true")
                 .attr("class", "lineM" + i)
                 .style("stroke", colors[i])
-                .attr("d", drawLineM(lineData[i]))
-                .on("mouseover", mouseover("M"))
+                .attr("d", drawlineM(lineData[i]))
+                .on("mouseover", mouseoverL("M"))
                 .on("mouseout", mouseoutL("M"));
         }
 
@@ -316,6 +316,7 @@ function createLinegraph() {
 
         /* Show data of the current dot & highlight the rest of the line. */
         function mouseoverDotF(d) {
+            console.log(d);
             var xPos = d3.mouse(this)[0] + 30,
                 yPos = d3.mouse(this)[1] - 20;
             tooltip
