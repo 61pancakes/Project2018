@@ -216,7 +216,7 @@ function createBarchart() {
         };
 
         function mouseclickBars(d) {
-            sunburstYear(this.id);
+            callSunburst(this.id);
         };
     })
 };
