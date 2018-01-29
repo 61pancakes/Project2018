@@ -123,16 +123,16 @@ function createLinegraph() {
                 .style("stroke", colors[i])
                 .style("stroke-dasharray", ("10, 10"))
                 .attr("d", drawLineF(lineData[i]))
-                .on("mouseover", mouseoverLineF) // Combine the M/F functions?
-                .on("mouseout", mouseoutLineF);
+                .on("mouseover", mouseoverL("F"))
+                .on("mouseout", mouseoutL("F"));
 
             svg.append("path")
                 .attr("id", "true")
                 .attr("class", "lineM" + i)
                 .style("stroke", colors[i])
                 .attr("d", drawLineM(lineData[i]))
-                .on("mouseover", mouseoverLineM)
-                .on("mouseout", mouseoutLineM);
+                .on("mouseover", mouseover("M"))
+                .on("mouseout", mouseoutL("M"));
         }
 
         /* Add circles ("dots") to the lines, corresponding with the data points, 
@@ -211,7 +211,6 @@ function createLinegraph() {
             .style("font-size", "150%")
             .text("↓♂  ↓♀  ");
 
-
         /* Create a tooltip. */
         var tooltip = svg.append("g")
             .attr("class", "tooltip")
@@ -285,68 +284,35 @@ function createLinegraph() {
         };
 
         /* Highlight the current line and dots & highlight barchart if it's the corresponding data. */
-        function mouseoverLineF() {
-            d3.select(this)
-                .style("cursor", "pointer")
-                .style("stroke-width", "4");
-            d3.selectAll(".dotF" + this.classList[0].slice(-1))
-                .attr("r", "5");
-            if (this.classList == "lineF4") {
-                d3.selectAll("rect.MF")
-                    .style("stroke", "black")
-                    .style("stroke-width", 3);
-            } else if (this.classList == "lineF3") {
-                d3.selectAll("rect.BF")
-                    .style("stroke", "black")
-                    .style("stroke-width", 3);
+        function mouseoverL(gender) {
+            return function () {
+                d3.select(this).style("cursor", "pointer");
+                d3.select(this).style("stroke-width", "4")
+                if (gender == "M") {
+                    d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "5");
+                    if (this.classList == "lineM4") {
+                        d3.selectAll("rect.MM")
+                            .style("stroke", "black")
+                            .style("stroke-width", 3);
+                    } else if (this.classList == "lineM3") {
+                        d3.selectAll("rect.BM")
+                            .style("stroke", "black")
+                            .style("stroke-width", 3);
+                    }
+                } else {
+                    d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "5");
+                    if (this.classList == "lineF4") {
+                        d3.selectAll("rect.MF")
+                            .style("stroke", "black")
+                            .style("stroke-width", 3);
+                    } else if (this.classList == "lineF3") {
+                        d3.selectAll("rect.BF")
+                            .style("stroke", "black")
+                            .style("stroke-width", 3);
+                    }
+                }
             }
         }
-
-        function mouseoverLineM() {
-            d3.select(this)
-                .style("cursor", "pointer")
-                .style("stroke-width", "4");
-            d3.selectAll(".dotM" + this.classList[0].slice(-1))
-                .attr("r", "5");
-            if (this.classList == "lineM4") {
-                d3.selectAll("rect.MM")
-                    .style("stroke", "black")
-                    .style("stroke-width", 3);
-            } else if (this.classList == "lineM3") {
-                d3.selectAll("rect.BM")
-                    .style("stroke", "black")
-                    .style("stroke-width", 3);
-            }
-        }
-
-        // function mouseoverLines(d, gender) {
-        //     d3.select(this).style("cursor", "pointer");
-        //     d3.select(this).style("stroke-width", "4")
-
-        //     if (gender == "m") {
-        //         d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "5");
-        //         if (this.classList == "drawLineM4") { // master
-        //             d3.selectAll("rect.MM")
-        //                 .style("stroke", "black")
-        //                 .style("stroke-width", 3);
-        //         } else if (this.classList == "drawLineM3") {
-        //             d3.selectAll("rect.BM")
-        //                 .style("stroke", "black")
-        //                 .style("stroke-width", 3);
-        //         }
-        //     } else {
-        //         d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "5");
-        //         if (this.classList == "lineF4") {
-        //             d3.selectAll("rect.MV")
-        //                 .style("stroke", "black")
-        //                 .style("stroke-width", 3);
-        //         } else if (this.classList == "lineF3") {
-        //             d3.selectAll("rect.BV")
-        //                 .style("stroke", "black")
-        //                 .style("stroke-width", 3);
-        //         }
-        //     }
-        // }
 
         /* Show data of the current dot & highlight the rest of the line. */
         function mouseoverDotF(d) {
@@ -390,25 +356,25 @@ function createLinegraph() {
         }
 
         /* Remove the highlights. */
-        function mouseoutLineF(d) {
-            d3.select(this).style("cursor", "default");
-            d3.select(this).style("stroke-width", "2");
-            d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "3");
-            if (this.classList == "lineF4") {
-                d3.selectAll("rect.MF").style("stroke-width", 0);
-            } else if (this.classList == "lineF3") {
-                d3.selectAll("rect.BF").style("stroke-width", 0);
-            }
-        }
-
-        function mouseoutLineM(d) {
-            d3.select(this).style("cursor", "default");
-            d3.select(this).style("stroke-width", "2");
-            d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "3");
-            if (this.classList == "lineM4") {
-                d3.selectAll("rect.MM").style("stroke-width", 0);
-            } else if (this.classList == "lineM3") {
-                d3.selectAll("rect.BM").style("stroke-width", 0);
+        function mouseoutL(gender) {
+            return function () {
+                d3.select(this).style("cursor", "default");
+                d3.select(this).style("stroke-width", "2");
+                d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "3");
+                if (gender == "M") {
+                    d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "3");
+                    if (this.classList == "lineM4") {
+                        d3.selectAll("rect.MM").style("stroke-width", 0);
+                    } else if (this.classList == "lineM3") {
+                        d3.selectAll("rect.BM").style("stroke-width", 0);
+                    }
+                } else {
+                    if (this.classList == "lineF4") {
+                        d3.selectAll("rect.MF").style("stroke-width", 0);
+                    } else if (this.classList == "lineF3") {
+                        d3.selectAll("rect.BF").style("stroke-width", 0);
+                    }
+                }
             }
         }
     });
