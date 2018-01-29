@@ -95,6 +95,7 @@
 - Begin gemaakt aan layout website.
 
 ![voortgang](/doc/websitev1.png)
+![voortgang](/doc/websitev2.png)
 
 ## day 17 (30 January 2017)
 ## day 18 (31 January 2017)
