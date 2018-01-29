@@ -5,16 +5,16 @@
  * linegraph.js: This file creates a multi line graph in d3 with data loaded in from a .json file.
  */
 
-
-(function () {
-    /* Create the basis variables for the svg. */
+function createLinegraph() {
+    /* Create the basis variables for the svg (hardcoded). */
     var margin = { top: 50, right: 250, bottom: 50, left: 50 },
         width = 800 - margin.left - margin.right,
         height = 600 - margin.top - margin.bottom,
-        years = 5;
+        years = 5,
+        studentMax = 3738;
 
     var y = d3.scale.linear()
-        .domain([3739, 0])
+        .domain([studentMax, 0])
         .range([0, height]);
 
     var x = d3.scale.ordinal()
@@ -72,7 +72,7 @@
         .style("text-anchor", "end")
         .text("→ Academisch jaar");
 
-    /* Add a title */
+    /* Add a title to the svg. */
     svg.append("g")
         .append("text")
         .attr("x", (width / 2))
@@ -80,167 +80,93 @@
         .attr("text-anchor", "middle")
         .style("font", "sans-serif")
         .style("text-decoration", "underline")
-        .text("Genderverdeling @ verschillende universiteiten.");
+        .text("Man-vrouwverhouding bij verschillende universiteiten.");
 
-    /* Load dataset from local server to create the lines. */
+    /* Load dataset to create the lines. */
     d3.json("data/json/linegraph.json", function (error, data) {
-        var finalData = [];
-        var years = ["twaalfdertien", "dertienveertien", "veertienvijftien",
-            "vijftienzestien", "zestienzeventien"];
+        var colors = ["#BBCCEE", "#44AA99", "#332288", "#117733", "#999933",
+            "#DDCC77", "#CC6677", "#882255", "#AA4499"],
+            years = ["twaalfdertien", "dertienveertien", "veertienvijftien",
+                "vijftienzestien", "zestienzeventien"];
 
-        /* Create M/F sets made of integers of the data. */
-        var k = 0;
-        for (var i = 0; i < 17; i++) {
-            finalData[k] = [5];
+        /* Transform the from the dataset from string to int in a multidimensional array.
+            The result will be tuples (male/female) with y coordinates:
+            i.e.: [{TU Delft F, TU Delft M}, {UvA FNWI F, UvA FNWI M}]*/
+        var lineData = [];
+        for (var i = 0, k = 0; i < 17; i++ , k++) {
+            lineData[k] = [5];
             for (var j = 0; j < 5; j++) {
-                finalData[k][j] = {
+                lineData[k][j] = {
                     women: parseInt(data.data[i][years[j]]),
                     men: parseInt(data.data[i + 1][years[j]])
                 };
             }
             i += 1;
-            k += 1;
         }
 
-        /* create a line function that can convert data[] into x and y coordinates. */
-        var lineF = d3.svg.line()
+        /* Create the lines. */
+        var drawLineF = d3.svg.line()
             .x(function (d, i) { return x(i); })
             .y(function (d) { return y(d.women); })
 
-        var lineM = d3.svg.line()
+        var drawLineM = d3.svg.line()
             .x(function (d, i) { return x(i); })
             .y(function (d) { return y(d.men); })
 
-        var colors = ["#BBCCEE", "#44AA99", "#332288", "#117733", "#999933",
-            "#DDCC77", "#CC6677", "#882255", "#AA4499"];
-        var legendData = [];
-        for (var l = 0; l < 9; l++) {
-            legendData[l] = { color: colors[l], name: data.data[l * 2].naam }
-        };
-
-        /* Show the lines. */
+        /* Loop over data to create all lines. 
+            The id is used to combine with the legend, to toggle the lines on/off.
+            The class is used to combine with the datapoints. */
         for (var i = 0; i < 9; i++) {
             svg.append("path")
                 .attr("id", "true")
-                .attr("class", "lineV" + i)
+                .attr("class", "lineF" + i)
                 .style("stroke", colors[i])
                 .style("stroke-dasharray", ("10, 10"))
-                .attr("d", lineF(finalData[i]))
-                .on("mouseover", function (d, i, j) {
-                    d3.select(this).style("cursor", "pointer");
-                    d3.select(this).style("stroke-width", "4")
-                    d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "5");
-                    if (this.classList == "lineV4") {
-                        d3.selectAll("rect.MV").style("stroke", "black").style("stroke-width", 3);
-                    } else if (this.classList == "lineV3") {
-                        d3.selectAll("rect.BV").style("stroke", "black").style("stroke-width", 3);
-                    }
-                })
-                .on("mouseout", function (d) {
-                    d3.select(this).style("cursor", "default");
-                    d3.select(this).style("stroke-width", "2")
-                    d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "3");
-                    if (this.classList == "lineV4") {
-                        d3.selectAll("rect.MV").style("stroke-width", 0);
-                    } else if (this.classList == "lineV3") {
-                        d3.selectAll("rect.BV").style("stroke-width", 0);
-                    }
-                });
+                .attr("d", drawLineF(lineData[i]))
+                .on("mouseover", mouseoverLineF) // Combine the M/F functions?
+                .on("mouseout", mouseoutLineF);
 
             svg.append("path")
                 .attr("id", "true")
                 .attr("class", "lineM" + i)
                 .style("stroke", colors[i])
-                .attr("d", lineM(finalData[i]))
-                .on("mouseover", function (d) {
-                    d3.select(this).style("cursor", "pointer");
-                    d3.select(this).style("stroke-width", "4")
-                    d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "5");
-                    if (this.classList == "lineM4") { // master
-                        d3.selectAll("rect.MM").style("stroke", "black").style("stroke-width", 3);
-                    } else if (this.classList == "lineM3") {
-                        d3.selectAll("rect.BM").style("stroke", "black").style("stroke-width", 3);
-                    }
-                })
-                .on("mouseout", function (d) {
-                    d3.select(this).style("cursor", "default");
-                    d3.select(this).style("stroke-width", "2")
-                    d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "3");
-                    if (this.classList == "lineM4") {
-                        d3.selectAll("rect.MM").style("stroke-width", 0);
-                    } else if (this.classList == "lineM3") {
-                        d3.selectAll("rect.BM").style("stroke-width", 0);
-                    }
-                });
+                .attr("d", drawLineM(lineData[i]))
+                .on("mouseover", mouseoverLineM)
+                .on("mouseout", mouseoutLineM);
         }
 
+        /* Add circles ("dots") to the lines, corresponding with the data points, 
+            The class is used to combine with the lines. */
         for (var j = 0; j < 9; j++) {
             svg.selectAll(".dot")
-                .data(finalData[j])
+                .data(lineData[j])
                 .enter().append("circle")
                 .attr("class", "dotF" + j)
                 .attr("fill", function (d) { return colors[j] })
                 .attr("cx", function (d, j) { return x(j) })
                 .attr("cy", function (d) { return y(d.women) })
                 .attr("r", 3)
-                .on("mouseover", function (d, j) {
-                    d3.select(this).style("cursor", "pointer");
-                    var xPosition = d3.mouse(this)[0] + 30;
-                    var yPosition = d3.mouse(this)[1] - 20;
-                    tooltip.style("display", null);
-                    tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
-                    tooltip.select("text")
-                        .html((d.women) + " vrouwen");
-                    d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "6")
-                    // d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "6")
-                    d3.selectAll(".lineV" + this.classList[0].slice(-1)).style("stroke-width", "5")
-                })
-                .on("mouseout", function (d) {
-                    d3.select(this).style("cursor", "default");
-                    tooltip.style("display", "none");
-                    d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "3")
-                    // d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "3")
-                    d3.selectAll(".lineV" + this.classList[0].slice(-1)).style("stroke-width", "2")
-                });
+                .on("mouseover", mouseoverDotF)
+                .on("mouseout", mouseoutDotF);
 
             svg.selectAll(".dot")
-                .data(finalData[j])
+                .data(lineData[j])
                 .enter().append("circle")
                 .attr("class", "dotM" + j)
                 .attr("fill", function (d) { return colors[j] })
                 .attr("cx", function (d, j) { return x(j) })
                 .attr("cy", function (d) { return y(d.men) })
                 .attr("r", 3)
-                .on("mouseover", function (d, j) {
-                    d3.select(this).style("cursor", "pointer");
-                    var xPosition = d3.mouse(this)[0] + 30;
-                    var yPosition = d3.mouse(this)[1] - 20;
-                    tooltip.style("display", null);
-                    tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
-                    tooltip.select("text")
-                        .html((d.men) + " mannen");
-                    d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "6")
-                    d3.selectAll(".lineM" + this.classList[0].slice(-1)).style("stroke-width", "5")
-                })
-                .on("mouseout", function (d) {
-                    d3.select(this).style("cursor", "default");
-                    tooltip.style("display", "none");
-                    d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "3")
-                    d3.selectAll(".lineM" + this.classList[0].slice(-1)).style("stroke-width", "2")
-                });
+                .on("mouseover", mouseoverDotM)
+                .on("mouseout", mouseoutDotM);
         }
 
+        /* Create the data for a legend and add it. */
+        var legendData = [];
+        for (var l = 0; l < 9; l++) {
+            legendData[l] = { color: colors[l], name: data.data[l * 2].naam }
+        };
 
-        /* Add legend 'columns' */
-        svg.append("g")
-            .append("text")
-            .attr("x", width + 75)
-            .attr("y", 40)
-            .attr("text-anchor", "middle")
-            .style("font-size", "150%")
-            .text("↓♂  ↓♀  ");
-
-        /* Create and draw a legend */
         var legend = svg.selectAll(".legend")
             .data(legendData)
             .enter().append("g")
@@ -253,10 +179,8 @@
             .attr("y1", 20)
             .attr("y2", 20)
             .style("stroke-width", "3")
-            .style("stroke", function (d, i) {
-                return legendData[i].color;
-            })
-            .on("click", onclick);
+            .style("stroke", function (d, i) { return legendData[i].color; })
+            .on("click", mouseclickLegend);
 
         legend.append("line")
             .attr("x1", width + 5)
@@ -264,12 +188,9 @@
             .attr("y1", 20)
             .attr("y2", 20)
             .style("stroke-width", "3")
-            .style("stroke-dasharray", ("10, 5"))
-            .style("stroke", function (d, i) {
-                return legendData[i].color;
-            })
-            .on("click", onclick);
-
+            .style("stroke-dasharray", ("5, 5"))
+            .style("stroke", function (d, i) { return legendData[i].color; })
+            .on("click", mouseclickLegend);
         legend.append("text")
             .attr("class", function (d, i) { return legendData[i].name.substr(2) })
             .attr("font", "sans-serif")
@@ -278,12 +199,18 @@
             .attr("y", 20)
             .attr("dy", ".35em")
             .style("text-anchor", "start")
-            .text(function (d, i) {
-                return legendData[i].name.substr(2);
-            })
-            .on("mouseover", onhover)
-            .on("mouseout", onmouseout)
-            .on("click", onclick);
+            .text(function (d, i) { return legendData[i].name.substr(2); })
+            .on("mouseover", mouseoverLegend)
+            .on("mouseout", mouseoutLegend)
+            .on("click", mouseclickLegend);
+        svg.append("g")
+            .append("text")
+            .attr("x", width + 75)
+            .attr("y", 40)
+            .attr("text-anchor", "middle")
+            .style("font-size", "150%")
+            .text("↓♂  ↓♀  ");
+
 
         /* Create a tooltip. */
         var tooltip = svg.append("g")
@@ -303,83 +230,188 @@
             .attr("font-size", "12px")
             .attr("font-weight", "bold");
 
-        function onclick(d, i) {
-            var lineidV = "lineV" + i;
-            var lineidM = "lineM" + i;
+        /* Check if the clicked line is active & toggle the line & dots off, or on otherwise. */
+        function mouseclickLegend(d, i) {
+            var lineF = "lineF" + i,
+                lineM = "lineM" + i,
+                dotF = "dotF" + i,
+                dotM = "dotM" + i,
+                currentLine = d3.select("." + lineF),
+                active = currentLine[0][0].id == "true" ? true : false;
 
-            var dotidF = "dotF" + i;
-            var dotidM = "dotM" + i;
-            var lines = d3.selectAll("." + lineidV);
-            var active = (lines[0][0].id) == "true" ? true : false;
             if (active) {
-                d3.selectAll("." + lineidV)
-                    .style("opacity", 0)
-                    .attr("id", "false");
-                d3.selectAll("." + lineidM)
-                    .style("opacity", 0)
-                    .attr("id", "false");
                 d3.select(this).attr("font-weight", "normal");
-                d3.selectAll("." + dotidF)
-                    .style("opacity", 0);
-                d3.selectAll("." + dotidM)
+                d3.selectAll("." + lineF + ",." + lineM)
+                    .style("opacity", 0)
+                    .attr("id", "false");
+                d3.selectAll("." + dotF + ",." + dotM)
                     .style("opacity", 0);
             } else {
-                d3.selectAll("." + lineidV)
-                    .style("opacity", 1)
-                    .attr("id", "true");
-                d3.selectAll("." + lineidM)
-                    .style("opacity", 1)
-                    .attr("id", "true");
                 d3.select(this).attr("font-weight", "bold");
-                d3.selectAll("." + dotidF)
+                d3.selectAll("." + lineF + ",." + lineM)
+                    .style("opacity", 1)
+                    .attr("id", "true");
+                d3.selectAll("." + dotF + ",." + dotM)
                     .style("opacity", 1);
-                d3.selectAll("." + dotidM)
-                    .style("opacity", 1);
-
             }
         };
 
+        /* Highlight lines corresponding with the legend. */
+        function mouseoverLegend(d, i) {
+            var lineF = "lineF" + i,
+                lineM = "lineM" + i,
+                dotF = "dotF" + i,
+                dotM = "dotM" + i;
 
-        function onhover(d, i) {
             d3.select(this).style("cursor", "pointer")
-            var lineidV = "lineV" + i;
-            var lineidM = "lineM" + i;
-            var dotidF = "dotF" + i;
-            var dotidM = "dotM" + i;
-            var lines = d3.selectAll("." + lineidV);
-            var active = (lines[0][0].id) == "true" ? true : false;
-            if (active) {
-                d3.selectAll("." + lineidV)
-                    .style("stroke-width", "5");
-                d3.selectAll("." + lineidM)
-                    .style("stroke-width", "5");
-                d3.selectAll("." + dotidM)
-                    .attr("r", "6")
-                d3.selectAll("." + dotidF)
-                    .attr("r", "6")
-            }
+            d3.selectAll("." + lineF + ",." + lineM)
+                .style("stroke-width", "5");
+            d3.selectAll("." + dotM + ",." + dotF)
+                .attr("r", "6")
         };
 
-        function onmouseout(d, i) {
+        /* Stop highlighting lines corresponding with the legend. */
+        function mouseoutLegend(d, i) {
+            var dotF = "dotF" + i,
+                dotM = "dotM" + i,
+                lineF = "lineF" + i,
+                lineM = "lineM" + i;
+
             d3.select(this).style("cursor", "default")
-            var dotidF = "dotF" + i;
-            var dotidM = "dotM" + i;
-            var lineidV = "lineV" + i;
-            var lineidM = "lineM" + i;
-            var dotid = "dot" + i;
-            var lines = d3.selectAll("." + lineidV);
-            var active = (lines[0][0].id) == "true" ? true : false;
-            if (active) {
-                d3.selectAll("." + lineidV)
-                    .style("stroke-width", "2");
-                d3.selectAll("." + lineidM)
-                    .style("stroke-width", "2");
-                d3.selectAll("." + dotidM)
-                    .attr("r", "3")
-                d3.selectAll("." + dotidF)
-                    .attr("r", "3")
-            }
+            d3.selectAll("." + lineF + ",." + lineM)
+                .style("stroke-width", "2");
+            d3.selectAll("." + dotM + ",." + dotF)
+                .attr("r", "3")
         };
-    });
-})();
 
+        /* Highlight the current line and dots & highlight barchart if it's the corresponding data. */
+        function mouseoverLineF() {
+            d3.select(this)
+                .style("cursor", "pointer")
+                .style("stroke-width", "4");
+            d3.selectAll(".dotF" + this.classList[0].slice(-1))
+                .attr("r", "5");
+            if (this.classList == "lineF4") {
+                d3.selectAll("rect.MF")
+                    .style("stroke", "black")
+                    .style("stroke-width", 3);
+            } else if (this.classList == "lineF3") {
+                d3.selectAll("rect.BF")
+                    .style("stroke", "black")
+                    .style("stroke-width", 3);
+            }
+        }
+
+        function mouseoverLineM() {
+            d3.select(this)
+                .style("cursor", "pointer")
+                .style("stroke-width", "4");
+            d3.selectAll(".dotM" + this.classList[0].slice(-1))
+                .attr("r", "5");
+            if (this.classList == "drawLineM4") {
+                d3.selectAll("rect.MM")
+                    .style("stroke", "black")
+                    .style("stroke-width", 3);
+            } else if (this.classList == "drawLineM3") {
+                d3.selectAll("rect.BM")
+                    .style("stroke", "black")
+                    .style("stroke-width", 3);
+            }
+        }
+
+        // function mouseoverLines(d, gender) {
+        //     d3.select(this).style("cursor", "pointer");
+        //     d3.select(this).style("stroke-width", "4")
+
+        //     if (gender == "m") {
+        //         d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "5");
+        //         if (this.classList == "drawLineM4") { // master
+        //             d3.selectAll("rect.MM")
+        //                 .style("stroke", "black")
+        //                 .style("stroke-width", 3);
+        //         } else if (this.classList == "drawLineM3") {
+        //             d3.selectAll("rect.BM")
+        //                 .style("stroke", "black")
+        //                 .style("stroke-width", 3);
+        //         }
+        //     } else {
+        //         d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "5");
+        //         if (this.classList == "lineF4") {
+        //             d3.selectAll("rect.MV")
+        //                 .style("stroke", "black")
+        //                 .style("stroke-width", 3);
+        //         } else if (this.classList == "lineF3") {
+        //             d3.selectAll("rect.BV")
+        //                 .style("stroke", "black")
+        //                 .style("stroke-width", 3);
+        //         }
+        //     }
+        // }
+
+        /* Show data of the current dot & highlight the rest of the line. */
+        function mouseoverDotF(d) {
+            var xPos = d3.mouse(this)[0] + 30,
+                yPos = d3.mouse(this)[1] - 20;
+            tooltip
+                .style("display", null)
+                .attr("transform", "translate(" + xPos + "," + yPos + ")")
+                .select("text")
+                .html((d.women) + " vrouwen");
+            d3.select(this).style("cursor", "pointer");
+            d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "6");
+            d3.selectAll(".lineF" + this.classList[0].slice(-1)).style("stroke-width", "5");
+        }
+
+        function mouseoverDotM(d) {
+            var xPos = d3.mouse(this)[0] + 30,
+                yPos = d3.mouse(this)[1] - 20;
+            tooltip
+                .style("display", null)
+                .attr("transform", "translate(" + xPos + "," + yPos + ")")
+                .select("text")
+                .html((d.men) + " mannen");
+            d3.select(this).style("cursor", "pointer");
+            d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "6");
+            d3.selectAll(".lineM" + this.classList[0].slice(-1)).style("stroke-width", "5");
+        }
+
+        function mouseoutDotF(d) {
+            tooltip.style("display", "none");
+            d3.select(this).style("cursor", "default");
+            d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "3");
+            d3.selectAll(".lineF" + this.classList[0].slice(-1)).style("stroke-width", "2");
+        }
+
+        function mouseoutDotM(d) {
+            d3.select(this).style("cursor", "default");
+            tooltip.style("display", "none");
+            d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "3")
+            d3.selectAll(".lineM" + this.classList[0].slice(-1)).style("stroke-width", "2")
+        }
+
+        /* Remove the highlights. */
+        function mouseoutLineF(d) {
+            d3.select(this).style("cursor", "default");
+            d3.select(this).style("stroke-width", "2");
+            d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "3");
+            if (this.classList == "lineF4") {
+                d3.selectAll("rect.MV").style("stroke-width", 0);
+            } else if (this.classList == "lineF3") {
+                d3.selectAll("rect.BV").style("stroke-width", 0);
+            }
+        }
+
+        function mouseoutLineM(d) {
+            d3.select(this).style("cursor", "default");
+            d3.select(this).style("stroke-width", "2");
+            d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "3");
+            if (this.classList == "drawLineM4") {
+                d3.selectAll("rect.MM").style("stroke-width", 0);
+            } else if (this.classList == "drawLineM3") {
+                d3.selectAll("rect.BM").style("stroke-width", 0);
+            }
+        }
+    });
+}
+
+createLinegraph();

@@ -6,9 +6,7 @@
  */
 
 function createBarchart() {
-    var test = 0;
-
-    /* Create the basis variables for the svg. */
+    /* Create the basis variables for the svg (hardcoded). */
     var margin = { top: 50, right: 150, bottom: 50, left: 50 },
         width = 700 - margin.left - margin.right,
         height = 600 - margin.top - margin.bottom;
@@ -19,7 +17,7 @@ function createBarchart() {
 
     var y = d3.scale.linear()
         .domain([studentMax, 0])
-        .range([0, height - 1]); // 
+        .range([0, height - 1]);
 
     var x0 = d3.scale.ordinal()
         .domain(d3.range(years))
@@ -69,7 +67,7 @@ function createBarchart() {
         .style("text-anchor", "end")
         .text("→ Academisch jaar");
 
-    /* Add a title */
+    /* Add a title to the svg. */
     svg.append("g")
         .append("text")
         .attr("x", (width / 2))
@@ -77,44 +75,48 @@ function createBarchart() {
         .attr("text-anchor", "middle")
         .style("font", "sans-serif")
         .style("text-decoration", "underline")
-        .text("Studenten @ FNWI door de jaren heen");
+        .text("Inschrijvingen FNWI-studenten door de jaren heen");
 
-    /* Load dataset from local server to create the bars. */
+    /* Load dataset to create the bars. */
     d3.json("data/json/barchart.json", function (error, data) {
-        var colors = ["#ffe6ff", "#99e6ff", "#ffb3ff", "#1ac6ff"];
+        var classCounter = 0;
+        var colors = ["#ffe6ff", "#99e6ff", "#ffb3ff", "#1ac6ff"],
+            years = ["twaalfdertien", "dertienveertien", "veertienvijftien",
+                "vijftienzestien", "zestienzeventien", "zeventienachttien"];
 
-        /* Transform the data from the dataset from string to int in a multidimensional array. */
-        var studentdata = [];
-        var years = ["twaalfdertien", "dertienveertien", "veertienvijftien",
-            "vijftienzestien", "zestienzeventien", "zeventienachttien"];
+        /* Transform the from the dataset from string to int in a multidimensional array.
+            The result will be tuples with y coordinates of each bar:
+            i.e.: [{Bachelor F}, {Bachelor M}, {Master F}, {Master M}]*/
+        var barData = [];
         for (var i = 0; i < 4; i++) {
-            studentdata[i] = [6];
+            barData[i] = [6];
             for (var j = 0; j < 6; j++) {
                 if (i < 2) {
-                    studentdata[i][j] = { begin: 0, end: parseInt(data.students[i][years[j]]) };
+                    barData[i][j] = { begin: 0, end: parseInt(data.students[i][years[j]]) };
                 } else {
-                    studentdata[i][j] = {
-                        begin: studentdata[i - 2][j].end,
-                        end: studentdata[i - 2][j].end + parseInt(data.students[i][years[j]])
+                    barData[i][j] = {
+                        begin: barData[i - 2][j].end,
+                        end: barData[i - 2][j].end + parseInt(data.students[i][years[j]])
                     };
                 }
             }
         }
 
-        /* Finally, add the bars to the graph */
+        /* Finally, add the bars to the graph (stacked & grouped!) */
         svg.append("g").selectAll("g")
-            .data(studentdata) // studentdata: [{BA F}, {BA M}, {MA F}, {MA M}]
+            .data(barData)
             .enter().append("g")
-            .style("fill", function (d, i) { return colors[i]; }) // Color bars the right color.
-            .attr("transform", function (d, i) { return "translate(" + x1(i % 2) + ",0)"; }) // = Grouped 
+            .style("fill", function (d, i) { return colors[i]; })
+            .attr("transform", function (d, i) { return "translate(" + x1(i % 2) + ",0)"; })
             .selectAll("rect")
             .data(function (d) { return d; })
             .enter().append("rect")
             .attr("width", x1.rangeBand())
-            .attr("height", function (d) { return (y(d.begin) - y(d.end)); }) // = Top van de rechthoek
+            .attr("height", function (d) { return (y(d.begin) - y(d.end)); })
             .attr("x", function (d, i) { return x0(i); })
             .attr("y", function (d) { return (y(d.end)); })
             .attr("id", function (d, i) {
+                /* The id is used in interactivity with the sunburst. */
                 switch (i) {
                     case 0: return "Opleidingen in 2012 - 2013";
                     case 1: return "Opleidingen in 2013 - 2014";
@@ -125,21 +127,16 @@ function createBarchart() {
                 }
             })
             .attr("class", function (d, i) {
-                if (test < 6) { test++; return "BV" }
-                else if (test < 12) { test++; return "BM" }
-                else if (test < 18) { test++; return "MV" }
-                else { test++; return "MM" }
+                /* The class is used in interactivity with the line graph. */
+                if (classCounter < 6) { classCounter++; return "BF" }
+                else if (classCounter < 12) { classCounter++; return "BM" }
+                else if (classCounter < 18) { classCounter++; return "MF" }
+                else { classCounter++; return "MM" }
             })
-            .on('mouseover', synchronizedMouseOver)
-            .on("mousemove", function (d) {
-                var xPosition = d3.mouse(this)[0] + 60;
-                var yPosition = d3.mouse(this)[1] - 20;
-                tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
-                tooltip.select("text")
-                    .html((d.end - d.begin) + " studenten");
-            })
-            .on("mouseout", synchronizedMouseOut)
-            .on("click", clickSunburst);
+            .on('mouseover', mouseoverBars)
+            .on("mousemove", mousemoveBars)
+            .on("mouseout", mouseoutBars)
+            .on("click", mouseclickBars);
 
         /* Create and draw a legend */
         var legend = svg.selectAll(".legend")
@@ -194,27 +191,34 @@ function createBarchart() {
             .attr("font-size", "12px")
             .attr("font-weight", "bold");
 
-        function synchronizedMouseOver(d) {
+        /* Show data on mouseover & highlight the bar. */
+        function mouseoverBars(d) {
             tooltip.style("display", null);
             d3.select(this).style("cursor", "pointer");
             d3.select(this).style("stroke", "black");
-
             d3.select(this).style("stroke-width", "2");
-
         };
 
-        function synchronizedMouseOut(d) {
+        /* Let the tooltip follow the mouse while on a bar. */
+        function mousemoveBars(d) {
+            var xPos = d3.mouse(this)[0] + 60;
+            var yPos = d3.mouse(this)[1] - 20;
+            tooltip.attr("transform", "translate(" + xPos + "," + yPos + ")");
+            tooltip.select("text")
+                .html((d.end - d.begin) + " studenten");
+        }
+
+        /* Hide data & remove highlight of the bar. */
+        function mouseoutBars(d) {
             tooltip.style("display", "none");
             d3.select(this).style("stroke", "none");
             d3.select(this).style("cursor", "default");
-
         };
 
-        function clickSunburst(d) {
+        function mouseclickBars(d) {
             sunburstYear(this.id);
         };
-    }
-    )
+    })
 };
 
 createBarchart();
