@@ -86,7 +86,6 @@
 
 
 ## day 15 (26 January 2017)
-- 
 - Presentatie gegeven. 
 
 ## day 16 (29 January 2017)
@@ -98,6 +97,8 @@
 ![voortgang](/doc/websitev2.png)
 
 ## day 17 (30 January 2017)
+- Code review: code verder opgeschoond.
+
 ## day 18 (31 January 2017)
 ## day 19 (32 January 2017)
 
