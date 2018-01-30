@@ -6,20 +6,26 @@
  */
 
 function createBarchart() {
-    var begin = false;
     /* Create the basis variables for the svg (hardcoded). */
     var margin = { top: 50, right: 150, bottom: 50, left: 50 },
         width = 700 - margin.left - margin.right,
-        height = 600 - margin.top - margin.bottom;
-
-    var years = 6,
+        height = 600 - margin.top - margin.bottom,
+        years = 6,
         genders = 2,
         studentMax = 3739;
 
+    var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("svg:g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    /* Create axes' variables. */
     var y = d3.scale.linear()
         .domain([studentMax, 0])
         .range([0, height - 1]);
 
+    /* x0 = x-axis ticks, x1 = placing the grouped bars on either side of an x-tick. */
     var x0 = d3.scale.ordinal()
         .domain(d3.range(years))
         .rangeBands([0, width], .5);
@@ -32,12 +38,6 @@ function createBarchart() {
         .domain(['\'12-\'13', '\'13-\'14', '\'14-\'15', '\'15-\'16', '\'16-\'17', '\'17-\'18',])
         .rangeBands([0, width], .5);
 
-    var svg = d3.select("body").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("svg:g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
     /* Show the axes. */
     var xAxis = d3.svg.axis()
         .scale(xLabels)
@@ -48,6 +48,7 @@ function createBarchart() {
         .innerTickSize(-width)
         .orient("left")
         .tickPadding(8);
+
     svg.append("g")
         .attr("class", "y axis")
         .call(yAxis)
@@ -80,8 +81,8 @@ function createBarchart() {
 
     /* Load dataset to create the bars. */
     d3.json("data/json/barchart.json", function (error, data) {
-        var classCounter = 0;
-        var colors = ["#ffe6ff", "#99e6ff", "#ffb3ff", "#1ac6ff"],
+        var classCounter = 0,
+            colors = ["#ffe6ff", "#99e6ff", "#ffb3ff", "#1ac6ff"],
             years = ["twaalfdertien", "dertienveertien", "veertienvijftien",
                 "vijftienzestien", "zestienzeventien", "zeventienachttien"];
 

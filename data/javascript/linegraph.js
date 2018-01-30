@@ -5,14 +5,17 @@
  * linegraph.js: This file creates a multi line graph in d3 with data loaded in from a .json file.
  */
 
-function createLinegraph() {
-    /* Create the basis variables for the svg (hardcoded). */
-    var margin = { top: 50, right: 250, bottom: 50, left: 50 },
-        width = 800 - margin.left - margin.right,
-        height = 600 - margin.top - margin.bottom,
-        years = 5,
-        studentMax = 3738;
+/* Create the basis variables for the svg (hardcoded). */
+var margin = { top: 50, right: 250, bottom: 50, left: 50 },
+    width = 800 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom,
+    years = 5,
+    studentMax = 3738,
+    standard = 3,
+    larger = 5;
 
+function createLinegraph() {
+    /* Create axes variables. */
     var y = d3.scale.linear()
         .domain([studentMax, 0])
         .range([0, height]);
@@ -25,17 +28,12 @@ function createLinegraph() {
         .domain(['\'12-\'13', '\'13-\'14', '\'14-\'15', '\'15-\'16', '\'16-\'17'])
         .rangePoints([0, width]);
 
-    var svg = d3.select("body").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("svg:g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
     /* Show the axes. */
     var xAxis = d3.svg.axis()
         .scale(xLabels)
         .innerTickSize(-height)
-        .orient("bottom");
+        .orient("bottom")
+        .tickPadding(8);
 
     var yAxis = d3.svg.axis()
         .scale(y)
@@ -46,6 +44,12 @@ function createLinegraph() {
     var yAxisRight = d3.svg.axis()
         .scale(y)
         .orient("right");
+
+    var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("svg:g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     svg.append("g")
         .attr("class", "y axis")
@@ -82,14 +86,21 @@ function createLinegraph() {
         .style("text-decoration", "underline")
         .text("Man-vrouwverhouding bij verschillende universiteiten.");
 
+
     /* Load dataset to create the lines. */
     d3.json("data/json/linegraph.json", function (error, data) {
+        /* Create variables for (coloring of) the data. */
         var colors = ["#BBCCEE", "#44AA99", "#332288", "#117733", "#999933",
             "#DDCC77", "#CC6677", "#882255", "#AA4499"],
             years = ["twaalfdertien", "dertienveertien", "veertienvijftien",
-                "vijftienzestien", "zestienzeventien"];
+                "vijftienzestien", "zestienzeventien"],
+            legendData = [];
 
-        /* Transform the from the dataset from string to int in a multidimensional array.
+        for (var l = 0; l < 9; l++) {
+            legendData[l] = { color: colors[l], name: data.data[l * 2].naam }
+        };
+
+        /* Transform the dataset from string to int in a multidimensional array.
             The result will be tuples (male/female) with y coordinates:
             i.e.: [{TU Delft F, TU Delft M}, {UvA FNWI F, UvA FNWI M}]*/
         var lineData = [];
@@ -104,7 +115,7 @@ function createLinegraph() {
             i += 1;
         }
 
-        /* Create the lines. */
+        /* Create line functions for both genders. */
         var drawlineF = d3.svg.line()
             .x(function (d, i) { return x(i); })
             .y(function (d) { return y(d.women); })
@@ -117,68 +128,68 @@ function createLinegraph() {
             The id is used to combine with the legend, to toggle the lines on/off.
             The class is used to combine with the datapoints. */
         for (var i = 0; i < 9; i++) {
+            /* Lines representing women (dashed). */
             svg.append("path")
                 .attr("id", "true")
                 .attr("class", "lineF" + i)
                 .style("stroke", colors[i])
                 .style("stroke-dasharray", ("10, 10"))
                 .attr("d", drawlineF(lineData[i]))
-                .on("mouseover", mouseoverL("F"))
-                .on("mouseout", mouseoutL("F"));
+                .on("mouseover", mouseoverLines("F"))
+                .on("mouseout", mouseoutLines("F"));
 
+            /* Lines representing men */
             svg.append("path")
                 .attr("id", "true")
                 .attr("class", "lineM" + i)
                 .style("stroke", colors[i])
                 .attr("d", drawlineM(lineData[i]))
-                .on("mouseover", mouseoverL("M"))
-                .on("mouseout", mouseoutL("M"));
+                .on("mouseover", mouseoverLines("M"))
+                .on("mouseout", mouseoutLines("M"));
         }
 
-        /* Add circles ("dots") to the lines, corresponding with the data points, 
+        /* Add circles ("datapoints") to the lines, corresponding with the data points, 
             The class is used to combine with the lines. */
         for (var j = 0; j < 9; j++) {
-            svg.selectAll(".dot")
+            /* First, add all datapoints on lines representing women. */
+            svg.selectAll(".datapoint")
                 .data(lineData[j])
                 .enter().append("circle")
-                .attr("class", "dotF" + j)
+                .attr("class", "datapointF" + j)
                 .attr("fill", function (d) { return colors[j] })
                 .attr("cx", function (d, j) { return x(j) })
                 .attr("cy", function (d) { return y(d.women) })
-                .attr("r", 3)
-                .on("mouseover", mouseoverDotF)
-                .on("mouseout", mouseoutDotF);
+                .attr("r", standard)
+                .on("mouseover", mouseoverdatapointF)
+                .on("mouseout", mouseoutdatapointF);
 
-            svg.selectAll(".dot")
+            /* Then add all datapoints on lines representing men. */
+            svg.selectAll(".datapoint")
                 .data(lineData[j])
                 .enter().append("circle")
-                .attr("class", "dotM" + j)
+                .attr("class", "datapointM" + j)
                 .attr("fill", function (d) { return colors[j] })
                 .attr("cx", function (d, j) { return x(j) })
                 .attr("cy", function (d) { return y(d.men) })
-                .attr("r", 3)
-                .on("mouseover", mouseoverDotM)
-                .on("mouseout", mouseoutDotM);
+                .attr("r", standard)
+                .on("mouseover", mouseoverdatapointM)
+                .on("mouseout", mouseoutdatapointM);
         }
 
-        /* Create the data for a legend and add it. */
-        var legendData = [];
-        for (var l = 0; l < 9; l++) {
-            legendData[l] = { color: colors[l], name: data.data[l * 2].naam }
-        };
-
+        /* Add legend. */
         var legend = svg.selectAll(".legend")
             .data(legendData)
             .enter().append("g")
             .attr("class", "legend")
             .attr("transform", function (d, i) { return "translate(70," + (i * 19 + 30) + ")"; });
 
+        /* Add both lines in the legend. */
         legend.append("line")
             .attr("x1", width - 28)
             .attr("x2", width)
             .attr("y1", 20)
             .attr("y2", 20)
-            .style("stroke-width", "3")
+            .style("stroke-width", standard)
             .style("stroke", function (d, i) { return legendData[i].color; })
             .on("click", mouseclickLegend);
 
@@ -187,10 +198,12 @@ function createLinegraph() {
             .attr("x2", width + 33)
             .attr("y1", 20)
             .attr("y2", 20)
-            .style("stroke-width", "3")
+            .style("stroke-width", standard)
             .style("stroke-dasharray", ("5, 5"))
             .style("stroke", function (d, i) { return legendData[i].color; })
             .on("click", mouseclickLegend);
+
+        /* Add text to the legend. */
         legend.append("text")
             .attr("class", function (d, i) { return legendData[i].name.substr(2) })
             .attr("font", "sans-serif")
@@ -203,6 +216,8 @@ function createLinegraph() {
             .on("mouseover", mouseoverLegend)
             .on("mouseout", mouseoutLegend)
             .on("click", mouseclickLegend);
+
+        /* Add a 'column separator' above the lines. */
         svg.append("g")
             .append("text")
             .attr("x", width + 75)
@@ -210,6 +225,142 @@ function createLinegraph() {
             .attr("text-anchor", "middle")
             .style("font-size", "150%")
             .text("↓♂  ↓♀  ");
+
+        /* Check if the clicked line is active & toggle the line & datapoints off, or on otherwise.
+        On advise I hardcoded the strings, instead of creating variables at the top of function. */
+        function mouseclickLegend(d, i) {
+            var currentLine = d3.select(".lineF" + i),
+                active = currentLine[0][0].id == "true" ? true : false;
+
+            if (active) {
+                d3.select(this).attr("font-weight", "normal");
+                d3.selectAll(".lineF" + i + ",.lineM" + i)
+                    .style("opacity", 0)
+                    .attr("id", "false");
+                d3.selectAll(".datapointF" + i + ",.datapointM" + i)
+                    .style("opacity", 0);
+            } else {
+                d3.select(this).attr("font-weight", "bold");
+                d3.selectAll(".lineF" + i + ",.lineM" + i)
+                    .style("opacity", 1)
+                    .attr("id", "true");
+                d3.selectAll(".datapointF" + i + ",.datapointM" + i)
+                    .style("opacity", 1);
+            }
+        }
+
+        /* Highlight lines corresponding with the legend. */
+        function mouseoverLegend(d, i) {
+            d3.select(this).style("cursor", "pointer");
+            d3.selectAll(".lineF" + i + ",.lineM" + i)
+                .style("stroke-width", larger);
+            d3.selectAll(".datapointM" + i + ",.datapointF" + i)
+                .attr("r", larger)
+        }
+
+        /* Stop highlighting lines corresponding with the legend. */
+        function mouseoutLegend(d, i) {
+            d3.select(this).style("cursor", "default");
+            d3.selectAll(".lineF" + i + ",.lineM" + i)
+                .style("stroke-width", standard);
+            d3.selectAll(".datapointM" + i + ",.datapointF" + i)
+                .attr("r", standard)
+        }
+
+        /* Highlight the current line and datapoints & highlight barchart if it's the corresponding data. */
+        function mouseoverLines(gender) {
+            return function () {
+                d3.select(this).style("cursor", "pointer");
+                d3.select(this).style("stroke-width", 4)
+                if (gender == "M") {
+                    d3.selectAll(".datapointM" + this.classList[0].slice(-1)).attr("r", 5);
+                    if (this.classList == "lineM4") {
+                        d3.selectAll("rect.MM")
+                            .style("stroke", "black")
+                            .style("stroke-width", standard);
+                    } else if (this.classList == "lineM3") {
+                        d3.selectAll("rect.BM")
+                            .style("stroke", "black")
+                            .style("stroke-width", standard);
+                    }
+                } else {
+                    d3.selectAll(".datapointF" + this.classList[0].slice(-1)).attr("r", 5);
+                    if (this.classList == "lineF4") {
+                        d3.selectAll("rect.MF")
+                            .style("stroke", "black")
+                            .style("stroke-width", standard);
+                    } else if (this.classList == "lineF3") {
+                        d3.selectAll("rect.BF")
+                            .style("stroke", "black")
+                            .style("stroke-width", standard);
+                    }
+                }
+            }
+        }
+
+        /* Show data of the current datapoint & highlight the rest of the line. */
+        function mouseoverdatapointF(d) {
+            var xPos = d3.mouse(this)[0] + 30,
+                yPos = d3.mouse(this)[1] - 20;
+            tooltip
+                .style("display", null)
+                .attr("transform", "translate(" + xPos + "," + yPos + ")")
+                .select("text")
+                .html((d.women) + " vrouwen");
+            d3.select(this).style("cursor", "pointer");
+            d3.selectAll(".datapointF" + this.classList[0].slice(-1)).attr("r", larger);
+            d3.selectAll(".lineF" + this.classList[0].slice(-1)).style("stroke-width", 5);
+        }
+
+        function mouseoverdatapointM(d) {
+            var xPos = d3.mouse(this)[0] + 30,
+                yPos = d3.mouse(this)[1] - 20;
+            tooltip
+                .style("display", null)
+                .attr("transform", "translate(" + xPos + "," + yPos + ")")
+                .select("text")
+                .html((d.men) + " mannen");
+            d3.select(this).style("cursor", "pointer");
+            d3.selectAll(".datapointM" + this.classList[0].slice(-1)).attr("r", larger);
+            d3.selectAll(".lineM" + this.classList[0].slice(-1)).style("stroke-width", 5);
+        }
+
+        function mouseoutdatapointF(d) {
+            tooltip.style("display", "none");
+            d3.select(this).style("cursor", "default");
+            d3.selectAll(".datapointF" + this.classList[0].slice(-1)).attr("r", standard);
+            d3.selectAll(".lineF" + this.classList[0].slice(-1)).style("stroke-width", 2);
+        }
+
+        function mouseoutdatapointM(d) {
+            d3.select(this).style("cursor", "default");
+            tooltip.style("display", "none");
+            d3.selectAll(".datapointM" + this.classList[0].slice(-1)).attr("r", standard)
+            d3.selectAll(".lineM" + this.classList[0].slice(-1)).style("stroke-width", 2)
+        }
+
+        /* Remove the highlights. */
+        function mouseoutLines(gender) {
+            return function () {
+                d3.select(this).style("cursor", "default");
+                d3.select(this).style("stroke-width", 2);
+                d3.selectAll(".datapointF" + this.classList[0].slice(-1)).attr("r", standard);
+                if (gender == "M") {
+                    d3.selectAll(".datapointM" + this.classList[0].slice(-1)).attr("r", standard);
+                    if (this.classList == "lineM4") {
+                        d3.selectAll("rect.MM").style("stroke-width", 0);
+                    } else if (this.classList == "lineM3") {
+                        d3.selectAll("rect.BM").style("stroke-width", 0);
+                    }
+                } else {
+                    if (this.classList == "lineF4") {
+                        d3.selectAll("rect.MF").style("stroke-width", 0);
+                    } else if (this.classList == "lineF3") {
+                        d3.selectAll("rect.BF").style("stroke-width", 0);
+                    }
+                }
+            }
+        }
 
         /* Create a tooltip. */
         var tooltip = svg.append("g")
@@ -229,155 +380,6 @@ function createLinegraph() {
             .attr("font-size", "12px")
             .attr("font-weight", "bold");
 
-        /* Check if the clicked line is active & toggle the line & dots off, or on otherwise. */
-        function mouseclickLegend(d, i) {
-            var lineF = "lineF" + i,
-                lineM = "lineM" + i,
-                dotF = "dotF" + i,
-                dotM = "dotM" + i,
-                currentLine = d3.select("." + lineF),
-                active = currentLine[0][0].id == "true" ? true : false;
-
-            if (active) {
-                d3.select(this).attr("font-weight", "normal");
-                d3.selectAll("." + lineF + ",." + lineM)
-                    .style("opacity", 0)
-                    .attr("id", "false");
-                d3.selectAll("." + dotF + ",." + dotM)
-                    .style("opacity", 0);
-            } else {
-                d3.select(this).attr("font-weight", "bold");
-                d3.selectAll("." + lineF + ",." + lineM)
-                    .style("opacity", 1)
-                    .attr("id", "true");
-                d3.selectAll("." + dotF + ",." + dotM)
-                    .style("opacity", 1);
-            }
-        };
-
-        /* Highlight lines corresponding with the legend. */
-        function mouseoverLegend(d, i) {
-            var lineF = "lineF" + i,
-                lineM = "lineM" + i,
-                dotF = "dotF" + i,
-                dotM = "dotM" + i;
-
-            d3.select(this).style("cursor", "pointer")
-            d3.selectAll("." + lineF + ",." + lineM)
-                .style("stroke-width", "5");
-            d3.selectAll("." + dotM + ",." + dotF)
-                .attr("r", "6")
-        };
-
-        /* Stop highlighting lines corresponding with the legend. */
-        function mouseoutLegend(d, i) {
-            var dotF = "dotF" + i,
-                dotM = "dotM" + i,
-                lineF = "lineF" + i,
-                lineM = "lineM" + i;
-
-            d3.select(this).style("cursor", "default")
-            d3.selectAll("." + lineF + ",." + lineM)
-                .style("stroke-width", "2");
-            d3.selectAll("." + dotM + ",." + dotF)
-                .attr("r", "3")
-        };
-
-        /* Highlight the current line and dots & highlight barchart if it's the corresponding data. */
-        function mouseoverL(gender) {
-            return function () {
-                d3.select(this).style("cursor", "pointer");
-                d3.select(this).style("stroke-width", "4")
-                if (gender == "M") {
-                    d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "5");
-                    if (this.classList == "lineM4") {
-                        d3.selectAll("rect.MM")
-                            .style("stroke", "black")
-                            .style("stroke-width", 3);
-                    } else if (this.classList == "lineM3") {
-                        d3.selectAll("rect.BM")
-                            .style("stroke", "black")
-                            .style("stroke-width", 3);
-                    }
-                } else {
-                    d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "5");
-                    if (this.classList == "lineF4") {
-                        d3.selectAll("rect.MF")
-                            .style("stroke", "black")
-                            .style("stroke-width", 3);
-                    } else if (this.classList == "lineF3") {
-                        d3.selectAll("rect.BF")
-                            .style("stroke", "black")
-                            .style("stroke-width", 3);
-                    }
-                }
-            }
-        }
-
-        /* Show data of the current dot & highlight the rest of the line. */
-        function mouseoverDotF(d) {
-            console.log(d);
-            var xPos = d3.mouse(this)[0] + 30,
-                yPos = d3.mouse(this)[1] - 20;
-            tooltip
-                .style("display", null)
-                .attr("transform", "translate(" + xPos + "," + yPos + ")")
-                .select("text")
-                .html((d.women) + " vrouwen");
-            d3.select(this).style("cursor", "pointer");
-            d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "6");
-            d3.selectAll(".lineF" + this.classList[0].slice(-1)).style("stroke-width", "5");
-        }
-
-        function mouseoverDotM(d) {
-            var xPos = d3.mouse(this)[0] + 30,
-                yPos = d3.mouse(this)[1] - 20;
-            tooltip
-                .style("display", null)
-                .attr("transform", "translate(" + xPos + "," + yPos + ")")
-                .select("text")
-                .html((d.men) + " mannen");
-            d3.select(this).style("cursor", "pointer");
-            d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "6");
-            d3.selectAll(".lineM" + this.classList[0].slice(-1)).style("stroke-width", "5");
-        }
-
-        function mouseoutDotF(d) {
-            tooltip.style("display", "none");
-            d3.select(this).style("cursor", "default");
-            d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "3");
-            d3.selectAll(".lineF" + this.classList[0].slice(-1)).style("stroke-width", "2");
-        }
-
-        function mouseoutDotM(d) {
-            d3.select(this).style("cursor", "default");
-            tooltip.style("display", "none");
-            d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "3")
-            d3.selectAll(".lineM" + this.classList[0].slice(-1)).style("stroke-width", "2")
-        }
-
-        /* Remove the highlights. */
-        function mouseoutL(gender) {
-            return function () {
-                d3.select(this).style("cursor", "default");
-                d3.select(this).style("stroke-width", "2");
-                d3.selectAll(".dotF" + this.classList[0].slice(-1)).attr("r", "3");
-                if (gender == "M") {
-                    d3.selectAll(".dotM" + this.classList[0].slice(-1)).attr("r", "3");
-                    if (this.classList == "lineM4") {
-                        d3.selectAll("rect.MM").style("stroke-width", 0);
-                    } else if (this.classList == "lineM3") {
-                        d3.selectAll("rect.BM").style("stroke-width", 0);
-                    }
-                } else {
-                    if (this.classList == "lineF4") {
-                        d3.selectAll("rect.MF").style("stroke-width", 0);
-                    } else if (this.classList == "lineF3") {
-                        d3.selectAll("rect.BF").style("stroke-width", 0);
-                    }
-                }
-            }
-        }
     });
 }
 
