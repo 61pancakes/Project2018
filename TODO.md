@@ -9,7 +9,11 @@
 - Layout fixen (informatie + indeling toevoegen)
 
 - Code opschonen
+- Linegraph id/class, hardcoded variables, MF functies, legenda nog fixen.
+- JS in header files gooien.
+
 - Filmpje maken
 - Verslag maken
 
 - Readme / Design updaten eindproduct
+
