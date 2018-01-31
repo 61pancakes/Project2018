@@ -14,7 +14,7 @@ function createBarchart() {
         genders = 2,
         studentMax = 3739;
 
-    var svg = d3.select("body").append("svg")
+    var svg = d3.select("body").append("svg:svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("svg:g")

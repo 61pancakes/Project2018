@@ -138,19 +138,6 @@ function getAncestors(node) {
     return ancestors;
 }
 
-/* Create an svg for the legend. */
-function createLegend() {
-    var legend = d3.select("#sequence").append("svg:svg")
-        .attr("width", width)
-        .attr("height", 50)
-        .attr("id", "legend");
-
-    legend.append("svg:text")
-        .attr("id", "endlabel")
-        .style("fill", "#000")
-        .style("font-size", "150%");
-}
-
 /* Generate a string that describes the tabs of the legend. */
 function createTabs(d, i) {
     var tabs = [];
@@ -166,6 +153,19 @@ function createTabs(d, i) {
     }
 
     return tabs.join(" ");
+}
+
+/* Create an svg for the legend. */
+function createLegend() {
+    var legend = d3.select("#sequence").append("svg:svg")
+        .attr("width", width)
+        .attr("height", 50)
+        .attr("id", "legend");
+
+    legend.append("svg:text")
+        .attr("id", "endlabel")
+        .style("fill", "#000")
+        .style("font-size", "150%");
 }
 
 /* Update the legend to show the current sequence and amount of students in that path. */
