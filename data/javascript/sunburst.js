@@ -39,7 +39,7 @@ var arc = d3.svg.arc()
     .outerRadius(function (d) { return Math.max(0, y(d.y + d.dy)); });
 
 function updateSunburst(year) {/* Load dataset from local server to create the circle partitions. */
-    d3.json("data/json/sunburst.json", function (error, root) {
+    d3.json("data/csv + json/sunburst.json", function (error, root) {
         createLegend();
         data = partition.nodes(root.children[year]);
 

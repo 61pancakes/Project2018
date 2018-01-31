@@ -12,7 +12,8 @@ var margin = { top: 50, right: 250, bottom: 50, left: 50 },
     years = 5,
     studentMax = 3738,
     standard = 3,
-    larger = 5;
+    larger = 5,
+    active = false;
 
 function createLinegraph() {
     /* Create axes variables. */
@@ -84,11 +85,51 @@ function createLinegraph() {
         .attr("text-anchor", "middle")
         .style("font", "sans-serif")
         .style("text-decoration", "underline")
-        .text("Man-vrouwverhouding bij verschillende universiteiten.");
+        .text("Man-vrouwverhouding bij verschillende universiteiten");
 
+    /* Create a tooltip. */
+    var tooltip2 = svg.append("g")
+        .attr("class", "tooltip2")
+        .style("display", "none");
+
+    tooltip2.append("rect")
+        .attr("width", 200)
+        .attr("height", 200)
+        .attr("fill", "black")
+        .style("opacity", 0.8)
+
+    tooltip2.append("text")
+        .attr("x", 15)
+        .attr("dy", "1.2em")
+        .style("text-anchor", "middle")
+        .attr("font-size", "12px");
+
+    function infobox() {
+        if (active == false) {
+            var xPos = d3.mouse(this)[0] + 30,
+                yPos = d3.mouse(this)[1] - 20;
+            d3.select(this).style("cursor", "pointer");
+            tooltip2
+                .attr("transform", "translate(" + xPos + "," + yPos + ")")
+                .style("display", null)
+            active = true;
+        } else {
+            d3.select(this).style("cursor", "default");
+            tooltip2.style("display", "none");
+            active = false;
+        }
+    }
+
+    var img = svg.append("svg:image")
+        .attr("xlink:href", "doc/info.png")
+        .attr("width", 15)
+        .attr("height", 15)
+        .attr("x", 390)
+        .attr("y", - 20)
+        .on("click", infobox)
 
     /* Load dataset to create the lines. */
-    d3.json("data/json/linegraph.json", function (error, data) {
+    d3.json("data/csv + json/linegraph.json", function (error, data) {
         /* Create variables for (coloring of) the data. */
         var colors = ["#BBCCEE", "#44AA99", "#332288", "#117733", "#999933",
             "#DDCC77", "#CC6677", "#882255", "#AA4499"],
@@ -181,7 +222,7 @@ function createLinegraph() {
             .data(legendData)
             .enter().append("g")
             .attr("class", "legend")
-            .attr("transform", function (d, i) { return "translate(70," + (i * 19 + 30) + ")"; });
+            .attr("transform", function (d, i) { console.log("TEST"); return "translate(70," + (i * 19 + 30) + ")"; });
 
         /* Add both lines in the legend. */
         legend.append("line")
@@ -379,7 +420,6 @@ function createLinegraph() {
             .style("text-anchor", "middle")
             .attr("font-size", "12px")
             .attr("font-weight", "bold");
-
     });
 }
 
