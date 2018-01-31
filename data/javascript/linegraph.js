@@ -117,6 +117,7 @@ function createLinegraph() {
         active = false;
     }
 
+
     var img = svg.append("svg:image")
         .attr("xlink:href", "doc/info.png")
         .attr("width", 15)
@@ -338,7 +339,7 @@ function createLinegraph() {
 
         /* Show data of the current datapoint & highlight the rest of the line. */
         function mouseoverdatapointF(d) {
-            console.log(tooltip);
+            console.log(tooltip)
             var xPos = d3.mouse(this)[0] + 30,
                 yPos = d3.mouse(this)[1] - 20;
             tooltip

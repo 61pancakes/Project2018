@@ -65,7 +65,6 @@ function updateSunburst(year) {/* Load dataset from local server to create the c
 
         /* Show the sunburst. */
         clickSunburst(data[0]);
-        console.log("TEST")
     });
 };
 
