@@ -6,14 +6,13 @@
  */
 
 /* Create the basis variables for the svg (hardcoded). */
-var margin = { top: 50, right: 250, bottom: 50, left: 50 },
+var margin = { top: 50, right: 300, bottom: 50, left: 100 },
     width = 800 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom,
     years = 5,
     studentMax = 3738,
     standard = 3,
-    larger = 5,
-    active = false;
+    larger = 5;
 
 function createLinegraph() {
     /* Create axes variables. */
@@ -46,7 +45,7 @@ function createLinegraph() {
         .scale(y)
         .orient("right");
 
-    var svg = d3.select("body").append("svg")
+    var svg = d3.select("#linegraph").append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("svg:g")
@@ -57,8 +56,7 @@ function createLinegraph() {
         .call(yAxis)
         .append("text")
         .attr("transform", "rotate(-90)")
-        .attr("y", -40)
-        .attr("x", -10)
+        .attr("y", -60)
         .style("text-anchor", "end")
         .text("→ Aantal studenten");
 
@@ -72,8 +70,8 @@ function createLinegraph() {
         .attr("transform", "translate(0," + height + ")")
         .call(xAxis)
         .append("text")
-        .attr("x", 500)
-        .attr("y", 30)
+        .attr("x", 400)
+        .attr("y", 40)
         .style("text-anchor", "end")
         .text("→ Academisch jaar");
 
@@ -81,7 +79,7 @@ function createLinegraph() {
     svg.append("g")
         .append("text")
         .attr("x", (width / 2))
-        .attr("y", -10)
+        .attr("y", -35)
         .attr("text-anchor", "middle")
         .style("font", "sans-serif")
         .style("text-decoration", "underline")
@@ -105,28 +103,28 @@ function createLinegraph() {
         .attr("font-size", "12px");
 
     function infobox() {
-        if (active == false) {
-            var xPos = d3.mouse(this)[0] + 30,
-                yPos = d3.mouse(this)[1] - 20;
-            d3.select(this).style("cursor", "pointer");
-            tooltip2
-                .attr("transform", "translate(" + xPos + "," + yPos + ")")
-                .style("display", null)
-            active = true;
-        } else {
-            d3.select(this).style("cursor", "default");
-            tooltip2.style("display", "none");
-            active = false;
-        }
+        var xPos = d3.mouse(this)[0] - 200,
+            yPos = d3.mouse(this)[1] + 20;
+        d3.select(this).style("cursor", "pointer");
+        tooltip2
+            .attr("transform", "translate(" + xPos + "," + yPos + ")")
+            .style("display", null)
+    }
+
+    function closeinfobox() {
+        d3.select(this).style("cursor", "default");
+        tooltip2.style("display", "none");
+        active = false;
     }
 
     var img = svg.append("svg:image")
         .attr("xlink:href", "doc/info.png")
         .attr("width", 15)
         .attr("height", 15)
-        .attr("x", 390)
-        .attr("y", - 20)
-        .on("click", infobox)
+        .attr("x", width + 270)
+        .attr("y", 210)
+        .on("mouseover", infobox)
+        .on("mouseout", closeinfobox);
 
     /* Load dataset to create the lines. */
     d3.json("data/csv + json/linegraph.json", function (error, data) {
@@ -222,7 +220,7 @@ function createLinegraph() {
             .data(legendData)
             .enter().append("g")
             .attr("class", "legend")
-            .attr("transform", function (d, i) { console.log("TEST"); return "translate(70," + (i * 19 + 30) + ")"; });
+            .attr("transform", function (d, i) { return "translate(90," + (i * 19 + 30) + ")"; });
 
         /* Add both lines in the legend. */
         legend.append("line")
@@ -247,7 +245,6 @@ function createLinegraph() {
         /* Add text to the legend. */
         legend.append("text")
             .attr("class", function (d, i) { return legendData[i].name.substr(2) })
-            .attr("font", "sans-serif")
             .attr("font-weight", "bold")
             .attr("x", width + 35)
             .attr("y", 20)
@@ -261,11 +258,11 @@ function createLinegraph() {
         /* Add a 'column separator' above the lines. */
         svg.append("g")
             .append("text")
-            .attr("x", width + 75)
+            .attr("x", width + 90)
             .attr("y", 40)
             .attr("text-anchor", "middle")
-            .style("font-size", "150%")
-            .text("↓♂  ↓♀  ");
+            .style("font-size", "100%")
+            .text("↓♂  ↓♀");
 
         /* Check if the clicked line is active & toggle the line & datapoints off, or on otherwise.
         On advise I hardcoded the strings, instead of creating variables at the top of function. */
@@ -341,6 +338,7 @@ function createLinegraph() {
 
         /* Show data of the current datapoint & highlight the rest of the line. */
         function mouseoverdatapointF(d) {
+            console.log(tooltip);
             var xPos = d3.mouse(this)[0] + 30,
                 yPos = d3.mouse(this)[1] - 20;
             tooltip
@@ -422,5 +420,4 @@ function createLinegraph() {
             .attr("font-weight", "bold");
     });
 }
-
 createLinegraph();

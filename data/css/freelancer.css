@@ -9,8 +9,8 @@ hr.star-light, hr.star-dark {
   text-align: center;
   border: none;
   border-top: solid 0.25rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 hr.star-light:after, hr.star-dark:after {
@@ -84,13 +84,14 @@ section {
 
 /* */
 header.masthead {
-  padding-top: calc(3rem + 72px);
-  padding-bottom: 3rem;
+  padding-top: calc(2rem + 72px);
+  padding-bottom: 2rem;
 }
 
 header.masthead h1 {
   font-size: 2rem;
   line-height: 2rem;
+  padding-top: 1rem;
 }
 
 .copyright {
@@ -118,26 +119,18 @@ header.masthead h1 {
   background: "red";
 }
 
-div {
-border-style: "dashed";
-border:1px solid black;
-}
-
 div #barchart {
 float: left;
-margin-bottom: 100px; /* SIMPLY SET THIS PROPERTY AS MUCH AS YOU WANT. This changes the space below box1 */
 
 }
 
 div #sunburst {
 float: right;
-width: 540px;
-margin-bottom: 100px; /* SIMPLY SET THIS PROPERTY AS MUCH AS YOU WANT. This changes the space below box1 */
+margin-bottom: 50px; /* SIMPLY SET THIS PROPERTY AS MUCH AS YOU WANT. This changes the space below box1 */
 }
 
 div #table {
   float: right;
-  width: 540px;
 }
 
 div #linegraph {

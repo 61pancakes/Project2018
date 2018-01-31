@@ -7,15 +7,16 @@
  */
 
 /* Create the basis variables for the svg. */
-var margin = { top: 0, right: 0, bottom: 0, left: 0 },
-    width = 1000 - margin.left - margin.right,
-    height = 1000 - margin.top - margin.bottom,
+var margin = { top: 0, right: 150, bottom: 0, left: 0 },
+    width = 900 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
-    legend = {
-        width: 190, height: 30, slice: 3, arrow: 10
-    };
+    first = true;
+legend = {
+    width: 200, height: 30, slice: 3, arrow: 10
+};
 
-var svg = d3.select("body").append("svg:svg")
+var svg = d3.select("#sunburst").append("svg:svg")
     .attr("width", width)
     .attr("height", height)
     .append("svg:g")
@@ -40,7 +41,10 @@ var arc = d3.svg.arc()
 
 function updateSunburst(year) {/* Load dataset from local server to create the circle partitions. */
     d3.json("data/csv + json/sunburst.json", function (error, root) {
-        createLegend();
+        if (first == true) {
+            createLegend();
+            first = false;
+        }
         data = partition.nodes(root.children[year]);
 
         /* Remove old data (if any). */
@@ -61,6 +65,7 @@ function updateSunburst(year) {/* Load dataset from local server to create the c
 
         /* Show the sunburst. */
         clickSunburst(data[0]);
+        console.log("TEST")
     });
 };
 
@@ -133,7 +138,6 @@ function getAncestors(node) {
         ancestors.unshift(current);
         current = current.parent;
     }
-    ancestors.unshift(current);
 
     return ancestors;
 }
@@ -151,21 +155,23 @@ function createTabs(d, i) {
     if (i > 0) {
         tabs.push(legend.arrow + "," + (legend.height / 2));
     }
-
+    console.log(tabs);
     return tabs.join(" ");
 }
+
+
 
 /* Create an svg for the legend. */
 function createLegend() {
     var legend = d3.select("#sequence").append("svg:svg")
-        .attr("width", width)
+        .attr("width", 750)
         .attr("height", 50)
         .attr("id", "legend");
 
     legend.append("svg:text")
         .attr("id", "endlabel")
-        .style("fill", "#000")
-        .style("font-size", "150%");
+        .style("fill", "black")
+        .style("font-size", "100%");
 }
 
 /* Update the legend to show the current sequence and amount of students in that path. */
@@ -185,8 +191,20 @@ function updateLegend(ancestors, studentcount) {
         .attr("y", legend.height / 2)
         .attr("dy", "0.35em")
         .attr("text-anchor", "middle")
+        .style("fill", function (d) {
+            if (d.name == "BA Physics and Astronomy" ||
+                d.name == "BA Natural and Social Sciences" ||
+                d.name == "MA Software Engineering" ||
+                d.name == "MA Artificial Intelligence" ||
+                d.name == "BA Future Planet Studies" ||
+                d.name == "MA Physics" || d.name == "BA Mathematics") {
+                return "white";
+            } else {
+                return "black";
+            }
+        })
         .text(function (d) { return d.name; })
-        .style("font-size", "100%");
+        .style("font-size", "80%");
 
     /* Set position for the new tabs & remove old tabs. */
     g.attr("transform", function (d, i) {
@@ -196,10 +214,11 @@ function updateLegend(ancestors, studentcount) {
 
     /* Update text of legend. */
     d3.select("#legend").select("#endlabel")
-        .attr("x", (ancestors.length + 0.5) * (legend.width + legend.slice))
+        .attr("x", (ancestors.length + 0.3) * (legend.width + legend.slice))
         .attr("y", legend.height / 2)
         .attr("dy", "0.35em")
         .attr("text-anchor", "middle")
+        .style("font-size", "80%")
         .text(studentcount);
 
     d3.select("#legend")
@@ -213,7 +232,7 @@ var courses = ["BA Artificial Intelligence", "MA Artificial Intelligence", "MA A
     "BA Future Planet Studies", "BA Information Science", "MA Information Studies", "MA Life Sciences", "MA Logic",
     "MA Mathematical Physics", "BA Mathematics", "BA Natural and Social Sciences", "MA Physics",
     "BA Physics and Astronomy", "BA Psychobiology", "MA Software Engineering", "MA Stochastics and Financial Mathematics", "MA System and Network Engineering"],
-    colors = ["#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c", "#98df8a", "#d62728",
+    colors = ["#ff7f0e", "#1f77b4", "#aec7e8", "#ffbb78", "#2ca02c", "#98df8a", "#d62728",
         "#ff9896", "#9467bd", "#c5b0d5", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f",
         "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5", "#8c564b", "#393b79",
         "#5254a3", "#6b6ecf", "#9c9ede", "#637939", "#8ca252", "#b5cf6b"],

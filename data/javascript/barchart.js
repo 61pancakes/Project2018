@@ -6,7 +6,7 @@
  */
 
 /* Create the basis variables for the svg (hardcoded). */
-var margin = { top: 50, right: 150, bottom: 50, left: 50 },
+var margin = { top: 50, right: 150, bottom: 50, left: 70 },
     width = 700 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom,
     years = 6,
@@ -15,7 +15,7 @@ var margin = { top: 50, right: 150, bottom: 50, left: 50 },
 
 function createBarchart() {
 
-    var svg = d3.select("body").append("svg:svg")
+    var svg = d3.select("#barchart").append("svg:svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("svg:g")
@@ -55,8 +55,7 @@ function createBarchart() {
         .call(yAxis)
         .append("text")
         .attr("transform", "rotate(-90)")
-        .attr("y", -40)
-        .attr("x", -10)
+        .attr("y", -60)
         .style("text-anchor", "end")
         .text("→ Aantal studenten");
 
@@ -65,8 +64,8 @@ function createBarchart() {
         .attr("transform", "translate(0," + height + ")")
         .call(xAxis)
         .append("text")
-        .attr("x", 500)
-        .attr("y", 30)
+        .attr("x", 480)
+        .attr("y", 40)
         .style("text-anchor", "end")
         .text("→ Academisch jaar");
 
@@ -74,7 +73,7 @@ function createBarchart() {
     svg.append("g")
         .append("text")
         .attr("x", (width / 2))
-        .attr("y", -10)
+        .attr("y", -30)
         .attr("text-anchor", "middle")
         .style("font", "sans-serif")
         .style("text-decoration", "underline")
@@ -136,7 +135,7 @@ function createBarchart() {
             .data(colors)
             .enter().append("g")
             .attr("class", "legend")
-            .attr("transform", function (d, i) { return "translate(30," + (i * 19 + 30) + ")"; });
+            .attr("transform", function (d, i) { return "translate(123," + (i * 19 + 30) + ")"; });
 
         legend.append("rect")
             .attr("x", width - 18)
@@ -214,13 +213,46 @@ function createBarchart() {
         };
     })
 
+    /* Create a tooltip. */
+    var tooltip2 = svg.append("g")
+        .attr("class", "tooltip2")
+        .style("display", "none");
+
+    tooltip2.append("rect")
+        .attr("width", 150)
+        .attr("height", 200)
+        .attr("fill", "black")
+        .style("opacity", 0.8)
+
+    tooltip2.append("text")
+        .attr("x", 15)
+        .attr("dy", "1.2em")
+        .style("text-anchor", "middle")
+        .attr("font-size", "12px");
+
+    function infobox() {
+        var xPos = d3.mouse(this)[0] - 140,
+            yPos = d3.mouse(this)[1] + 10;
+        d3.select(this).style("cursor", "pointer");
+        tooltip2
+            .attr("transform", "translate(" + xPos + "," + yPos + ")")
+            .style("display", null)
+    }
+
+    function closeinfobox() {
+        d3.select(this).style("cursor", "default");
+        tooltip2.style("display", "none");
+        active = false;
+    }
+
     var img = svg.append("svg:image")
         .attr("xlink:href", "doc/info.png")
         .attr("width", 15)
         .attr("height", 15)
-        .attr("x", 375)
-        .attr("y", - 20)
-        .on("mouseover", function () { d3.select(this).style("cursor", "pointer") })
+        .attr("x", width + 123)
+        .attr("y", 110)
+        .on("mouseover", infobox)
+        .on("mouseout", closeinfobox);
 };
 
 createBarchart();
