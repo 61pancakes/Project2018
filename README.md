@@ -1,19 +1,24 @@
-**Minor Programmeren: Programmeerproject 2018**  
-**TITEL:** Demografische ontwikkelingen bij de FNWI  
-**AUTEUR:** Andrea van den Hooff  
-**PAGES:** http://61pancakes.github.io/Project2018/
+**OVERVIEW**
+----------------  
+**Vak**: Minor Programmeren: Programmeerproject 2018  
+**Titel:** Demografische ontwikkelingen bij de FNWI  
+**Auteur:** Andrea van den Hooff  
+**Pages:** http://61pancakes.github.io/Project2018/
 
 { insert screenshots here }
 
-#### PURPOSE
+**PURPOSE**  
+-----
 Het is algemeen bekend dat vrouwen aanzienlijk in de minderheid zijn bij technische studies. Daar wordt geprobeerd verandering in te brengen door bureaus en NGO's zoals [het VHTO](https://www.vhto.nl/over-vhto/) en [Girls Who Code](https://www.girlswhocode.com). Dit project dient een inzicht te geven in de demografie van de bètastudies aan de Universiteit van Amsterdam. Is die balans daadwerkelijk bij alle studies bij de FNWI zo scheef? In hoeverre zit er relatief en/of absoluut een ontwikkeling in sinds het populairder worden de ICT-branche in het aantal inschrijvingen bij de FNWI? Door middel van verschillende visualisaties wordt dat in dit project enigszins zichtbaar.
 
-#### COPYRIGHT
+COPYRIGHT
+---------
 
 { insert copyright here }
 
 
-#### ACKNOWLEDGEMENTS (copyright)
+**ACKNOWLEDGEMENTS (copyright)**
+--------
 
 { insert acknowledgements here }
 
