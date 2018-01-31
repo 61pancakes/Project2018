@@ -32,75 +32,66 @@
 #### day 7 (16 January 2017)
 - Interactiviteit aan de staafdiagram toegevoegd (tooltip + legenda). Het is nu duidelijker wat de diagram visualiseert.
 - Staafdiagramcode opgeschoond. 
-- Progress geupdate.
+- Progress geupdate.  
 ![voortgang](/doc/barchartv2.png)
 
---------
-
 #### day 8 (17 January 2017)
-- Code georganiseerd. 
-- Aan lijngrafiek gewerkt.
-- Na zitten denken over indeling HTML, geen verstand van Bootstrap dus beetje rond zitten kijken naar voorbeelden op de site wat mogelijkheden zijn.
+- Code van de drie grafieken georganiseerd. 
+- Na zitten denken over indeling HTML, geen verstand van Bootstrap dus beetje rond zitten kijken naar voorbeelden op de site wat mogelijkheden zijn. Ik heb nog niet echt iets gezien waarvan ik denk: 'Ja, die wordt het!'.
 
 #### day 9 (18 January 2017)
-- IVM Storm thuisgebleven.
+- IVM storm thuis gebleven.
 
 #### day 10 (19 January 2017)
 - Gewerkt aan de legenda + aan/uitzetten van lijnen in de lijngrafiek, maar kreeg dat laatste (nog) niet volledig werkende.
 - Twijfel over of ik de duo's (M/F) individueel wil kunnen uitzetten, of een soort voorselectie wil kunnen geven met een dropdown menu, of enkel als duo's. Hoeveel vrijheid geef je de gebruiker?
 - Presentatie gegeven. 
-
 ![voortgang](/doc/linechartv1.png)
 
-
 #### day 11 (22 January 2017)
-- Heel erg veel gekloot met pages & kleuren van de sunburst. Ik wil de laatste twee ringen specifieke kleuren geven en ook de studies in verschillende jaren wel consistent kleuren, en in alle voorbeelden zijn die random dus daar moet ik nog wat op vinden.
+- Heel erg veel gekloot met het werkend krijgen van pages & de kleuren van de sunburst. Ik wil de laatste twee ringen specifieke kleuren geven en ook de studies in verschillende jaren wel consistent kleuren, en in alle voorbeelden zijn die random dus daar moet ik nog wat op vinden.
 ![voortgang](/doc/sunburst.gif)
 
 #### day 12 (23 January 2017)
-- Legenda van de lijngrafiek afgemaakt (Statisch)
+- Legenda van de lijngrafiek afgemaakt (werkt nu statisch).
 - Opnieuw poging gewaagd aan de interactie van de lijngrafiek (lines & legenda) - wat precies uit en aan kunnen zetten waar? 
-- Interactiviteit tussen barchart en sunburst toegevoegd! :) Er moet nog wel uitleg komen over wat je kan doen en waarom je dat zou doen.
+- De interactiviteit tussen barchart en sunburst toegevoegd! :) Er moet nog wel uitleg komen over wat je kan doen en waarom je dat zou doen.
 
 #### day 13 (24 January 2017)
 - Lijngrafieklegenda interactie werkende gekregen! Ik had ook graag gewild dat je lijnen uit kon zetten door op de lijnen zelf te klikken, in plaats van op de legenda, maar dat is wel nog meer werk en ik weet niet zo snel hoe ik dat netjes zou oplossen, dus doe ik dat maar (voorlopig) niet.
 - Begin gemaakt aan tabel in Bootstrap, besloten de tabel 'verticaal' met elkaar te vergelijken, in plaats van de standaard 'horizontale' tabellen waarbij een dataset in 1 rij in kolommen wordt geplaatst. Nu is nog de vraag - hoeveel studies met elkaar vergelijken? Beginnen met kijken of ik 2 kan laten werken.
 - Planning voor laatste dagen gemaakt.
-
 ![voortgang](/doc/linegraph.gif)
 
 #### day 14 (25 January 2017)
-- Besloten datapunten toe te voegen aan de lijngrafiek, om de data beter te visualiseren.
-- Daar een tooltip bijgemaakt, zelfde als bij staafdiagram.
-- Poging tot legenda bij sunburst gedaan. Dat zijn echter te veel kleuren, dus bleek geen goed idee:  
-![voortgang](/doc/sunburstlegenda.png)
-- Toen keek ik of ik niet gewoon een tooltip kon maken, maar dat faalde ook met layers van de SVG en maakte het niet echt duidelijker.  
+- Besloten datapunten toe te voegen aan de lijngrafiek, om de data beter te visualiseren. Daar vervolgens ook een tooltip bijgemaakt, zelfde als bij staafdiagram.
+- Poging tot legenda bij sunburst gedaan. Dat zijn echter te veel kleuren, dus bleek geen goed idee:    
+![voortgang](/doc/sunburstlegenda.png)Toen keek ik of ik niet gewoon een tooltip kon maken, maar dat faalde ook met layers van de SVG en maakte het niet echt duidelijker.  
 ![voortgang](/doc/sunburstv2.png)
-
-- Tot slot toch maar gekeken of ik de ['hoverable' sunburst](https://bl.ocks.org/kerryrodden/7090426) na kon maken, wat er nogal lastig uit zag. Dat is gelukkig wel gelukt en ik vind het duidelijk genoeg. Code is nu wel een zooitje maar dat komt volgende week wel.  
+Tot slot toch maar gekeken of ik de ['hoverable' sunburst](https://bl.ocks.org/kerryrodden/7090426) na kon maken, wat er nogal lastig uit zag. Dat is gelukkig wel gelukt en ik vind het duidelijk genoeg. Code is nu wel een zooitje maar dat komt volgende week wel.  
 ![voortgang](/doc/sunburstv3.png)
 
 
 #### day 15 (26 January 2017)
 - Presentatie gegeven. 
-- Vast heel nuttig geweest, maar ik wist het na het weekend het niet meer :)
+- Vast heel nuttig geweest, maar ik wist het maandag niet meer :)
 
 #### day 16 (29 January 2017)
-- Code grotendeels opgeschoond, ik moet nog kijken of ik de line chart nog verder kan inkorten. Ik heb nu alle M/F-functies bijna dubbel.
+- Code grotendeels opgeschoond, ik moet nog kijken of ik de lijngrafiek nog verder kan inkorten. Ik heb nu alle M/F-functies bijna dubbel.
 - Sunburst veranderd naar enkel aanroepen door staafdiagram (max. 1 academisch jaar visualiseren) - er zit nog een bug in de eerste keer klikken, dan kan je nog niet hoveren, dus dat moet ik morgen nog even oplossen.
 - Begin gemaakt aan layout website.
-
 ![voortgang](/doc/websitev1.png)
 ![voortgang](/doc/websitev2.png)
 
 #### day 17 (30 January 2017)
 - Op basis van code review: code verder opgeschoond.
-- Besloten om toch nog een poging aan een interactieve tabel te wagen, voordat ik aan het verslag begin.
+- Besloten om toch nog een poging aan een interactieve tabel te wagen, omdat ik meende daar tijd voor te hebben, voordat ik aan het verslag begin.
 - Maar eerst aan de lay-out van de website gezeten. :)
 
 #### day 18 (31 January 2017)
-- Besloten in verband met dat de tabellen die ik zou kunnen maken echt lelijk zijn en veel tijd zouden kosten, de tabel te laten voor wat het is en me te focussen op de lay-out: liever een informatietooltip en goede, opgeruimde, werkdende code & verslag dan een extra interactief component.
+- Door het vinden van nog redeiljk wat bugs toch maar besloten de tabel te laten voor wat het is en me te focussen op de lay-out: liever een informatietooltip en goede, opgeruimde, werkdende code & verslag dan een extra interactief component. (Bovendien waren de tabellen, die ik zou kunnen maken in twee dagen echt lelijk zijn en zou het me veel stress gaan geven.) 
 - Gefocust op het geheel mooi te krijgen, aangezien ik al maanden niks meer met HTML had gedaan.
+- Begin gemaakt aan REPORT.MD, PROGRESS.md uitgewerkt & README.md geupdate. 
 
 #### day 19 (1 February 2017)
 
