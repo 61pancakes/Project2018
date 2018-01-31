@@ -1,6 +1,6 @@
-1. README.md updaten
+1. README.md laatste beetje updaten
 2. REPORT.md schrijven
-3. JS files 
-4. Code fixen: Unieke ID, variabelen hardcoded? MF functies samenvoegen. Lijngrafiek legenda. Sunburst 1e hover + titel. Layout info icon.
-5. HTML fixen: 4 divs + queue + window on load. JS in header.
+3. JS files opschonen
+4. Code fixen: Unieke ID, MF functies samenvoegen. Tooltips. Sunburst 1e hover. Layout info icon.
+5. HTML fixen: navbar fixen.
 6. Demo maken van eindresultaat
