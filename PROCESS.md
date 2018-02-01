@@ -101,6 +101,6 @@ Tot slot toch maar gekeken of ik de ['hoverable' sunburst](https://bl.ocks.org/k
 ![final](/doc/finalv4.png)
 
 #### day 20 (2 February 2017)
-- Filmpje gemaakt.
+- Filmpje gemaakt.  
 ![final](/doc/theend.jpg)
 
