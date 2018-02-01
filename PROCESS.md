@@ -97,6 +97,10 @@ Tot slot toch maar gekeken of ik de ['hoverable' sunburst](https://bl.ocks.org/k
 #### day 19 (1 February 2017)
 - REPORT.MD geschreven!
 - Navbar was verticaal, daar nog naar gekeken of ik hem toch mooi horizontaal kon krijgen (#bootstrapstruggles)
-- Nu *echt* de laatste puntjes op de i's gezet. 
-- Filmpje gemaakt.
+- Nu *echt* de laatste puntjes op de i's gezet.   
 ![final](/doc/finalv4.png)
+
+#### day 20 (2 February 2017)
+- Filmpje gemaakt.
+![final](/doc/theend.jpg)
+
