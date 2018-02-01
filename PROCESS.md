@@ -26,7 +26,7 @@
 ![voortgang](/doc/barchart.png)
 
 #### day 6 (15 January 2017)
-- Begin aan de sunburst gemaakt. Benodigde data had ik nog niet in een goed format, dus dat heb ik moeten herschrijven. De sunburst werkt op zichzelf, maar moet nog duidelijker worden. Ik heb nu gewoon een standaard voorbeeld nagemaakt en zal dus de tekst en kleuren nog moeten aanpassen. Daarnaast twijfel ik of ik de sunburst pas wil laten zien nadat een jaar is geselecteerd in de staafdiagram, of dat hij in het geheel zichtbaar is en enkel van schaal verandert door het klikken.
+- Begin aan de sunburst gemaakt. Benodigde data had ik nog niet in een goed format, dus dat heb ik moeten herschrijven. De sunburst werkt op zichzelf, maar moet nog duidelijker worden. Ik heb nu gewoon een standaard voorbeeld nagemaakt en zal dus de tekst en kleuren nog moeten aanpassen. Daarnaast twijfel ik of ik de sunburst pas wil laten zien nadat een jaar is geselecteerd in de staafdiagram, of dat hij in het geheel zichtbaar is en enkel van schaal verandert door het klikken.  
 ![voortgang](/doc/sunburstv1.png)
 
 #### day 7 (16 January 2017)
@@ -45,7 +45,7 @@
 #### day 10 (19 January 2017)
 - Gewerkt aan de legenda + aan/uitzetten van lijnen in de lijngrafiek, maar kreeg dat laatste (nog) niet volledig werkende.
 - Twijfel over of ik de duo's (M/F) individueel wil kunnen uitzetten, of een soort voorselectie wil kunnen geven met een dropdown menu, of enkel als duo's. Hoeveel vrijheid geef je de gebruiker?
-- Presentatie gegeven. 
+- Presentatie gegeven.   
 ![voortgang](/doc/linechartv1.png)
 
 #### day 11 (22 January 2017)
@@ -99,4 +99,4 @@ Tot slot toch maar gekeken of ik de ['hoverable' sunburst](https://bl.ocks.org/k
 - Navbar was verticaal, daar nog naar gekeken of ik hem toch mooi horizontaal kon krijgen (#bootstrapstruggles)
 - Nu *echt* de laatste puntjes op de i's gezet. 
 - Filmpje gemaakt.
-![final](/doc/websitev4.png)
+![final](/doc/finalv4.png)
