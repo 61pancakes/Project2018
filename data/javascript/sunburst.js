@@ -2,8 +2,9 @@
  * Andrea van den Hooff
  * Minor Programmeren
  * 10439080
- * sunburst.js: This file creates a zoomable sunburst in d3 with data loaded in from a .json file.
- * Used https://bl.ocks.org/mbostock/4348373 and https://bl.ocks.org/kerryrodden/7090426 as examples.
+ * sunburst.js: This file creates a zoomable sunburst in d3 with data
+ * loaded in from a .json file. Used https://bl.ocks.org/mbostock/4348373
+ * and https://bl.ocks.org/kerryrodden/7090426 as examples.
  */
 
 /* Create the basis variables for the svg. */
@@ -11,11 +12,28 @@ var margin = { top: 0, right: 150, bottom: 0, left: 0 },
     width = 900 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
-    first = true;
-legend = {
-    width: 200, height: 30, slice: 3, arrow: 10
-};
+    first = true,
+    legend = {
+        width: 200, height: 30, slice: 3, arrow: 10
+    }
 
+/* Create the variables for the coloring (used in fillSunburst()). */
+var courses = ["BA Artificial Intelligence", "MA Artificial Intelligence", "MA Astronomy and Astrophysics",
+    "MA Biological Sciences", "BA Biology", "BA Biomedical Sciences", "MA Brain and Cognitive Sciences",
+    "BA Chemistry", "MA Computational Science", "MA Computer Science", "BA Computing Science", "MA Earth Science", "MA Forensic Science",
+    "BA Future Planet Studies", "BA Information Science", "MA Information Studies", "MA Life Sciences", "MA Logic",
+    "MA Mathematical Physics", "BA Mathematics", "BA Natural and Social Sciences", "MA Physics",
+    "BA Physics and Astronomy", "BA Psychobiology", "MA Software Engineering", "MA Stochastics and Financial Mathematics", "MA System and Network Engineering"],
+    colors = ["#ff7f0e", "#1f77b4", "#aec7e8", "#ffbb78", "#2ca02c", "#98df8a", "#d62728",
+        "#ff9896", "#9467bd", "#c5b0d5", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f",
+        "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5", "#8c564b", "#393b79",
+        "#5254a3", "#6b6ecf", "#9c9ede", "#637939", "#8ca252", "#b5cf6b"],
+    lightpink = "#ffe6ff",
+    pink = "#ffb3ff",
+    lightblue = "#99e6ff",
+    blue = "#1ac6ff";
+
+/* Add the svg. */
 var svg = d3.select("#sunburst").append("svg:svg")
     .attr("width", width)
     .attr("height", height)
@@ -39,18 +57,15 @@ var arc = d3.svg.arc()
     .innerRadius(function (d) { return Math.max(0, y(d.y)); })
     .outerRadius(function (d) { return Math.max(0, y(d.y + d.dy)); });
 
-function updateSunburst(year) {/* Load dataset from local server to create the circle partitions. */
+/* Create & update the sunburst when called by barchart.js. */
+function updateSunburst(year) {
     d3.json("data/csv + json/sunburst.json", function (error, root) {
         if (first == true) {
             createLegend();
             first = false;
         }
-        data = partition.nodes(root.children[year]);
 
-        /* Remove old data (if any). */
-        svg.selectAll("path")
-            .data(data)
-            .exit().remove();
+        data = partition.nodes(root.children[year]);
 
         /* Create the correct sunburst. */
         svg.selectAll("path")
@@ -65,10 +80,15 @@ function updateSunburst(year) {/* Load dataset from local server to create the c
 
         /* Show the sunburst. */
         clickSunburst(data[0]);
+
+        /* Remove old data (if any). */
+        svg.selectAll("path")
+            .data(data)
+            .exit().remove();
     });
 };
 
-/* Change the visualisation based on mouseclick, keeping scaling in mind. */
+/* Change the visualisation based on mouseclick, keeping scale in mind. */
 function clickSunburst(d) {
     svg.transition()
         .duration(750)
@@ -96,12 +116,11 @@ function mouseover(d) {
         ancestors = getAncestors(d);
     updateLegend(ancestors, studentcount);
 
-    d3.select("#explanation")
-        .style("visibility", "");
     d3.select("#percentage")
         .text(studentcount);
 
     /* Fade the sunburst, highlght current sequence. */
+    console.log(d3.selectAll("path.sunburst"));
     d3.selectAll("path.sunburst")
         .style("stroke-width", 0.5)
         .style("opacity", 0.3);
@@ -154,11 +173,9 @@ function createTabs(d, i) {
     if (i > 0) {
         tabs.push(legend.arrow + "," + (legend.height / 2));
     }
-    console.log(tabs);
+
     return tabs.join(" ");
 }
-
-
 
 /* Create an svg for the legend. */
 function createLegend() {
@@ -223,22 +240,6 @@ function updateLegend(ancestors, studentcount) {
     d3.select("#legend")
         .style("visibility", "");
 }
-
-/* Create the variables for the coloring (used in fillSunburst()). */
-var courses = ["BA Artificial Intelligence", "MA Artificial Intelligence", "MA Astronomy and Astrophysics",
-    "MA Biological Sciences", "BA Biology", "BA Biomedical Sciences", "MA Brain and Cognitive Sciences",
-    "BA Chemistry", "MA Computational Science", "MA Computer Science", "BA Computing Science", "MA Earth Science", "MA Forensic Science",
-    "BA Future Planet Studies", "BA Information Science", "MA Information Studies", "MA Life Sciences", "MA Logic",
-    "MA Mathematical Physics", "BA Mathematics", "BA Natural and Social Sciences", "MA Physics",
-    "BA Physics and Astronomy", "BA Psychobiology", "MA Software Engineering", "MA Stochastics and Financial Mathematics", "MA System and Network Engineering"],
-    colors = ["#ff7f0e", "#1f77b4", "#aec7e8", "#ffbb78", "#2ca02c", "#98df8a", "#d62728",
-        "#ff9896", "#9467bd", "#c5b0d5", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f",
-        "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5", "#8c564b", "#393b79",
-        "#5254a3", "#6b6ecf", "#9c9ede", "#637939", "#8ca252", "#b5cf6b"],
-    lightpink = "#ffe6ff",
-    pink = "#ffb3ff",
-    lightblue = "#99e6ff",
-    blue = "#1ac6ff";
 
 /* Function to color each section of the sunburst the right color. */
 function fillSunburst(d) {

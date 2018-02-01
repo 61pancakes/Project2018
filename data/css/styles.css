@@ -1,40 +1,49 @@
+/*  
+ * Andrea van den Hooff
+ * Minor Programmeren
+ * 10439080
+ * styles.css: This file has style attributes for the d3 visualisations.
+ */
+
 svg {
-  font-weight: normal;
-  shape-rendering: crispEdges;
+    font-weight: normal;
+    shape-rendering: crispEdges;
 }
 
+/* Bar chart */
 .axis path,
 .axis line {
-  fill: none;
-  stroke: #000;
-  stroke-width: 1;
+    fill: none;
+    stroke: #000;
+    stroke-width: 1;
 }
 
 .tick line {
-  opacity: 0.2;
+    opacity: 0.2;
 }
 
-/* Andere SVG */
+/* Line chart */
 path {
-  stroke: black;
-  stroke-width: 2;
-  fill: none;
+    stroke: black;
+    stroke-width: 2;
+    fill: none;
 }
 
-/* SB */
+/* Sunburst */
 #sequence {
-  height: 70px;
+    height: 70px;
 }
 
 #legend {
-  padding: 10px 0 0 3px;
+    padding: 10px 0 0 3px;
 }
 
-#sequence text, #legend text {
-  font-weight: 600;
-  fill: #fff;
+#sequence text,
+#legend text {
+    font-weight: 600;
+    fill: #fff;
 }
 
 #chart path {
-  stroke: #fff;
+    stroke: #fff;
 }

@@ -1,36 +1,51 @@
-<!DOCTYPE html>
+<!--
+    Andrea van den Hooff
+    Minor Programmeren
+    10439080 
+    index.html: This file creates the website lay-out,
+    linking the Javascript files together and showing a nice website. :)  
+    
+    NB: I know that you officially should put all the JS-files in the head,
+    but I could only make some of the scripts work, and since I'm rather
+    consistent than half-correct I ended up putting all the JS-files
+    in the body instead. Secondly, the HTML style (e.g. camelcase/snakecase)
+    is different from the Javascript files, since I was using a Bootstrap
+    template with a different style from mine, which was linked with different files
+    so I couldn't change most of it without screwing the CSS.
+-->
+
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>Programmeerproject 2018</title>
 
+    <!-- D3 library -->
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
     <!-- Custom fonts for this template -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="data/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="data/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="data/css/freelancer.css" rel="stylesheet">
 
-    <!-- Eigen CSS -->
-    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <!-- CSS for SVGs. -->
     <link rel="stylesheet" href="data/css/styles.css" type="text/css">
 </head>
 
 <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="mainNav bg-secondary fixed-top text-uppercase" id="mainNav">
-        <div class="container-fluid">
-            <ul class="navbar-nav">
-                <li class="nav-item" display="inline">
-                    <a class="nav-link py-3 px-0 px-lg-3" href="#page-top">Home</a>
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+        <div class="container">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#page-top">Home</a>
                 </li>
-                <li class="nav-item" display="inline">
-                    <a class="nav-link py-3 px-0 px-lg-3" href="#datasets">Data</a>
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#datasets">Datasets</a>
                 </li>
-                <li class="nav-item" display="inline">
-                    <a class="nav-link py-3 px-0 px-lg-3" href="#about">About</a>
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
                 </li>
             </ul>
         </div>
@@ -100,6 +115,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <div class="copyright py-4 text-center text-white">
         <div class="container">
             Januari 2018 - Minor Programmeren - Andrea van den Hooff - 10439080

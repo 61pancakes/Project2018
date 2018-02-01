@@ -2,7 +2,8 @@
  * Andrea van den Hooff
  * Minor Programmeren
  * 10439080
- * linegraph.js: This file creates a multi line graph in d3 with data loaded in from a .json file.
+ * linegraph.js: This file creates a multi line graph in d3
+ * with data loaded in from a .json file.
  */
 
 /* Create the basis variables for the svg (hardcoded). */

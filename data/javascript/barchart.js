@@ -3,6 +3,8 @@
  * Minor Programmeren
  * 10439080
  * barchart.js: This file creates a bar chart in d3 with data loaded in from a .json file.
+ * Used https://bl.ocks.org/mbostock/3886208 and https://bl.ocks.org/mbostock/882152
+ * as examples. * 
  */
 
 /* Create the basis variables for the svg (hardcoded). */
@@ -14,7 +16,6 @@ var margin = { top: 50, right: 150, bottom: 50, left: 70 },
     studentMax = 3739;
 
 function createBarchart() {
-
     var svg = d3.select("#barchart").append("svg:svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
@@ -228,6 +229,7 @@ function createBarchart() {
         .attr("x", 15)
         .attr("dy", "1.2em")
         .style("text-anchor", "middle")
+        .attr("fill", "white")
         .attr("font-size", "12px");
 
     function infobox() {
