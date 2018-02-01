@@ -5,7 +5,11 @@
 **Auteur:** Andrea van den Hooff  
 **Pages:** http://61pancakes.github.io/Project2018/
 
-{ insert screenshots here }
+**SCREENSHOTS**  
+-----
+![final](doc/finalv1.png)
+
+![final](doc/finalv2.png)
 
 **PURPOSE**  
 -----
@@ -14,12 +18,33 @@ Het is algemeen bekend dat vrouwen aanzienlijk in de minderheid zijn bij technis
 COPYRIGHT
 ---------
 
-{ insert copyright here }
+BSD 2-Clause License
 
+Copyright (c) 2018, Andrea van den Hooff
+All rights reserved.
 
-**ACKNOWLEDGEMENTS (copyright)**
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+**ACKNOWLEDGEMENTS**
 --------
 
-{ insert acknowledgements here }
-
-The README.md should also acknowledge sources of external code, images and other materials that are in the repository but not created by yourself. Make sure that it is clear which directories are copyrighted by different creators.Also note that these materials have their own respective licenses. You should at the very least note this fact (again, in the README.md). Make sure you also check the licenses to see if you should make a special statement about the source of the materials.
+Voor het bouwen van de lay-out heb ik gebruik gemaakt van het framework van de [Freelancer Bootstrap van Start Bootstrap](https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/gh-pages/LICENSE). Verder moet ik ook de mensen van bl.ocks voor het maken van de prachtige voorbeelden (en natuurlijk de TA's :) ).
