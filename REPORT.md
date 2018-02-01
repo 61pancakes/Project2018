@@ -2,7 +2,7 @@
 ----------------  
 Dit project visualiseert de demografische ontwikkelingen van de Universiteit van Amsterdam. Het brengt het aantal inschrijvingen per studie in kaart en focust daarbij op de Bachelor- en Masterstudenten aan de bètafaculteit FNWI. Door de afgelopen 5 jaar in de verschillende grafieken naast elkaar te zetten, kunnen er vergelijkingen worden gedaan, niet alleen tussen studies, maar ook tussen verschillende academische jaren.
 
-![Website](doc/finalv3.png)
+![Website](doc/finalv5.png)
 
 **DESIGN**
 ----------------  
@@ -35,12 +35,14 @@ Het is me na vier weken wel een stuk duidelijker, maar ik snap nog steeds niet a
 Mijn plan was aan het einde van week drie om nog in de laatste week een tabel te gaan maken, die stond namelijk nog in mijn originele plan (wel als optioneel). Op dat moment had ik namelijk drie werkende visualisaties en leek het allemaal wel goed te gaan. Echter heb ik bij het opschonen van de code gezien, dat er eigenlijk nog wel veel te doen was. Er deden zich steeds weer nieuwe problemen voor, waardoor ik er uiteindelijk voor heb gekozen om het begin van de tabel die ik gemaakt had, weg te gooien en te focussen op dat wat ik al had. Hier heb ik misschien wel in algemene zin het meeste van geleerd: je code kan je echt 100 keer bijwerken en je zal elke keer weer nieuwe foutjes vinden.
 
 **4. De website in elkaar zetten.**  
-Dit sluit enigszins aan bij 1 en 3; HTML is behoorlijk anders dan de andere programmeertalen waarmee ik in contact ben gekomen. Als je het kant-en-klaar ziet is het te begrijpen, maar om het zelf op te bouwen is toch iets anders. Ik heb er uiteindelijk voor gekozen om een template van Bootstrap te nemen en die aan te passenm, zodat ik op een voorbeeld kon voortbouwen. Echter stond er zoveel in dat template wat ik niet nodig had, dat ik vooral veel tijd kwijt was aan het uitzoeken wat ik allemaal weg kon gooien. Je wilt (natuurlijk) wel een mooie lay-out hebben en ik heb dan ook misschien meer tijd gestoken in dat netjes te krijgen dan mijn code qua stijl echt netjes te krijgen.
+Dit sluit enigszins aan bij 1 en 3; HTML is behoorlijk anders dan de andere programmeertalen waarmee ik in contact ben gekomen. Als je het kant-en-klaar ziet is het te begrijpen, maar om het zelf op te bouwen is toch iets anders. Ik heb er uiteindelijk voor gekozen om een template van Bootstrap te nemen en die aan te passenm, zodat ik op een voorbeeld kon voortbouwen. Echter stond er zoveel in dat template wat ik niet nodig had, dat ik vooral veel tijd kwijt was aan het uitzoeken wat ik allemaal weg kon gooien. Je wilt (natuurlijk) wel een mooie lay-out hebben en ik heb dan ook misschien meer tijd gestoken in dat netjes te krijgen dan mijn code qua stijl echt netjes te krijgen. De lay-out is nu helaas niet echt flexibel, en ziet er precies goed uit op een laptopscherm van fixed size..
 
 **VERANDERINGEN**
 ------------------
 **Verschillen met het originele design:**  
 Van het originele design document is het meest intact gebleven. De algemene lay-out heb ik wel veranderd, aangezien dat slechts een basis was en omdat mijn laptopbeeldscherm niet zo breed als een A4'tje was. Daarnaast heb ik het eerste niveau van de sunburst weggehaald, op aanraden van de presentaties op de derde vrijdag. Er stonden te veel data in. Hoewel het wel een mooie visualisatie was, waren de data niet meer overzichtelijk. Eigenlijk heb ik vooral dingen veranderd/toegevoegd om de visualisaties te verduidelijken: legenda's, kleurtjes, tooltips en interactie stonden allemaal in het teken van uitleg. 
+
+Ik had niet echt een duidelijk idee van wat mijn extra interactieve componenten zouden worden. Eigenlijk waren de tabel en bijbehorende dropdown daar onderdeel van, maar die had ik wel als optioneel neergezet. Ik heb uiteindelijk wel een heleboel kleinere interactieve componenten binnen de visualisaties zelf toegevoegd, en ook nog een interactieve lay-out, waardoor ik van mening ben dat er wel genoeg interactiviteit in het project als geheel zit?
 
 **Mogelijke aanpassingen in de toekomst:**  
 Als ik meer tijd had gehad, had ik nog een dag of twee naar de stijl van mijn code willen kijken. En daarnaast vooral nog een tabel interactief en werkende willen krijgen. Ik vind het jammer dat die niet is gelukt en dat er nu een afbeelding staat als voorbeeld van wat ik eigenlijk had willen maken. De lijngrafiek had ik mogelijk ook wel anders gedaan. Ik vind hem niet echt mooi en er staan misschien te veel data in, als je hem in zijn geheel ziet (alhoewel daar natuurlijk alle interactiviteit voor is). Natuurlijk is het altijd mooier in je hoofd als je gewoon zou kunnen tekenen wat je zou willen maken, in plaats van gebruik te moeten maken van d3. Toch denk ik dat ik wel redelijk 'naar mijn kunnen' heb gepresteerd en ben ik trots op het resultaat! 
