@@ -13,7 +13,7 @@
 
 **PURPOSE**  
 -----
-Het is algemeen bekend dat vrouwen aanzienlijk in de minderheid zijn bij technische studies. Daar wordt geprobeerd verandering in te brengen door bureaus en NGO's zoals het [VHTO](https://www.vhto.nl/over-vhto/) en [Girls Who Code](https://www.girlswhocode.com). Dit project dient een inzicht te geven in de demografie van de bètastudies aan de Universiteit van Amsterdam. Is die balans daadwerkelijk bij alle studies bij de FNWI zo scheef? In hoeverre zit er relatief en/of absoluut een ontwikkeling in sinds het populairder worden de ICT-branche in het aantal inschrijvingen bij de FNWI? Door middel van verschillende visualisaties wordt dat in dit project enigszins zichtbaar.
+Het is algemeen bekend dat vrouwen aanzienlijk in de minderheid zijn bij technische studies. Daar wordt geprobeerd verandering in te brengen door bureaus en NGO's zoals het [VHTO](https://www.vhto.nl/over-vhto/) en [Girls Who Code](https://www.girlswhocode.com). Dit project dient een inzicht te geven in de demografie van de bètastudies aan de Universiteit van Amsterdam. Is die balans daadwerkelijk bij alle studies bij de FNWI zo scheef? In hoeverre zit er relatief en/of absoluut een ontwikkeling in sinds het populairder worden de ICT-branche in het aantal inschrijvingen bij de FNWI? Door middel van verschillende visualisaties (namelijk een staafdiagram, een lijngrafiek en een 'sunburst') wordt dat in dit project enigszins zichtbaar.
 
 COPYRIGHT
 ---------
