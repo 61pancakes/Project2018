@@ -99,3 +99,4 @@ Tot slot toch maar gekeken of ik de ['hoverable' sunburst](https://bl.ocks.org/k
 - Navbar was verticaal, daar nog naar gekeken of ik hem toch mooi horizontaal kon krijgen (#bootstrapstruggles)
 - Nu *echt* de laatste puntjes op de i's gezet. 
 - Filmpje gemaakt.
+![final](/doc/websitev4.png)
