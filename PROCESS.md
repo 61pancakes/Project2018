@@ -64,10 +64,11 @@
 ![voortgang](/doc/linegraph.gif)
 
 #### day 14 (25 January 2017)
-- Besloten datapunten toe te voegen aan de lijngrafiek, om de data beter te visualiseren. Daar vervolgens ook een tooltip bijgemaakt, zelfde als bij staafdiagram.
+- Besloten datapunten toe te voegen aan de lijngrafiek, om de data beter te visualiseren. Daar vervolgens ook een tooltip bijgemaakt, zelfde als bij staafdiagram.  
 - Poging tot legenda bij sunburst gedaan. Dat zijn echter te veel kleuren, dus bleek geen goed idee:    
-![voortgang](/doc/sunburstlegenda.png)Toen keek ik of ik niet gewoon een tooltip kon maken, maar dat faalde ook met layers van de SVG en maakte het niet echt duidelijker.  
-![voortgang](/doc/sunburstv2.png)
+![voortgang](/doc/sunburstlegenda.png)  
+Toen keek ik of ik niet gewoon een tooltip kon maken, maar dat faalde ook met layers van de SVG en maakte het niet echt duidelijker.  
+![voortgang](/doc/sunburstv2.png)  
 Tot slot toch maar gekeken of ik de ['hoverable' sunburst](https://bl.ocks.org/kerryrodden/7090426) na kon maken, wat er nogal lastig uit zag. Dat is gelukkig wel gelukt en ik vind het duidelijk genoeg. Code is nu wel een zooitje maar dat komt volgende week wel.  
 ![voortgang](/doc/sunburstv3.png)
 
