@@ -60,10 +60,13 @@ section {
 }
 
 #mainNav {
-  width: 100%;
-  height: 50px;
+  display: inline;
   font-weight: 1000;
   font-family: 'Montserrat';
+}
+
+#mainNav li.nav-item {
+  width: 200px;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
@@ -79,7 +82,7 @@ section {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #18BC9C;
+    color: #18BC9C;
 }
 
 /* */
@@ -121,7 +124,6 @@ header.masthead h1 {
 
 div #barchart {
 float: left;
-
 }
 
 div #sunburst {
