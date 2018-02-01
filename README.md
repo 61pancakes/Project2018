@@ -47,4 +47,4 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 **ACKNOWLEDGEMENTS**
 --------
 
-Voor het bouwen van de lay-out heb ik gebruik gemaakt van het framework van de [Freelancer Bootstrap van Start Bootstrap](https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/gh-pages/LICENSE). Verder moet ik ook de mensen van bl.ocks voor het maken van de prachtige voorbeelden (en natuurlijk de TA's :) ).
+Voor het bouwen van de lay-out heb ik gebruik gemaakt van het framework van de [Freelancer Bootstrap van Start Bootstrap](https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/gh-pages/LICENSE). De data komt van de [UvA](http://www.uva.nl/en/about-the-uva/uva-profile/facts-and-figures/facts-and-figures.html) en [TU Delft](https://www.tudelft.nl/over-tu-delft/feiten-en-cijfers/), die als twee van de weinige universiteiten in Nederland al hun statistieken vrij geven op hun website. Verder moet ik ook de mensen van bl.ocks voor het maken van de prachtige voorbeelden (en natuurlijk de TA's :) ).
