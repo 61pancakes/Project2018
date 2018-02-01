@@ -4,6 +4,7 @@
  * 10439080
  * linegraph.js: This file creates a multi line graph in d3
  * with data loaded in from a .json file.
+ * This code is a bit of a mess because of all the interactivity. :D
  */
 
 /* Create the basis variables for the svg (hardcoded). */
@@ -86,62 +87,6 @@ function createLinegraph() {
         .style("text-decoration", "underline")
         .text("Man-vrouwverhouding bij verschillende universiteiten");
 
-    /* Create a tooltip. */
-    var tooltip2 = svg.append("g")
-        .attr("class", "tooltip2")
-        .style("display", "none");
-
-    tooltip2.append("rect")
-        .attr("width", 200)
-        .attr("height", 80)
-        .attr("fill", "black")
-        .style("opacity", 0.8)
-    tooltip2.append('svg:text')
-        .attr("fill", "white")
-        .attr('x', 100)
-        .attr('y', 10)
-        .attr('class', 'id')
-        .append('svg:tspan')
-        .attr('x', 0)
-        .attr('dy', 5)
-        .text("Hover over lijnen voor")
-        .append('svg:tspan')
-        .attr('x', 0)
-        .attr('dy', 20)
-        .text("meer informatie!")
-        .append('svg:tspan')
-        .attr('x', 0)
-        .attr('dy', 20)
-        .text("Legenda: Klik om lijnen")
-        .append('svg:tspan')
-        .attr('x', 0)
-        .attr('dy', 20)
-        .text("aan en uit te zetten.")
-
-    function infobox() {
-        var xPos = d3.mouse(this)[0] - 200,
-            yPos = d3.mouse(this)[1] + 20;
-        d3.select(this).style("cursor", "pointer");
-        tooltip2
-            .attr("transform", "translate(" + xPos + "," + yPos + ")")
-            .style("display", null)
-    }
-
-    function closeinfobox() {
-        d3.select(this).style("cursor", "default");
-        tooltip2.style("display", "none");
-        active = false;
-    }
-
-    var img = svg.append("svg:image")
-        .attr("xlink:href", "doc/info.png")
-        .attr("width", 15)
-        .attr("height", 15)
-        .attr("x", width + 270)
-        .attr("y", 210)
-        .on("mouseover", infobox)
-        .on("mouseout", closeinfobox);
-
     /* Load dataset to create the lines. */
     d3.json("data/csv + json/linegraph.json", function (error, data) {
         /* Create variables for (coloring of) the data. */
@@ -216,7 +161,7 @@ function createLinegraph() {
                 .attr("cy", function (d) { return y(d.women) })
                 .attr("r", standard)
                 .on("mouseover", mouseoverdatapointF)
-                .on("mouseout", mouseoutdatapointF);
+                .on("mouseout", mouseoutDatapoint);
 
             /* Then add all datapoints on lines representing men. */
             svg.selectAll(".datapoint")
@@ -228,7 +173,7 @@ function createLinegraph() {
                 .attr("cy", function (d) { return y(d.men) })
                 .attr("r", standard)
                 .on("mouseover", mouseoverdatapointM)
-                .on("mouseout", mouseoutdatapointM);
+                .on("mouseout", mouseoutDatapoint);
         }
 
         /* Add legend. */
@@ -321,13 +266,14 @@ function createLinegraph() {
                 .attr("r", standard)
         }
 
-        /* Highlight the current line and datapoints & highlight barchart if it's the corresponding data. */
+        /* Highlight the current line and datapoints & highlight barchart if it's the corresponding data.
+        Not the best looking function, but he does the job. */
         function mouseoverLines(gender) {
             return function () {
                 d3.select(this).style("cursor", "pointer");
-                d3.select(this).style("stroke-width", 4)
+                d3.select(this).style("stroke-width", larger)
                 if (gender == "M") {
-                    d3.selectAll(".datapointM" + this.classList[0].slice(-1)).attr("r", 5);
+                    d3.selectAll(".datapointM" + this.classList[0].slice(-1)).attr("r", larger);
                     if (this.classList == "lineM4") {
                         d3.selectAll("rect.MM")
                             .style("stroke", "black")
@@ -338,7 +284,7 @@ function createLinegraph() {
                             .style("stroke-width", standard);
                     }
                 } else {
-                    d3.selectAll(".datapointF" + this.classList[0].slice(-1)).attr("r", 5);
+                    d3.selectAll(".datapointF" + this.classList[0].slice(-1)).attr("r", larger);
                     if (this.classList == "lineF4") {
                         d3.selectAll("rect.MF")
                             .style("stroke", "black")
@@ -350,47 +296,6 @@ function createLinegraph() {
                     }
                 }
             }
-        }
-
-        /* Show data of the current datapoint & highlight the rest of the line. */
-        function mouseoverdatapointF(d) {
-            var xPos = d3.mouse(this)[0] + 30,
-                yPos = d3.mouse(this)[1] - 20;
-            hoverbox
-                .style("display", null)
-                .attr("transform", "translate(" + xPos + "," + yPos + ")")
-                .select("text")
-                .html((d.women) + " vrouwen");
-            d3.select(this).style("cursor", "pointer");
-            d3.selectAll(".datapointF" + this.classList[0].slice(-1)).attr("r", larger);
-            d3.selectAll(".lineF" + this.classList[0].slice(-1)).style("stroke-width", 5);
-        }
-
-        function mouseoverdatapointM(d) {
-            var xPos = d3.mouse(this)[0] + 30,
-                yPos = d3.mouse(this)[1] - 20;
-            hoverbox
-                .style("display", null)
-                .attr("transform", "translate(" + xPos + "," + yPos + ")")
-                .select("text")
-                .html((d.men) + " mannen");
-            d3.select(this).style("cursor", "pointer");
-            d3.selectAll(".datapointM" + this.classList[0].slice(-1)).attr("r", larger);
-            d3.selectAll(".lineM" + this.classList[0].slice(-1)).style("stroke-width", 5);
-        }
-
-        function mouseoutdatapointF(d) {
-            hoverbox.style("display", "none");
-            d3.select(this).style("cursor", "default");
-            d3.selectAll(".datapointF" + this.classList[0].slice(-1)).attr("r", standard);
-            d3.selectAll(".lineF" + this.classList[0].slice(-1)).style("stroke-width", 2);
-        }
-
-        function mouseoutdatapointM(d) {
-            d3.select(this).style("cursor", "default");
-            hoverbox.style("display", "none");
-            d3.selectAll(".datapointM" + this.classList[0].slice(-1)).attr("r", standard)
-            d3.selectAll(".lineM" + this.classList[0].slice(-1)).style("stroke-width", 2)
         }
 
         /* Remove the highlights. */
@@ -416,23 +321,114 @@ function createLinegraph() {
             }
         }
 
+        /* Show data of the current datapoint & highlight the rest of the line. */
+        function mouseoverdatapointF(d) {
+            var xPos = d3.mouse(this)[0] + 30,
+                yPos = d3.mouse(this)[1] - 20;
+            tooltip1
+                .style("display", null)
+                .attr("transform", "translate(" + xPos + "," + yPos + ")")
+                .select("text")
+                .html((d.women) + " vrouwen");
+            d3.select(this).style("cursor", "pointer");
+            d3.selectAll(".datapointF" + this.classList[0].slice(-1)).attr("r", larger);
+            d3.selectAll(".lineF" + this.classList[0].slice(-1)).style("stroke-width", larger);
+        }
+
+        function mouseoverdatapointM(d) {
+            var xPos = d3.mouse(this)[0] + 30,
+                yPos = d3.mouse(this)[1] - 20;
+            tooltip1
+                .style("display", null)
+                .attr("transform", "translate(" + xPos + "," + yPos + ")")
+                .select("text")
+                .html((d.men) + " mannen");
+            d3.select(this).style("cursor", "pointer");
+            d3.selectAll(".datapointM" + this.classList[0].slice(-1)).attr("r", larger);
+            d3.selectAll(".lineM" + this.classList[0].slice(-1)).style("stroke-width", larger);
+        }
+
+        function mouseoutdatapoint(d) {
+            tooltip1.style("display", "none");
+            d3.select(this).style("cursor", "default");
+            d3.selectAll("circle").attr("r", standard);
+            d3.selectAll(".lineF" + this.classList[0].slice(-1)).style("stroke-width", 2);
+            d3.selectAll(".lineM" + this.classList[0].slice(-1)).style("stroke-width", 2);
+        }
+
         /* Create a tooltip. */
-        var hoverbox = svg.append("g")
-            .attr("class", "hoverbox")
+        var tooltip1 = svg.append("g")
+            .attr("class", "tooltip1")
             .style("display", "none");
 
-        hoverbox.append("rect")
+        tooltip1.append("rect")
             .attr("width", 60)
             .attr("height", 20)
             .attr("fill", "white")
             .style("opacity", 0.5);
 
-        hoverbox.append("text")
+        tooltip1.append("text")
             .attr("x", 15)
             .attr("dy", "1.2em")
             .style("text-anchor", "middle")
             .attr("font-size", "12px")
             .attr("font-weight", "bold");
+
+        /* Create a tooltip with extra information. */
+        var tooltip2 = svg.append("g")
+            .attr("class", "tooltip2")
+            .style("display", "none");
+
+        tooltip2.append("rect")
+            .attr("width", 200)
+            .attr("height", 80)
+            .attr("fill", "black")
+            .style("opacity", 0.8)
+        tooltip2.append('svg:text')
+            .attr("fill", "white")
+            .attr('x', 100)
+            .attr('y', 10)
+            .attr('class', 'id')
+            .append('svg:tspan')
+            .attr('x', 0)
+            .attr('dy', 5)
+            .text("Hover over lijnen voor")
+            .append('svg:tspan')
+            .attr('x', 0)
+            .attr('dy', 20)
+            .text("meer informatie!")
+            .append('svg:tspan')
+            .attr('x', 0)
+            .attr('dy', 20)
+            .text("Legenda: Klik om lijnen")
+            .append('svg:tspan')
+            .attr('x', 0)
+            .attr('dy', 20)
+            .text("aan en uit te zetten.")
+
+        function infobox() {
+            var xPos = d3.mouse(this)[0] - 200,
+                yPos = d3.mouse(this)[1] + 20;
+            d3.select(this).style("cursor", "pointer");
+            tooltip2
+                .attr("transform", "translate(" + xPos + "," + yPos + ")")
+                .style("display", null)
+        }
+
+        function closeinfobox() {
+            d3.select(this).style("cursor", "default");
+            tooltip2.style("display", "none");
+            active = false;
+        }
+
+        var img = svg.append("svg:image")
+            .attr("xlink:href", "doc/info.png")
+            .attr("width", 15)
+            .attr("height", 15)
+            .attr("x", width + 270)
+            .attr("y", 210)
+            .on("mouseover", infobox)
+            .on("mouseout", closeinfobox);
     });
 }
 createLinegraph();

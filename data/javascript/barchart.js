@@ -139,7 +139,7 @@ function createBarchart() {
             .attr("transform", function (d, i) { return "translate(123," + (i * 19 + 30) + ")"; });
 
         legend.append("rect")
-            .attr("x", width - 18)
+            .attr("x", width - 120)
             .attr("width", 18)
             .attr("height", 18)
             .style("fill", function (d, i) {
@@ -153,7 +153,7 @@ function createBarchart() {
 
         legend.append("text")
             .attr("font", "sans-serif")
-            .attr("x", width + 5)
+            .attr("x", width - 100)
             .attr("y", 10)
             .attr("dy", ".35em")
             .style("text-anchor", "start")
