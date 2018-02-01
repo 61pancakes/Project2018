@@ -4,7 +4,7 @@
  * 10439080
  * linegraph.js: This file creates a multi line graph in d3
  * with data loaded in from a .json file.
- * This code is a bit of a mess because of all the interactivity. :D
+ * This code is a bit of a mess because of all the interactivity.
  */
 
 /* Create the basis variables for the svg (hardcoded). */
@@ -348,7 +348,7 @@ function createLinegraph() {
             d3.selectAll(".lineM" + this.classList[0].slice(-1)).style("stroke-width", larger);
         }
 
-        function mouseoutdatapoint(d) {
+        function mouseoutDatapoint(d) {
             tooltip1.style("display", "none");
             d3.select(this).style("cursor", "default");
             d3.selectAll("circle").attr("r", standard);
