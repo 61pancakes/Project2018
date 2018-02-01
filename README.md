@@ -7,9 +7,9 @@
 
 **SCREENSHOTS**  
 -----
-![final](doc/finalv1.png)  
+![final](doc/finalv5.png)  
   
-![final](doc/finalv2.png)
+![final](doc/finalv6.png)
 
 **PURPOSE**  
 -----
