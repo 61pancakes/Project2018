@@ -166,18 +166,18 @@ function createBarchart() {
                 }
             });
 
-        /* Create a tooltip. */
-        var tooltip = svg.append("g")
-            .attr("class", "tooltip")
+        /* Create a hoverbox. */
+        var hoverbox = svg.append("g")
+            .attr("class", "hoverbox")
             .style("display", "none");
 
-        tooltip.append("rect")
+        hoverbox.append("rect")
             .attr("width", 60)
             .attr("height", 20)
             .attr("fill", "white")
             .style("opacity", 0.5);
 
-        tooltip.append("text")
+        hoverbox.append("text")
             .attr("x", 15)
             .attr("dy", "1.2em")
             .style("text-anchor", "middle")
@@ -186,7 +186,7 @@ function createBarchart() {
 
         /* Show data on mouseover & highlight the bar. */
         function mouseover(d) {
-            tooltip.style("display", null);
+            hoverbox.style("display", null);
             d3.select(this).style("cursor", "pointer");
             d3.select(this).style("stroke", "black");
             d3.select(this).style("stroke-width", "2");
@@ -196,14 +196,14 @@ function createBarchart() {
         function mousemove(d) {
             var xPos = d3.mouse(this)[0] + 60;
             var yPos = d3.mouse(this)[1] - 20;
-            tooltip.attr("transform", "translate(" + xPos + "," + yPos + ")");
-            tooltip.select("text")
+            hoverbox.attr("transform", "translate(" + xPos + "," + yPos + ")");
+            hoverbox.select("text")
                 .html((d.end - d.begin) + " studenten");
         }
 
         /* Hide data & remove highlight of the bar. */
         function mouseout(d) {
-            tooltip.style("display", "none");
+            hoverbox.style("display", "none");
             d3.select(this).style("stroke", "none");
             d3.select(this).style("cursor", "default");
         };
@@ -214,23 +214,46 @@ function createBarchart() {
         };
     })
 
-    /* Create a tooltip. */
+    /* Create a hoverbox. */
     var tooltip2 = svg.append("g")
         .attr("class", "tooltip2")
         .style("display", "none");
 
     tooltip2.append("rect")
         .attr("width", 150)
-        .attr("height", 200)
+        .attr("height", 130)
         .attr("fill", "black")
         .style("opacity", 0.8)
 
-    tooltip2.append("text")
-        .attr("x", 15)
-        .attr("dy", "1.2em")
-        .style("text-anchor", "middle")
+    tooltip2.append('svg:text')
         .attr("fill", "white")
-        .attr("font-size", "12px");
+        .attr('x', 100)
+        .attr('y', 10)
+        .attr('class', 'id')
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 5)
+        .text("Hover over een")
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 20)
+        .text("staaf voor meer")
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 20)
+        .text("info! Of klik er op")
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 20)
+        .text("om uit dat jaar")
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 20)
+        .text("meer info te zien")
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 20)
+        .text("→→→→→→→→");
 
     function infobox() {
         var xPos = d3.mouse(this)[0] - 140,

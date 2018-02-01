@@ -8,7 +8,7 @@
 
 /* Create the basis variables for the svg (hardcoded). */
 var margin = { top: 50, right: 300, bottom: 50, left: 100 },
-    width = 800 - margin.left - margin.right,
+    width = 900 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom,
     years = 5,
     studentMax = 3738,
@@ -93,15 +93,30 @@ function createLinegraph() {
 
     tooltip2.append("rect")
         .attr("width", 200)
-        .attr("height", 200)
+        .attr("height", 80)
         .attr("fill", "black")
         .style("opacity", 0.8)
-
-    tooltip2.append("text")
-        .attr("x", 15)
-        .attr("dy", "1.2em")
-        .style("text-anchor", "middle")
-        .attr("font-size", "12px");
+    tooltip2.append('svg:text')
+        .attr("fill", "white")
+        .attr('x', 100)
+        .attr('y', 10)
+        .attr('class', 'id')
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 5)
+        .text("Hover over lijnen voor")
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 20)
+        .text("meer informatie!")
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 20)
+        .text("Legenda: Klik om lijnen")
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 20)
+        .text("aan en uit te zetten.")
 
     function infobox() {
         var xPos = d3.mouse(this)[0] - 200,
@@ -117,7 +132,6 @@ function createLinegraph() {
         tooltip2.style("display", "none");
         active = false;
     }
-
 
     var img = svg.append("svg:image")
         .attr("xlink:href", "doc/info.png")
@@ -340,10 +354,9 @@ function createLinegraph() {
 
         /* Show data of the current datapoint & highlight the rest of the line. */
         function mouseoverdatapointF(d) {
-            console.log(tooltip)
             var xPos = d3.mouse(this)[0] + 30,
                 yPos = d3.mouse(this)[1] - 20;
-            tooltip
+            hoverbox
                 .style("display", null)
                 .attr("transform", "translate(" + xPos + "," + yPos + ")")
                 .select("text")
@@ -356,7 +369,7 @@ function createLinegraph() {
         function mouseoverdatapointM(d) {
             var xPos = d3.mouse(this)[0] + 30,
                 yPos = d3.mouse(this)[1] - 20;
-            tooltip
+            hoverbox
                 .style("display", null)
                 .attr("transform", "translate(" + xPos + "," + yPos + ")")
                 .select("text")
@@ -367,7 +380,7 @@ function createLinegraph() {
         }
 
         function mouseoutdatapointF(d) {
-            tooltip.style("display", "none");
+            hoverbox.style("display", "none");
             d3.select(this).style("cursor", "default");
             d3.selectAll(".datapointF" + this.classList[0].slice(-1)).attr("r", standard);
             d3.selectAll(".lineF" + this.classList[0].slice(-1)).style("stroke-width", 2);
@@ -375,7 +388,7 @@ function createLinegraph() {
 
         function mouseoutdatapointM(d) {
             d3.select(this).style("cursor", "default");
-            tooltip.style("display", "none");
+            hoverbox.style("display", "none");
             d3.selectAll(".datapointM" + this.classList[0].slice(-1)).attr("r", standard)
             d3.selectAll(".lineM" + this.classList[0].slice(-1)).style("stroke-width", 2)
         }
@@ -404,17 +417,17 @@ function createLinegraph() {
         }
 
         /* Create a tooltip. */
-        var tooltip = svg.append("g")
-            .attr("class", "tooltip")
+        var hoverbox = svg.append("g")
+            .attr("class", "hoverbox")
             .style("display", "none");
 
-        tooltip.append("rect")
+        hoverbox.append("rect")
             .attr("width", 60)
             .attr("height", 20)
             .attr("fill", "white")
             .style("opacity", 0.5);
 
-        tooltip.append("text")
+        hoverbox.append("text")
             .attr("x", 15)
             .attr("dy", "1.2em")
             .style("text-anchor", "middle")
