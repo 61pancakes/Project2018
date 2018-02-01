@@ -9,7 +9,7 @@ Dit project visualiseert de demografische ontwikkelingen van de Universiteit van
 **OVERVIEW**
 
 De website is in tweeën te delen: lay-out/informatie en de datasets.
-1. De lay-out wordt gemaakt door een HTML-bestand (index.html) en bijbehorende freelancer.css. In de HTML worden scripts aangeroepen die de visualisaties maken.
+1. De lay-out wordt gemaakt door een HTML-bestand (index.html) en bijbehorende freelancer.css en bootstrap.css. In de HTML worden scripts aangeroepen die de visualisaties maken.
 2. Die scripts staan in drie Javascript-bestanden, één voor elke visualisatie van de datasets. De stijl van de daarin gemaakte svgs wordt beschreven in het styles.css-bestand. Verder staan de data, die gebruikt worden door de de Javascript-bestanden in een apart mapje met CSV- en JSON-bestanden.
 
 Qua GitHub is er ook nog een mapje met HTML (waarin een begin van een tabel is gemaakt) en een mapje met een python-bestand, waarmee CSV naar JSON geconvert kan worden. Deze zijn echter in het proces gebruikt en worden niet in de website gebruikt.
