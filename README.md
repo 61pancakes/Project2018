@@ -2,7 +2,6 @@
 ----------------  
 **Vak**: Minor Programmeren: Programmeerproject 2018  
 **Titel:** Demografische ontwikkelingen bij de FNWI  
-**Auteur:** Andrea van den Hooff  
 **Pages:** http://61pancakes.github.io/Project2018/  
 **Demo:** https://www.youtube.com/watch?v=JgKyIJn3LFc&
 
