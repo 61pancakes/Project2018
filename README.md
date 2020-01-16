@@ -14,35 +14,6 @@
 -----
 Het is algemeen bekend dat vrouwen aanzienlijk in de minderheid zijn bij technische studies. Daar wordt geprobeerd verandering in te brengen door bureaus en NGO's zoals het [VHTO](https://www.vhto.nl/over-vhto/) en [Girls Who Code](https://www.girlswhocode.com). Dit project dient een inzicht te geven in de demografie van de bètastudies aan de Universiteit van Amsterdam. Is die balans daadwerkelijk bij alle studies bij de FNWI zo scheef? In hoeverre zit er relatief en/of absoluut een ontwikkeling in sinds het populairder worden de ICT-branche in het aantal inschrijvingen bij de FNWI? Door middel van verschillende visualisaties (namelijk een staafdiagram, een lijngrafiek en een 'sunburst') wordt dat in dit project enigszins zichtbaar.
 
-COPYRIGHT
----------
-
-BSD 2-Clause License
-
-Copyright (c) 2018, Andrea van den Hooff
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-
-* Redistributions of source code must retain the above copyright notice, this
-  list of conditions and the following disclaimer.
-
-* Redistributions in binary form must reproduce the above copyright notice,
-  this list of conditions and the following disclaimer in the documentation
-  and/or other materials provided with the distribution.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
 **ACKNOWLEDGEMENTS**
 --------
 
